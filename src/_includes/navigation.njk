@@ -1,0 +1,56 @@
+{% macro header(title) %}
+<div class="w-full px-3 py-1 text-slate-300 bg-gray-800">
+  {{ title }}
+</div>
+{% endmacro %}
+
+{% macro item(title, link) %}
+<li>
+  <a class="group block px-3 py-1 text-blue-300 transition-all hover:translate-x-1 focus:translate-x-1 outline-none" href="{{ link }}">
+    <span class="inline-block">
+      {{ title }}
+    </span>
+    <svg class="inline-block opacity-0 transition-all group-hover:opacity-100 group-focus:opacity-100" width=".8rem" height=".8rem" version="2.0">
+      <use href="#chevron-right" />
+    </svg>
+  </a>
+</li>
+{% endmacro %}
+
+
+<nav class="relative block md:sticky md:max-h-[768px] md:top-3 w-full md:w-[256px] flex-shrink-0 mb-3 md:mb-0 md:me-5 bg-gray-700 text-white rounded-md shadow-lg overflow-hidden">
+  <div class="absolute -right-5 left-full bottom-0 origin-bottom-right -rotate-90 text-gray-800 opacity-25 text-9xl font-bold italic uppercase z-0 pointer-events-none select-none">nav</div>
+  <div class="w-full flex p-3 bg-gray-900 rounded-t-md">
+    <a href="/" class="group inline-flex uppercase font-bold italic text-xl me-auto outline-none">
+      <!-- This is probably the worst set of classes in this entire project -->
+      <span class="transition-all z-1 hover:text-[#27aad7] group-focus:text-[#27aad7] hover:drop-shadow-[0_0_0_transparent] group-focus:drop-shadow-[0_0_0_transparent] drop-shadow-[.1rem_.1rem_0_#27aad7]">p</span>
+      <span class="transition-all z-1 hover:text-[#bce236] group-focus:text-[#bce236] hover:drop-shadow-[0_0_0_transparent] group-focus:drop-shadow-[0_0_0_transparent] drop-shadow-[.1rem_.1rem_0_#bce236]">i</span>
+      <span class="transition-all z-1 hover:text-[#e88e27] group-focus:text-[#e88e27] hover:drop-shadow-[0_0_0_transparent] group-focus:drop-shadow-[0_0_0_transparent] drop-shadow-[.1rem_.1rem_0_#e88e27]">x</span>
+      <span class="transition-all z-1 hover:text-[#d72859] group-focus:text-[#d72859] hover:drop-shadow-[0_0_0_transparent] group-focus:drop-shadow-[0_0_0_transparent] drop-shadow-[.1rem_.1rem_0_#d72859]">e</span>
+      <span class="transition-all z-1 hover:text-[#2d4263] group-focus:text-[#2d4263] hover:drop-shadow-[0_0_0_transparent] group-focus:drop-shadow-[0_0_0_transparent] drop-shadow-[.1rem_.1rem_0_#2d4263]">l</span>
+    </a>
+    <a class="px-2 py-1 bg-gray-700 transition-all opacity-0 -translate-x-1 focus:opacity-100 focus:translate-x-0 focus" href="#content">
+      Skip navigation
+    </a>
+    <button class="appearance-none block md:hidden p-2 bg-gray-700 rounded-md js-nav-toggle">
+      <svg class="fill-gray-300" height="1rem" width="1rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+    </button>
+  </div>
+  <div class="h-0 md:h-[unset] transition-all js-nav-wrapper">
+    {{ header('site') }}
+    <ul class="py-2">
+      {{ item('home', '/') }}
+      {{ item('about', '/about') }}
+      {{ item('projects', '/projects') }}
+      {{ item('contact', '/contact') }}
+    </ul>
+
+    {{ header('misc.') }}
+    <ul class="py-2">
+      {{ item('uses', '/uses') }}
+      {{ item('now', '/now') }}
+      {{ item('characters', '/characters') }}
+      {{ item('friends', '/friends') }}
+    </ul>
+  </div>
+</nav>
