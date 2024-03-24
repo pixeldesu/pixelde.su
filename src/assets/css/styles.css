@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.prose p:first-of-type,
+.prose h1:first-of-type,
+.prose h2:first-of-type,
+.prose h3:first-of-type {
+  margin-block-start: 0;
+}
