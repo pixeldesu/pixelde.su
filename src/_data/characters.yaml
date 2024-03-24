@@ -1,0 +1,12 @@
+- nickname: Poly
+  enabled: false
+  cover: "/assets/img/characters/poly-cover.png"
+- nickname: Pixel
+  enabled: false
+  cover: "/assets/img/characters/pixel-cover.png"
+- nickname: Pyuru
+  enabled: false
+  cover: "/assets/img/characters/pyuru-cover.png"
+- nickname: Vert
+  enabled: false
+  cover: "/assets/img/characters/vert-cover.png"
