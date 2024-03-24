@@ -1,0 +1,15 @@
+{% extends "layouts/base.njk" %}
+
+{% block main %}
+  <div class="relative min-h-[768px] mb-3 p-3 bg-white rounded-md shadow-lg prose prose-headings:my-3 prose-code:before:hidden prose-code:after:hidden max-w-none">
+    <div class="relative z-10">
+      {{ content | safe }}
+    </div>
+  </div>
+  <a class="group font-semibold relative flex items-center justify-center overflow-hidden p-3 mb-3 bg-white rounded-md shadow-lg no-underline transition-all hover:translate-y-1 hover:bg-slate-100 focus:translate-y-1 focus:bg-slate-100" href="/contact">
+    <span>Want to talk? Check out my contact info!</span>
+    <svg class="ms-2" width="1rem" height="1rem" version="2.0">
+      <use href="#chevron-right" />
+    </svg>
+  </a>
+{% endblock %}
