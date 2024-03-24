@@ -1,0 +1,14 @@
+{% macro item(project, skills) %}
+<a class="group relative block overflow-hidden p-3 mb-3 bg-white rounded-md shadow-lg no-underline transition-all hover:translate-y-1" href="{{ project.url }}">
+  <div class="relative z-10">
+    <h2>{{ project.name }}</h2>
+    <p>{{ project.description }}</p>
+    <ul class="p-0 m-0">
+      {% for skill in project.skills %}
+        <li class="inline-block list-none rounded-md px-2 m-0 {{ skills[skill].classes }}">{{ skills[skill].name | trim }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="absolute -left-5 -bottom-2 text-slate-300 opacity-15 text-9xl font-bold italic uppercase z-0 pointer-events-none select-none transition-all group-hover:{{project.accent}} group-hover:left-0 group-focus:{{project.accent}} group-focus:left-0">{{ project.name }}</div>
+</a>
+{% endmacro %}

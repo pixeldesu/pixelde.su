@@ -1,0 +1,41 @@
+# NOTE: If you add something new here, especially a new skill, 
+#       don't forget to adjust _data/skills.yaml as well!
+
+- name: Retrospring
+  url: https://github.com/Retrospring/retrospring
+  description: |
+    A social Q/A site
+  skills:
+    - ruby
+    - typescript
+  accent: text-purple-500
+- name: TYPO3
+  url: https://github.com/TYPO3/typo3
+  description: |
+    A free/libre content management system
+  skills:
+    - typescript
+    - php
+  accent: text-amber-500
+- name: moduleRaid
+  url: https://github.com/pixeldesu/moduleRaid
+  description: |
+    A library to take apart Webpacks webpackJsonp
+  skills:
+    - typescript
+  accent: text-rose-500
+- name: videoline
+  url: https://github.com/pixeldesu/videoline
+  description: |
+    A Google-free YouTube subscription management interface
+  skills:
+    - vue
+    - javascript
+  accent: text-indigo-500
+- name: PangLib
+  url: https://github.com/retreev/PangLib
+  description: |
+    A series of tools to interact with Pangya PC MMO game files
+  skills:
+    - csharp
+  accent: text-sky-500
