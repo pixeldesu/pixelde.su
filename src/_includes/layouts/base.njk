@@ -8,18 +8,18 @@
     {% if title %}
       <title>{{ title }} - pixeldesu</title>
       <meta property="og:title" content="{{ title }} - pixeldesu"/>
-      <meta property="twitter:title" content="{{ title }} - pixeldesu"/>
+      <meta name="twitter:title" content="{{ title }} - pixeldesu"/>
     {% else %}
       <title>pixeldesu</title>
       <meta property="og:title" content="pixeldesu"/>
-      <meta property="twitter:title" content="pixeldesu"/>
+      <meta name="twitter:title" content="pixeldesu"/>
     {% endif %}
     {% if description %}
-      <meta property="description" content="{{ description }}"/>
-      <meta property="twitter:description" content="{{ description }}"/>
+      <meta name="description" content="{{ description }}"/>
+      <meta name="twitter:description" content="{{ description }}"/>
     {% else %}
-      <meta property="description" content="Personal homepage of pixeldesu, a professional web developer and open source tinkerer from Germany."/>
-      <meta property="twitter:description" content="Personal homepage of pixeldesu, a professional web developer and open source tinkerer from Germany."/>
+      <meta name="description" content="Personal homepage of pixeldesu, a professional web developer and open source tinkerer from Germany."/>
+      <meta name="twitter:description" content="Personal homepage of pixeldesu, a professional web developer and open source tinkerer from Germany."/>
     {% endif %}
     <link rel="me" href="https://desu.social/@pixel"/>
     <script type="module" src="/assets/js/main.js"></script>
