@@ -5,7 +5,7 @@
     <p>{{ project.description }}</p>
     <ul class="p-0 m-0">
       {% for skill in project.skills %}
-        <li class="inline-block list-none rounded-md px-2 m-0 {{ skills[skill].classes }}">{{ skills[skill].name | trim }}</li>
+        <li class="inline-block list-none rounded-md px-2 m-0 me-1 {{ skills[skill].classes }}">{{ skills[skill].name | trim }}</li>
       {% endfor %}
     </ul>
   </div>
