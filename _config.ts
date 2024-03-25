@@ -4,6 +4,7 @@ import nunjucks from "lume/plugins/nunjucks.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import tailwindcss from "lume/plugins/tailwindcss.ts";
 import postcss from "lume/plugins/postcss.ts";
+import minifyHTML from "lume/plugins/minify_html.ts";
 
 import tailwindOptions from "./tailwind.config.js";
 
@@ -21,5 +22,6 @@ site.use(tailwindcss({
   options: tailwindOptions,
 }));
 site.use(postcss());
+site.use(minifyHTML());
 
 export default site;
