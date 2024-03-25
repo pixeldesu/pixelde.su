@@ -6,6 +6,7 @@ import tailwindcss from "lume/plugins/tailwindcss.ts";
 import postcss from "lume/plugins/postcss.ts";
 import minifyHTML from "lume/plugins/minify_html.ts";
 import terser from "lume/plugins/terser.ts";
+import nano from "npm:cssnano";
 
 import tailwindOptions from "./tailwind.config.js";
 
@@ -25,5 +26,7 @@ site.use(tailwindcss({
 site.use(postcss());
 site.use(minifyHTML());
 site.use(terser());
+
+site.hooks.addPostcssPlugin(nano);
 
 export default site;
