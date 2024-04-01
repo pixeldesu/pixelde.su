@@ -31,9 +31,9 @@
       </defs>
     </svg>
 
-    <div class="w-full md:w-[768px] min-h-[768px] md:my-[5rem] p-3 md:flex md:flex-row">
+    <div class="w-full md:w-auto min-h-[768px] md:my-[5rem] p-3 md:flex md:flex-row">
       {% include "navigation.njk" %}
-      <main id="content" class="w-full">
+      <main id="content" class="w-full md:max-w-[65ch]">
         {% block main %}{% endblock %}
       </main>
     </div>
