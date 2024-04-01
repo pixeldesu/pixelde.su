@@ -1,0 +1,37 @@
+---
+layout: layouts/minimal.njk
+title: Blog
+---
+
+{% from "blog.njk" import item %}
+
+<div class="p-3 mb-3 bg-white rounded-md shadow-lg overflow-hidden w-[65ch] prose prose-headings:my-3 max-w-none">
+  <div class="flex items-center">
+    <h1>Blog</h1>
+
+    <a class="inline-block ms-auto transition-all fill-neutral-500 hover:fill-orange-500 focus:fill-orange-500" href="/blog/posts.rss">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="2rem" width="2rem"><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM96 136c0-13.3 10.7-24 24-24c137 0 248 111 248 248c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-110.5-89.5-200-200-200c-13.3 0-24-10.7-24-24zm0 96c0-13.3 10.7-24 24-24c83.9 0 152 68.1 152 152c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-57.4-46.6-104-104-104c-13.3 0-24-10.7-24-24zm0 120a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+    </a>
+    <a class="inline-block ms-1 transition-all grayscale hover:grayscale-0 focus:grayscale-0" href="/blog/posts.json">
+      <svg class="rounded-sm" version="1.1" viewBox="0 0 140 140" height="1.8rem" width="1.8rem" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" fill-rule="evenodd">
+        <g transform="translate(-4 -14)">
+        <rect x="4" y="14" width="140" height="140" fill="#8BE028"/>
+        <g transform="translate(79.55 79.55) rotate(-45) translate(-53.5 -59)">
+        <path d="m7 64.984v0.20683c8.252 0 10.918 3.3008 10.918 13.267v15.742c0 16.377 8.0615 23.613 26.343 23.613h5.5859v-11.87h-2.8564c-10.347 0-14.028-3.5547-14.028-13.457v-18.472c0-9.5215-4.2529-14.727-12.568-15.488v-1.7773c8.5693-0.8252 12.568-5.5859 12.568-14.79v-16.567c0-10.093 3.5547-13.584 14.028-13.584h2.8564v-11.807h-5.5859c-18.345 0-26.343 6.9824-26.343 22.979v13.647c0 9.9658-2.7295 13.33-10.918 13.33v0.060348c-3.909 0.25729-7 3.5095-7 7.4836s3.091 7.2263 7 7.4836z" fill="#497614"/>
+        <g transform="translate(42 50)" fill="#fff">
+        <circle cx="7.5" cy="7.5" r="7.5"/>
+        <circle cx="32.5" cy="7.5" r="7.5"/>
+        <circle cx="57.5" cy="7.5" r="7.5"/>
+        </g>
+        </g>
+        </g>
+        </g>
+      </svg>
+    </a>
+  </div>
+  <p>I write stuff sometimes!</p>
+</div>
+{% for article in search.pages("type=blog", "order date=desc") %}
+  {{ item(article) }}
+{% endfor %}

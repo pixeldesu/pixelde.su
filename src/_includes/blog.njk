@@ -1,0 +1,17 @@
+{% macro item(article) %}
+<a href="{{article.url}}" class="group block p-3 mb-3 bg-white rounded-md shadow-lg overflow-hidden prose prose-headings:my-3 max-w-none no-underline transition-all hover:translate-y-1">
+  <h2 class="text-xl !mb-0">{{ article.title }}</h2>
+  <p class="text-sm text-neutral-600 mb-3">
+    Published on <time datetime={{ article.date | date }}>{{ article.date | date('HUMAN_DATE') }}</time>
+  </p>
+  {{ article.description | safe }}
+  <div class="flex justify-end items-center transition-all group-hover:-translate-x-1 group-focus:-translate-x-1">
+    <span class="font-bold">
+      Read more
+    </span>
+    <svg class="ms-1 inline-block" width=".8rem" height=".8rem" version="2.0">
+      <use href="#chevron-right" />
+    </svg>
+  </div>
+</a>
+{% endmacro %}
