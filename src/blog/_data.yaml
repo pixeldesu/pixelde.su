@@ -1,0 +1,3 @@
+layout: layouts/blog.njk
+type: blog
+index: true
