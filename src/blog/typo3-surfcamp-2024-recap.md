@@ -169,7 +169,7 @@ We then packed our bags, checked out of the hotel, and had a proper goodbye sess
 
 The mentors drove us to the Airport and flight-wise everything was fine too. I made the mistake of checking my train status while still in Fuerteventura, and then being surprised by railworks near Munich Airport, requiring me to take a replacement bus service.
 
-This was a bit of a problem because my schedule in Germany ended up being quite tight. I'd arrive in Munich by 10 PM and my final train back to Rosenheim would depart sometime after midnight. With pickling up my luggage and taking a tram line this already was super close, having railworks added to that was a massive pain.
+This was a bit of a problem because my schedule in Germany ended up being quite tight. I'd arrive in Munich by 10 PM and my final train back to Rosenheim would depart sometime after midnight. With picking up my luggage and taking a tram line this already was super close, having railworks added to that was a massive pain.
 
 In the end, I managed to catch the very final train and arrived home at about 2 AM after 12 hours of traveling.
 
