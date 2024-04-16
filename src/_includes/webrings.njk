@@ -1,0 +1,60 @@
+{% macro item(webring) %}
+<div class="flex p-1 items-center mb-1 bg-slate-100" data-webring>
+  <a class="me-auto rounded-md px-2 py-1 hover:bg-slate-200 focus:bg-slate-200" href="{{ webring.previous }}" rel="nofollow" title="Previous {{ webring.name }} site">
+    <svg width="1rem" height="1rem" version="2.0">
+      <use href="#chevron-left" />
+    </svg>
+  </a>
+
+  <a class="inline-block" href="{{ webring.url }}" rel="nofollow">
+    <b>{{ webring.name }}</b>
+  </a>
+  {% if webring.random %}
+    <a class="inline-block ms-1 rounded-md px-2 py-1 hover:bg-slate-200 focus:bg-slate-200" href="{{ webring.random }}" rel="nofollow" title="Random {{ webring.name }} site">
+      <svg width="1rem" height="1rem" version="2.0">
+        <use href="#shuffle" />
+      </svg>
+    </a>
+  {% endif %}
+
+  <a class="ms-auto rounded-md px-2 py-1 hover:bg-slate-200 focus:bg-slate-200" href="{{ webring.next }}" rel="nofollow" title="Next {{ webring.name }} site">
+    <svg width="1rem" height="1rem" version="2.0">
+      <use href="#chevron-right" />
+    </svg>
+  </a>
+</div>
+{% endmacro %}
+
+<div class="p-3 bg-white rounded-md shadow-lg mt-3" data-webring-container>
+  <div class="flex p-1 items-center mb-1 no-js-hidden" data-webring-placeholder>
+    <a class="me-auto rounded-md px-2 py-1 hover:bg-slate-200" href="#">
+      <svg width="1rem" height="1rem" version="2.0">
+        <use href="#chevron-left" />
+      </svg>
+    </a>
+
+    <a class="inline-block" href="#">
+      <b>Webring</b>
+    </a>
+
+    <a class="ms-auto rounded-md px-2 py-1 hover:bg-slate-200" href="#">
+      <svg width="1rem" height="1rem" version="2.0">
+        <use href="#chevron-right" />
+      </svg>
+    </a>
+  </div>
+  <details class="block w-full" data-webring-list>
+    <summary class="block text-center px-2 py-1">
+      <span class="no-js-hidden">More&nbsp;</span>Webrings
+      <svg width="1rem" height="1rem" version="2.0">
+        <use href="#chevron-down" />
+      </svg>
+      <svg width="1rem" height="1rem" version="2.0">
+        <use href="#chevron-up" />
+      </svg>
+    </summary>
+    {% for webring in webrings %}
+      {{ item(webring) }}
+    {% endfor %}
+  </details>
+</div>

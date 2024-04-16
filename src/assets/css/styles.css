@@ -12,3 +12,15 @@
 .no-js .no-js-hidden {
   display: none;
 }
+
+[data-webring-list] summary svg {
+  display: inline-block;
+}
+
+[data-webring-list]:not([open]) summary svg:last-child {
+  display: none !important;
+}
+
+[data-webring-list][open] summary svg:first-of-type {
+  display: none !important;
+}
