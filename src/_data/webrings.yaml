@@ -1,0 +1,10 @@
+- name: OBEY THE SYSTEM
+  url: https://webring.obeythesystem.com/
+  random: https://webring.obeythesystem.com/random
+  next: https://webring.obeythesystem.com/page?=next
+  previous: https://webring.obeythesystem.com/page?=previous
+- name: Fediring
+  url: https://fediring.net
+  random: https://fediring.net/random
+  next: https://fediring.net/next?host=pixelde.su
+  previous: https://fediring.net/previous?host=pixelde.su
