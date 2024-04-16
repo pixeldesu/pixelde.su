@@ -6,3 +6,7 @@ if (navigationToggle) {
     navigationWrapper.classList.toggle("h-fit");
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.documentElement.classList.remove("no-js");
+});
