@@ -19,6 +19,7 @@ const site = lume({
 });
 
 site.copy("assets/img");
+site.copy("assets/slides");
 
 site.use(esbuild());
 site.use(nunjucks());
