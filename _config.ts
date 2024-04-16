@@ -46,6 +46,19 @@ site.use(feed({
   },
 }));
 
+site.use(feed({
+  output: ["/talks/posts.rss", "/talks/posts.json"],
+  query: "type=talk index=true",
+  info: {
+    title: "pixeldesu's blog",
+    description: "Sessions and talks presented by pixeldesu at various events",
+  },
+  items: {
+    title: "=title",
+    description: "=excerpt",
+  },
+}));
+
 site.hooks.addPostcssPlugin(nano);
 
 export default site;
