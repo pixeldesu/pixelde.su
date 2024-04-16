@@ -1,0 +1,3 @@
+layout: layouts/talk.njk
+type: talk
+index: true
