@@ -8,3 +8,8 @@
   random: https://fediring.net/random
   next: https://fediring.net/next?host=pixelde.su
   previous: https://fediring.net/previous?host=pixelde.su
+- name: CSS JOY
+  url: https://cs.sjoy.lol/
+  random: https://webri.ng/webring/cssjoy/random?via=https://pixelde.su/
+  next: https://webri.ng/webring/cssjoy/next?via=https://pixelde.su/
+  previous: https://webri.ng/webring/cssjoy/previous?via=https://pixelde.su/
