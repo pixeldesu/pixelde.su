@@ -13,3 +13,7 @@
   random: https://webri.ng/webring/cssjoy/random?via=https://pixelde.su/
   next: https://webri.ng/webring/cssjoy/next?via=https://pixelde.su/
   previous: https://webri.ng/webring/cssjoy/previous?via=https://pixelde.su/
+- name: bucket webring
+  url: https://webring.bucketfish.me/
+  next: https://webring.bucketfish.me/redirect.html?to=next&name=pixeldesu
+  previous: https://webring.bucketfish.me/redirect.html?to=prev&name=pixeldesu
