@@ -21,3 +21,11 @@
   url: https://webring.dinhe.net/
   next: https://webring.dinhe.net/next/https://pixelde.su/
   previous: https://webring.dinhe.net/prev/https://pixelde.su/
+- name: Focus First
+  url: https://owlsroost.xyz/webring/index.html
+  next: "#"
+  previous: "#"
+  random: "#"
+  onionring:
+    variable: FocusFirst
+    script: https://owlsroost.xyz/webring/onionring-variables.js

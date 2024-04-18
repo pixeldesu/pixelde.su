@@ -22,6 +22,15 @@
       <meta name="twitter:description" content="Personal homepage of pixeldesu, a professional web developer and open source tinkerer from Germany."/>
     {% endif %}
     <link rel="me" href="https://desu.social/@pixel"/>
+
+    {% if url === "/" %}
+      {% for webring in webrings %}
+        {% if webring.onionring %}
+          <script src="{{ webring.onionring.script }}"></script>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
     <script type="module" src="/assets/js/main.js"></script>
   </head>
   <body class="min-h-full min-w-full flex justify-center md:items-start bg-slate-100 md:bg-[url('/assets/img/poly.png')] bg-no-repeat bg-[right_50vh] bg-fixed">
