@@ -1,0 +1,20 @@
+# place button images under /src/assets/img/buttons/ and only link the filename here!
+
+- title: DeviousTengu's site
+  url: https://tengu.space
+  image: dev.png
+- title: Revengeday's site
+  url: https://revenge.day
+  image: revengeday_purple.gif
+- title: Emma Essex' site
+  url: https://heckscaper.com
+  image: msx8831.gif
+- title: datakra.sh
+  url: https://datakra.sh
+  image: datakrash_web_4.gif
+- title: Norm's website
+  url: https://biribiri.dev
+  image: norm_badge.png
+- title: Nina's site
+  url: https://misnina.com
+  image: misnina.jpg
