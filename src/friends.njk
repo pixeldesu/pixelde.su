@@ -9,12 +9,31 @@ title: Friends
 
 <p>Cool people whose websites you should also check out!</p>
 
-<div class="not-prose mb-10">
+<div class="not-prose mb-3">
   <ul>
     {% for friend in friends %}
       {{ item(friend) }}
     {% endfor %}
   </ul>
+</div>
+
+<h2>Buttons</h2>
+
+<div class="flex outline-dashed outline-sky-600 outline-2 px-2 py-1 rounded-md leading-snug italic text-center mb-5 not-prose items-center">
+  <img src="/assets/img/buttons/pixeldesu.png" class="me-2"/>
+  <div>
+    Feel free to add my button to your site!
+  </div>
+</div>
+
+<div class="not-prose mb-10">
+  <p>
+    {% for button in buttons %}
+      <a class="inline-block" href="{{ button.url }}" rel="noreferer noopener">
+        <img src="/assets/img/buttons/{{ button.image }}" alt="{{ button.title}}" width="88" height="31" loading="lazy"/>
+      </a>
+    {% endfor %}
+  </p>
 </div>
 
 <div class="outline-dashed outline-2 px-2 py-1 rounded-md leading-snug italic text-center mb-3">
