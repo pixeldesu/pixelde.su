@@ -17,8 +17,8 @@ am doing currently.
 
 ## What I'm playing
 
+- [Rabbit and Steel](https://store.steampowered.com/app/2132850/Rabbit_and_Steel/)
 - [vivid/stasis](https://store.steampowered.com/app/2093940/vividstasis/)
-- [Palworld](https://store.steampowered.com/app/1623730/Palworld/)
 
 ## What I'm watching
 
