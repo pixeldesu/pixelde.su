@@ -8,6 +8,7 @@ import minifyHTML from "lume/plugins/minify_html.ts";
 import terser from "lume/plugins/terser.ts";
 import date from "lume/plugins/date.ts";
 import readInfo from "lume/plugins/reading_info.ts";
+import robots from "lume/plugins/robots.ts";
 import feed from "lume/plugins/feed.ts";
 import nano from "npm:cssnano";
 
@@ -58,6 +59,10 @@ site.use(feed({
     description: "=excerpt",
   },
 }));
+
+site.use(robots({
+  disallow: ["GPTBot", "GPTBot-User", "Google-Extended", "PerplexityBot", "claudebot", "ClaudeBot"]
+}))
 
 site.hooks.addPostcssPlugin(nano);
 
