@@ -10,10 +10,8 @@ am doing currently.
 
 ## What I'm working on
 
-- A lot of [Retrospring](https://github.com/Retrospring/retrospring) stuff,
-  mostly fixing up legacy bugs and adding new features.
-- I'm removing all usages of jQuery from the [TYPO3](https://typo3.org) backend
-  JS code.
+- Setting up my new Fedora system.
+- Playing around with neovim and configuring it with a lot of plugins!
 
 ## What I'm playing
 
@@ -22,7 +20,7 @@ am doing currently.
 
 ## What I'm watching
 
-- [HUNTER×HUNTER](https://anilist.co/anime/11061/HUNTERHUNTER-2011/)
+- [World Trigger](https://anilist.co/anime/20729/World-Trigger/)
 
 ## What I'm listening to
 
