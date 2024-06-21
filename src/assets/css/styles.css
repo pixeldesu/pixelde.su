@@ -17,6 +17,11 @@
   display: inline-block;
 }
 
+[data-webring-list] summary::marker,
+[data-webring-list] summary::-webkit-details-marker {
+  display: none;
+}
+
 [data-webring-list]:not([open]) summary svg:last-child {
   display: none !important;
 }
