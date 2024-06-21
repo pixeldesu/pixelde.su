@@ -18,8 +18,7 @@
 {% endmacro %}
 
 
-<nav class="relative block md:sticky md:max-h-[768px] md:top-3 w-full md:w-[256px] flex-shrink-0 mb-3 md:mb-0 md:me-5 bg-gray-700 text-white rounded-md shadow-lg overflow-hidden">
-  <div class="absolute -right-5 left-full bottom-0 origin-bottom-right -rotate-90 text-gray-800 opacity-25 text-9xl font-bold italic uppercase z-0 pointer-events-none select-none">nav</div>
+<nav class="block md:sticky md:max-h-[768px] md:top-3 w-full md:w-[256px] flex-shrink-0 mb-3 md:mb-0 md:me-5 bg-gray-700 text-white rounded-md shadow-lg overflow-hidden">
   <div class="w-full flex p-3 bg-gray-900 rounded-t-md">
     <a href="/" class="group inline-flex uppercase font-bold italic text-xl me-auto outline-none">
       <!-- This is probably the worst set of classes in this entire project -->
@@ -36,7 +35,8 @@
       <svg class="fill-gray-300" height="1rem" width="1rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
     </button>
   </div>
-  <div class="h-0 md:h-[unset] transition-all js-nav-wrapper">
+  <div class="relative h-0 md:h-full transition-all overflow-hidden js-nav-wrapper">
+    <div class="absolute -right-5 left-full bottom-5 md:bottom-20 origin-bottom-right -rotate-90 text-gray-800 opacity-25 text-9xl font-bold italic uppercase z-0 pointer-events-none select-none">nav</div>
     {{ header('site') }}
     <ul class="py-2">
       {{ item('home', '/') }}
