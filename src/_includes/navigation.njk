@@ -6,11 +6,11 @@
 
 {% macro item(title, link) %}
 <li>
-  <a class="group block px-3 py-1 text-blue-300 transition-all hover:translate-x-1 focus:translate-x-1 outline-none" href="{{ link }}">
+  <a class="group block px-3 py-1 text-blue-300 transition-all hocus:translate-x-1 outline-none" href="{{ link }}">
     <span class="inline-block">
       {{ title }}
     </span>
-    <svg class="inline-block opacity-0 transition-all group-hover:opacity-100 group-focus:opacity-100" width=".8rem" height=".8rem" version="2.0">
+    <svg class="inline-block opacity-0 transition-all group-hocus:opacity-100" width=".8rem" height=".8rem" version="2.0">
       <use href="#chevron-right" />
     </svg>
   </a>

@@ -18,6 +18,7 @@
       "npm:postcss-nesting@12.0.3": "npm:postcss-nesting@12.0.3_postcss@8.4.35_postcss-selector-parser@6.0.15",
       "npm:postcss@8.4.35": "npm:postcss@8.4.35",
       "npm:sharp@0.33.2": "npm:sharp@0.33.2",
+      "npm:tailwindcss": "npm:tailwindcss@3.4.1_postcss@8.4.35",
       "npm:tailwindcss@3.4.1": "npm:tailwindcss@3.4.1_postcss@8.4.35",
       "npm:terser@5.27.2": "npm:terser@5.27.2"
     },
