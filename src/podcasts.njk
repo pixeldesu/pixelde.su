@@ -1,0 +1,17 @@
+---
+layout: layouts/minimal.njk
+title: Podcasts
+---
+
+{% from "podcast.njk" import item %}
+
+<div class="relative p-3 mb-3 bg-white rounded-md shadow-lg overflow-hidden w-full prose prose-headings:my-3 max-w-none">
+  <div class="flex items-center">
+    <h1>Podcasts</h1>
+  </div>
+  <p>I have been a guest on these podcasts!</p>
+</div>
+
+{% for podcast in podcasts %}
+  {{ item(podcast) }}
+{% endfor %}

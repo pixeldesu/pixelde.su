@@ -1,0 +1,10 @@
+{% macro item(podcast) %}
+<a href="{{podcast.url}}" target="_blank" class="group block p-3 mb-3 bg-white rounded-md shadow-lg overflow-hidden prose prose-headings:my-3 max-w-none no-underline transition-all hover:translate-y-1">
+  <h2 class="text-xl !mb-0">
+    Episode {{ podcast.episode_number }} of {{ podcast.podcast }}: {{ podcast.title }}
+  </h2>
+  <p class="text-sm text-neutral-600 mb-3">
+    <time datetime={{ podcast.date | date }}>{{ podcast.date | date('HUMAN_DATE') }}</time>
+  </p>
+</a>
+{% endmacro %}
