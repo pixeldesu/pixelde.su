@@ -66,4 +66,6 @@ site.use(robots({
 
 site.hooks.addPostcssPlugin(nano);
 
+site.filter("hostname", (url) => (new URL(url)).hostname, false);
+
 export default site;

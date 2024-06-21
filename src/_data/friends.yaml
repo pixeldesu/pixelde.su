@@ -1,35 +1,22 @@
-# NOTE: Get rid of `clean_url` with writing a hostname helper for Nunjucks, you lazy fuck
-
 - name: coderobe
-  clean_url: coderobe.net
   url: https://coderobe.net
 - name: Shiz
-  clean_url: shiz.me
   url: https://shiz.me/
 - name: Tabby
-  clean_url: caffeination.space
   url: https://caffeination.space/
 - name: resir014
-  clean_url: resir014.xyz
   url: https://resir014.xyz/
 - name: raccube
-  clean_url: kjk.dog
   url: https://kjk.dog
 - name: eramdam
-  clean_url: erambert.me
   url: https://erambert.me
 - name: Rue
-  clean_url: rue.moe
   url: https://rue.moe
 - name: Johann150
-  clean_url: qwertqwefsday.eu
   url: https://qwertqwefsday.eu/
 - name: Revengeday
-  clean_url: revenge.day
   url: https://revenge.day/
 - name: rick
-  clean_url: n0id.space
   url: https://n0id.space/
 - name: yretenai
-  clean_url: chronovore.dev
   url: https://chronovore.dev/
