@@ -3,7 +3,7 @@ layout: layouts/minimal.njk
 title: Characters
 ---
 
-<div class="relative p-3 mb-3 bg-white rounded-md shadow-lg overflow-hidden w-full prose prose-headings:my-3 max-w-none">
+<div class="card card--raised mb-3 prose prose-headings:my-3">
   <h1>Characters</h1>
   <p>Known usually from my profile pictures across platforms, I do have a few original characters that I designed over the years. Here you can find their profiles and references!</p>
   <p class="font-bold">Individual profiles are coming soon!</p>
@@ -11,12 +11,10 @@ title: Characters
 <div class="grid gap-3 grid-cols-1 sm:grid-cols-2">
   {% for character in characters %}
     <a class="
-        relative 
+        card card--raised card--linked
         flex items-end 
-        bg-white bg-[url('{{ character.cover }}')] bg-center bg-cover bg-no-repeat 
-        rounded-md shadow-lg overflow-hidden 
-        h-[200px] md:h-[100px]
-        transition-all
+        bg-white bg-[url('{{ character.cover }}')] bg-center bg-cover bg-no-repeat
+        h-[200px] md:h-[100px] p-0
         {% if not character.enabled %}grayscale hover:grayscale-[0.5] cursor-not-allowed{% endif %}" 
         {% if character.enabled %}href="/characters/{{character.nickname}}/"{% else %}href="#"{% endif %}>
       <div class="w-full px-3 py-1 bg-white/75 uppercase italic font-bold">{{ character.nickname }}</div>

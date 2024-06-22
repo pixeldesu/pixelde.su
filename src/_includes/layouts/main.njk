@@ -1,7 +1,7 @@
 {% extends "layouts/base.njk" %}
 
 {% block main %}
-  <div class="relative min-h-[768px] md:w-[65ch] p-3 bg-white rounded-md shadow-lg overflow-hidden prose prose-headings:my-3 prose-code:before:hidden prose-code:after:hidden max-w-none">
+  <div class="card card--raised min-h-[768px] md:w-[65ch] prose prose-headings:my-3 prose-code:before:hidden prose-code:after:hidden max-w-none">
     <div class="absolute -right-5 left-full bottom-0 origin-bottom-right -rotate-90 text-slate-300 opacity-25 text-9xl font-bold italic uppercase z-0 pointer-events-none select-none">{{ title }}</div>
     <div class="relative z-10">
       {{ content | safe }}

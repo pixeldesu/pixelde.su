@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .card {
+    @apply p-3;
+  }
+  
+  .card--raised {
+    @apply relative max-w-none overflow-hidden bg-white rounded-md shadow-lg;
+  }
+  
+  .card--linked {
+    @apply no-underline transition-all;
+  }
+
+  .article-card {
+    @apply 
+      card card--raised card--linked
+      prose prose-headings:my-3
+      block overflow-hidden mb-3 hover:translate-y-1;
+  }
+}
+
 .prose p:first-of-type,
 .prose h1:first-of-type,
 .prose h2:first-of-type,
