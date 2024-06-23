@@ -21,6 +21,13 @@
       prose prose-headings:my-3
       block overflow-hidden mb-3 hover:translate-y-1;
   }
+
+  .link-card {
+    @apply
+      card card--raised card--linked
+      flex justify-center 
+      hover:translate-y-1 hocus:bg-slate-100
+  }
 }
 
 .prose p:first-of-type,
