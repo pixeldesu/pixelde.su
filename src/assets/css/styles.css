@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+  .prose {
+    @apply prose-headings:my-3 prose-code:before:hidden prose-code:after:hidden;
+  }
+
   .card {
     @apply p-3;
   }
