@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const randomWebringIndex = Math.floor(Math.random() * webrings.length);
 
     const randomWebring = webrings[randomWebringIndex].cloneNode(true);
-    randomWebring.classList.remove("bg-slate-100");
+    randomWebring.classList.remove("webring--highlighted");
 
     const webringPlaceholder = document.querySelector("[data-webring-placeholder]");
     webringPlaceholder.replaceWith(randomWebring);

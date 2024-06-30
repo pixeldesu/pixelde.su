@@ -52,6 +52,26 @@
       flex justify-center 
       hover:translate-y-1 hocus:bg-slate-100
   }
+
+  .webring {
+    @apply flex p-1 items-center mb-1 justify-center rounded-md;
+  }
+
+  .webring--highlighted {
+    @apply bg-slate-100;
+  }
+
+  .webring-action {
+    @apply rounded-md px-2 py-1 hocus:bg-slate-200 transition-all;
+  }
+
+  .webring-action--previous {
+    @apply me-auto;
+  }
+
+  .webring-action--next {
+    @apply ms-auto;
+  }
 }
 
 .prose p:first-of-type,
