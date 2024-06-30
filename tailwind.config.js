@@ -3,6 +3,10 @@ import plugin from "npm:tailwindcss/plugin.js";
 
 export default {
   mode: "jit",
+  darkMode: ["variant", [
+    "@media (prefers-color-scheme: dark) { &:not(.light *) }",
+    "&:is(.dark *)",
+  ]],
   plugins: [
     typography,
     plugin(({ addVariant }) => {

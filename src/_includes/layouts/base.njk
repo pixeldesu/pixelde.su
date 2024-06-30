@@ -31,6 +31,14 @@
       {% endfor %}
     {% endif %}
 
+    <script>
+      if (localStorage.getItem("theme") === "dark") {
+        document.documentElement.classList.add("dark");
+      }
+      else if (localStorage.getItem("theme") === "light") {
+        document.documentElement.classList.add("light");
+      }
+    </script>
     <script type="module" src="/assets/js/main.js"></script>
   </head>
   <body class="min-h-full min-w-full flex justify-center md:items-start bg-slate-100 dark:bg-neutral-900 dark:text-neutral-200 md:bg-[url('/assets/img/poly.png')] dark:md:bg-[url('/assets/img/poly-light.png')] bg-no-repeat bg-[right_50vh] bg-fixed">
