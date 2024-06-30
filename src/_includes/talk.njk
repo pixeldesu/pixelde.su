@@ -1,7 +1,7 @@
 {% macro item(talk) %}
 <a href="{{talk.url}}" class="article-card group">
   <h2 class="text-xl !mb-0">{{ talk.title }}</h2>
-  <p class="text-sm text-neutral-600 mb-3">
+  <p class="text-sm mb-3">
     Presented on <time datetime={{ talk.date | date }}>{{ talk.date | date('HUMAN_DATE') }}</time> at {{ talk.event }}
   </p>
   {{ talk.description | safe }}
