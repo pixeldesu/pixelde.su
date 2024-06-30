@@ -1,7 +1,7 @@
 {% macro item(friend) %}
 <li>
   <a class="card card--flat card--slim card--linked group relative block" href="{{ friend.url }}" target="_blank">
-    <span class="leading-none block font-semibold">{{ friend.name }}</span>
+    <span class="leading-none block font-semibold dark:text-neutral-100">{{ friend.name }}</span>
     <span class="leading-none opacity-75 block italic">{{ friend.url | hostname }}</span>
     <svg class="absolute inset-y-0 right-0 h-full pe-2 inline-block opacity-0 transition-all -translate-x-1 group-hocus:translate-x-0 group-hocus:opacity-100" width="1rem" height="1rem" version="2.0">
       <use href="#chevron-right" />

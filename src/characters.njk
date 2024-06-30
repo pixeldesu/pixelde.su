@@ -13,11 +13,11 @@ title: Characters
     <a class="
         card card--raised card--linked
         flex items-end 
-        bg-white bg-[url('{{ character.cover }}')] bg-center bg-cover bg-no-repeat
+        bg-white dark:bg-neutral-800 bg-[url('{{ character.cover }}')] bg-center bg-cover bg-no-repeat
         h-[200px] md:h-[100px] p-0
         {% if not character.enabled %}grayscale hover:grayscale-[0.5] cursor-not-allowed{% endif %}" 
         {% if character.enabled %}href="/characters/{{character.nickname}}/"{% else %}href="#"{% endif %}>
-      <div class="w-full px-3 py-1 bg-white/75 uppercase italic font-bold">{{ character.nickname }}</div>
+      <div class="w-full px-3 py-1 bg-white/75 dark:bg-neutral-800/75 uppercase italic font-bold">{{ character.nickname }}</div>
     </a>
   {% endfor %}
 </div>

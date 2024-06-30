@@ -3,7 +3,7 @@
   <h2 class="text-xl !mb-0">
     Episode {{ podcast.episode_number }} of {{ podcast.podcast }}: {{ podcast.title }}
   </h2>
-  <p class="text-sm text-neutral-600 mb-3">
+  <p class="text-sm mb-3">
     <time datetime={{ podcast.date | date }}>{{ podcast.date | date('HUMAN_DATE') }}</time>
   </p>
 </a>

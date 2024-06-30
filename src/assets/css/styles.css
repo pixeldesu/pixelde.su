@@ -4,7 +4,7 @@
 
 @layer components {
   .prose {
-    @apply prose-headings:my-3 prose-code:before:hidden prose-code:after:hidden;
+    @apply dark:prose-invert dark:prose-neutral prose-headings:my-3 prose-code:before:hidden prose-code:after:hidden;
   }
 
   .button {
@@ -24,11 +24,11 @@
   }
   
   .card--raised {
-    @apply relative bg-white shadow-lg;
+    @apply relative bg-white dark:bg-neutral-800 shadow-lg;
   }
 
   .card--flat {
-    @apply bg-slate-50/50 prose;
+    @apply bg-slate-50/50 dark:bg-neutral-600/50 prose;
   }
   
   .card--linked {
@@ -36,7 +36,7 @@
   }
 
   .card--flat.card--linked {
-    @apply hocus:bg-slate-100;
+    @apply hocus:bg-slate-100 dark:hocus:bg-neutral-700;
   }
 
   .article-card {
@@ -50,7 +50,7 @@
     @apply
       card card--raised card--linked
       flex justify-center 
-      hover:translate-y-1 hocus:bg-slate-100
+      hover:translate-y-1 hocus:bg-slate-100 dark:hocus:bg-neutral-700
   }
 
   .webring {
@@ -58,11 +58,11 @@
   }
 
   .webring--highlighted {
-    @apply bg-slate-100;
+    @apply bg-slate-100 dark:bg-neutral-600;
   }
 
   .webring-action {
-    @apply rounded-md px-2 py-1 hocus:bg-slate-200 transition-all;
+    @apply rounded-md px-2 py-1 hocus:bg-slate-200 dark:hocus:bg-neutral-700 transition-all;
   }
 
   .webring-action--previous {
