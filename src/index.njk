@@ -18,7 +18,7 @@ title: Welcome!
 <h3>Latest blog articles</h3>
 <div class="grid md:grid-cols-2 gap-3">
   {% for article in search.pages("type=blog", "order date=desc", 2) %}
-    <a href="{{article.url}}" class="group flex flex-col p-3 bg-slate-50/50 hocus:bg-slate-100 rounded-md overflow-hidden prose prose-headings:my-3 max-w-none no-underline transition-all">
+    <a href="{{article.url}}" class="card card--flat card--linked group flex flex-col">
       <h4 class="text-md !mb-0 !mt-0">{{ article.title }}</h4>
       <p class="text-sm text-neutral-600 mb-3">
         Published on <time datetime={{ article.date | date }}>{{ article.date | date('HUMAN_DATE') }}</time>
