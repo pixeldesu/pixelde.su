@@ -7,6 +7,14 @@
     @apply prose-headings:my-3 prose-code:before:hidden prose-code:after:hidden;
   }
 
+  .button {
+    @apply inline-flex items-center rounded-md shadow-lg font-bold text-white px-2 py-0.5 transition-all hocus:translate-y-0.5;
+  }
+
+  .button svg {
+    @apply inline-block fill-white h-[1.33rem] align-text-bottom w-auto me-1;
+  }
+
   .card {
     @apply max-w-none p-3 overflow-hidden rounded-md;
   }
