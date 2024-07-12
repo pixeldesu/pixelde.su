@@ -6,7 +6,6 @@ description: |
 date: 2024-07-12
 tags:
   - twitter
-post_draft: true
 ---
 
 People know I've been an avid Twitter user back in the good old days (_good old days_ mostly being pre-2015), and after Twitter crushed a lot of desktop clients with the introduction of the APIv1.1 and its abhorrent 100,000 token limit, I was always on the search for a new client that filled the void in terms of nice UI and good usability.
