@@ -1,3 +1,4 @@
 layout: layouts/blog.njk
 type: blog
 index: true
+post_draft: false

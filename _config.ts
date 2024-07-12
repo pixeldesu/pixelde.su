@@ -36,7 +36,7 @@ site.use(terser());
 
 site.use(feed({
   output: ["/blog/posts.rss", "/blog/posts.json"],
-  query: "type=blog index=true",
+  query: "type=blog index=true post_draft=false",
   info: {
     title: "pixeldesu's blog",
     description: "Personal and technical ramblings and write-ups from pixeldesu",
