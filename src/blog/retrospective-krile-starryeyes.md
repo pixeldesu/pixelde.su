@@ -20,7 +20,7 @@ Krile StarryEyes was a desktop Twitter client, made by [@karno](https://x.com/@k
 
 <a href="/assets/img/blog/krile-retro/ui.png" class="no-underline" target="_blank">
   <figure class="m-0">
-    <img class="rounded-md" src="/assets/img/blog/krile-retro/ui-thumb.png" alt="Screenshot of the Krile StarryEyes interface, showing a multi-column layout in a Metro-style application"/>
+    <img class="rounded-md m-auto" src="/assets/img/blog/krile-retro/ui-thumb.png" alt="Screenshot of the Krile StarryEyes interface, showing a multi-column layout in a Metro-style application"/>
     <figcaption class="italic text-center font-normal">The Krile StarryEyes user interface, click it for a full-size screenshot</figcaption>
   </figure>
 </a>
