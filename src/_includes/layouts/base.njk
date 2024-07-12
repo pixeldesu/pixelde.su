@@ -21,6 +21,9 @@
       <meta name="description" content="Personal homepage of pixeldesu, a professional web developer and open source tinkerer from Germany."/>
       <meta name="twitter:description" content="Personal homepage of pixeldesu, a professional web developer and open source tinkerer from Germany."/>
     {% endif %}
+    {% if (index === false) or (post_draft === true) %}
+      <meta name="robots" content="noindex,nofollow"/>
+    {% endif %}
     <link rel="me" href="https://desu.social/@pixel"/>
 
     {% if url === "/" %}
