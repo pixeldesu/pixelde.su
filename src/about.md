@@ -12,7 +12,7 @@ title: About
     <figcaption class="italic">That's me! Can you believe I'm not actually a cute blue-haired anime girl?</figcaption>
   </figure>
 </div>
-<p>My name is Andy, and I'm a <span class="js-age">27</span> year old Senior Frontend Developer from southern Germany.</p>
+<p>My name is Andy, and I'm a <span class="js-age">28</span> year old Senior Frontend Developer from southern Germany.</p>
 
 <p>I love building and contributing to open source software, some of which you can find on the <a href="/projects">Projects page</a> on this website. Besides that, I also love taking apart anything that I come across. Learning how things are built and what other secrets they might contain is really interesting to me.</p>
 </div>
