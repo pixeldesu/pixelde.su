@@ -3,8 +3,13 @@
   episode_number: 53
   date: 2019-05-01
   url: https://www.youtube.com/watch?v=stAd0E_w4IU
+  tags:
+    - pangya
+    - reverse-engineering
 - title: Pangya Community Site
   podcast: Papel Pod-Cast
   episode_number: 52
   date: 2019-03-17
   url: https://www.youtube.com/watch?v=OcidoK5d68Y
+  tags:
+    - pangya
