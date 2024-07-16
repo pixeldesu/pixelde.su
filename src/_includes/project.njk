@@ -1,11 +1,13 @@
-{% macro item(project, skills) %}
+{% from "tag.njk" import item as tagItem %}
+
+{% macro item(project, globalTagData) %}
 <a class="article-card group relative overflow-hidden" href="{{ project.url }}">
   <div class="relative z-10">
     <h2>{{ project.name }}</h2>
     <p>{{ project.description }}</p>
     <ul class="p-0 m-0">
-      {% for skill in project.skills %}
-        <li class="inline-block list-none rounded-md px-2 m-0 me-1 {{ skills[skill].classes }}">{{ skills[skill].name | trim }}</li>
+      {% for tag in project.tags %}
+        {{ tagItem(tag, globalTagData, false) }}
       {% endfor %}
     </ul>
   </div>
