@@ -33,5 +33,5 @@ title: Blog
   <p>I write stuff sometimes!</p>
 </div>
 {% for article in search.pages("type=blog post_draft=false", "order date=desc") %}
-  {{ item(article) }}
+  {{ item(article, tagData.global) }}
 {% endfor %}
