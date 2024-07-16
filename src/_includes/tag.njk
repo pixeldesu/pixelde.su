@@ -1,0 +1,21 @@
+{% macro item(tag, globalTagData, isLink = true, linkPrefix = '/') %}
+{% if isLink %}
+  <li class="inline">
+    <a href="{{ linkPrefix }}{{ tag }}" class="tag {{ globalTagData[tag].classes }}">
+      {% if globalTagData[tag].name %}
+        {{ globalTagData[tag].name }}
+      {% else %}
+        {{ tag }}
+      {% endif %}
+    </a>
+  </li>
+{% else %}
+  <li class="inline tag {{ globalTagData[tag].classes }}">
+    {% if globalTagData[tag].name %}
+      {{ globalTagData[tag].name }}
+    {% else %}
+      {{ tag }}
+    {% endif %}
+  </li>
+{% endif %}
+{% endmacro %}
