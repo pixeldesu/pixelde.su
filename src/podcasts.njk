@@ -13,5 +13,5 @@ title: Podcasts
 </div>
 
 {% for podcast in podcasts %}
-  {{ item(podcast) }}
+  {{ item(podcast, tagData.global) }}
 {% endfor %}
