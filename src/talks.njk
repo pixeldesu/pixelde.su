@@ -33,5 +33,5 @@ title: Talks
   <p>I talk at events sometimes!</p>
 </div>
 {% for talk in search.pages("type=talk", "order date=desc") %}
-  {{ item(talk) }}
+  {{ item(talk, tagData.global) }}
 {% endfor %}
