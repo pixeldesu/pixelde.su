@@ -2,6 +2,9 @@
 title: CKEditor 5 - Plugins für die neue Version schreiben
 description: |
   A session about writing plugins for CKEditor 5, used in TYPO3 v12.
+tags:
+  - javascript
+  - typo3
 event: T3BOARD23
 language: German
 date: 2023-03-14

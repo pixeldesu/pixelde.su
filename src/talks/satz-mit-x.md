@@ -2,6 +2,9 @@
 title: Satz mit X - Twitter schwindet, was als nächstes?
 description: |
   A talk about how Twitter is dying and what alternatives exist, focussing on the fediverse.
+tags:
+  - twitter
+  - fediverse
 event: TYPO3camp München 2023
 language: German
 date: 2023-09-03

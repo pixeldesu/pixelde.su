@@ -2,6 +2,8 @@
 title: Un-Framework - Delivering Dynamic Experiences with HTML over the Wire
 description: |
   A talk giving an entry to the Hotwire suite of libraries, namely Turbo and Stimulus.
+tags:
+  - javascript
 event: TYPO3 Developer Days 2023
 language: English
 date: 2023-08-03

@@ -2,6 +2,9 @@
 title: Vuex Basics
 description: |
   A requested talk about the basics of the Vue state management library Vuex.
+tags:
+  - javascript
+  - vue
 event: TYPO3camp München 2021
 language: German
 date: 2021-09-26
