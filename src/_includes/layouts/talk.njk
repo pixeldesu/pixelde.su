@@ -1,7 +1,14 @@
 {% extends "layouts/base.njk" %}
 
+{% from "tag.njk" import item as tagItem %}
+
 {% block main %}
   <div class="card card--raised flex flex-col min-h-[768px] prose">
+    <ul class="p-0 m-0">
+      {% for tag in tags %}
+        {{ tagItem(tag, tagData.global, true, '/talks/tag/') }}
+      {% endfor %}
+    </ul>
     <h1>{{title}}</h1>
     <p class="text-sm mb-2">
         Presented on <time datetime={{ date | date }}>{{ date | date('HUMAN_DATE') }}</time> at {{ event }}

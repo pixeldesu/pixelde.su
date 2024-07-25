@@ -1,0 +1,30 @@
+{% extends "layouts/minimal.njk" %}
+
+{% from "talk.njk" import item %}
+{% from "tag.njk" import item as tagItem %}
+
+{% block main %}
+  <div class="card card--raised mb-3 prose">
+    <div class="flex items-center">
+      <h2>All talks tagged with {{ tagItem(tag, tagData.global, false) }}</h2>
+    </div>
+    <p>
+      {{ talks.length }}
+      {% if (talks.length === 1) %}
+        talk
+      {% else %}
+        talks
+      {% endif %}
+      with this tag.
+    </p>
+  </div>
+  <a class="link-card items-center group font-semibold mb-3" href="/talks">
+    <svg class="fill-current me-2" width="1rem" height="1rem" version="2.0">
+      <use href="#chevron-left" />
+    </svg>
+    <span>Back to all talks</span>
+  </a>
+  {% for talk in talks %}
+    {{ item(talk, tagData.global) }}
+  {% endfor %}
+{% endblock %}
