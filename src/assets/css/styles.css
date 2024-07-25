@@ -74,7 +74,7 @@
   }
 
   .tag {
-    @apply font-bold bg-slate-200 dark:bg-neutral-700 align-middle leading-6 px-2 py-0.5 me-1 rounded-md;
+    @apply font-bold whitespace-nowrap !no-underline hocus:no-underline bg-slate-200 dark:bg-neutral-700 px-2 py-0.5 me-1 rounded-md;
   }
 }
 
