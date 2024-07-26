@@ -1,5 +1,7 @@
 export const layout = "layouts/tags/talk.njk"
 
+export const type = "page"
+
 export default function* ({ tagData, search }) {
     const posts = search.pages("type=talk", "order date=desc");
 

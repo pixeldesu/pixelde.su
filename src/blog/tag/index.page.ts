@@ -1,5 +1,7 @@
 export const layout = "layouts/tags/blog.njk"
 
+export const type = "page"
+
 export default function* ({ tagData, search }) {
     const posts = search.pages("type=blog post_draft=false", "order date=desc");
 
