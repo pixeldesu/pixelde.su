@@ -18,12 +18,20 @@
       with this tag.
     </p>
   </div>
-  <a class="link-card items-center group font-semibold mb-3" href="/talks">
-    <svg class="fill-current me-2" width="1rem" height="1rem" version="2.0">
-      <use href="#chevron-left" />
-    </svg>
-    <span>Back to all talks</span>
-  </a>
+  <div class="grid md:grid-cols-2 gap-3">
+    <a class="link-card items-center group font-semibold mb-3" href="/talks">
+      <svg class="fill-current me-2" width="1rem" height="1rem" version="2.0">
+        <use href="#chevron-left" />
+      </svg>
+      <span>Back to all talks</span>
+    </a>
+    <a class="link-card items-center group font-semibold mb-3" href="/tag/{{ tag }}">
+      <span>Everything with this tag</span>
+      <svg class="fill-current ms-2" width="1rem" height="1rem" version="2.0">
+        <use href="#chevron-right" />
+      </svg>
+    </a>
+  </div>
   {% for talk in talks %}
     {{ item(talk, tagData.global) }}
   {% endfor %}
