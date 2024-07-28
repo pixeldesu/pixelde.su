@@ -1,4 +1,5 @@
 ---
+url: ./reverse-engineering-pangya-file-formats-1-dat/
 title: "Reverse Engineering Pangya - File Formats #1: .dat"
 description: |
   As I pretty much started out with barely any knowledge in reverse engineering in mid-2018, when this whole endeavor started, I also picked one of the simpler formats of Pangya to write a tool for first.

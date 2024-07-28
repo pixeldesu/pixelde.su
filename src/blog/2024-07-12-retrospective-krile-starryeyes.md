@@ -1,4 +1,5 @@
 ---
+url: ./retrospective-krile-starryeyes/
 title: A retrospective on the coolest Twitter client you (probably) didn't know
 description: |
   A retrospective on the japanese Twitter client Krile StarryEyes by karno, why it was so cool
