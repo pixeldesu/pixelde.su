@@ -1,5 +1,4 @@
 ---
-url: ./how-to-improve-your-twitter-experience/
 title: How to improve your Twitter experience
 description: |
   So, I've been a Twitter user for around 10 years now. Now that I'm a bit more active again I'd like to share some of the tips that I used to get my experience up to something enjoyable again.

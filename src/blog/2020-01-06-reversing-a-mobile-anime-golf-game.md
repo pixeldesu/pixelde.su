@@ -1,5 +1,4 @@
 ---
-url: ./reversing-a-mobile-anime-golf-game/
 title: Reversing a Mobile Anime Golf Game
 description: |
   Pangya Mobile is shutting down on 7th February and I'm talking about how I scrambled to reverse-engineer and save Pangya Mobile before it is gone forever.

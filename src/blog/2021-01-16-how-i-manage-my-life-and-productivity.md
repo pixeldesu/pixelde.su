@@ -1,5 +1,4 @@
 ---
-url: ./how-i-manage-my-life-and-productivity/
 title: How I manage my Life and Productivity
 description: |
   I've wanted to write this blogpost for quite a while now, since October I believe. Finally got some time on my hands and feeling like writing after my year-in-review post, so here we go.

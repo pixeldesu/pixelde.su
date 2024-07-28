@@ -1,5 +1,4 @@
 ---
-url: ./reverse-engineering-pangya-file-formats-2-iff/
 title: "Reverse Engineering Pangya – File Formats #2: .iff"
 description: |
   Even though I talked about a different file format in my first post about reverse engineering Pangya, that actually wasn't the first format that I took apart, or messed with.

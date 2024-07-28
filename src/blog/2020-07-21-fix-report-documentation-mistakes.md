@@ -1,5 +1,4 @@
 ---
-url: ./fix-report-documentation-mistakes/
 title: Fix/Report documentation mistakes when you find them!
 description: |
   Something I noticed in spaces of bigger OSS project communities is that a lot of people complain a lot about documentation...and don't fix it. This should change!
