@@ -12,7 +12,7 @@ out right here, on my very own [/uses](https://uses.tech) page.
 
 ### RainbowFrontier
 
-- **OS:** Fedora 40 (KDE Spin)
+- **OS:** Windows 11 Pro
 - **CPU:** Intel Core i7-9750H
 - **Graphics:**
   - Intel UHD Graphics 630 (Integrated)
@@ -42,9 +42,8 @@ out right here, on my very own [/uses](https://uses.tech) page.
 
 ### Browser
 
-- I'm a web developer by trade, so technically I use every browser, ~~but
-  generally my main browser by now is [Arc](https://arc.net/).~~  
-  I'm back to using Firefox! (mainly because Arc is not available on Linux, but also to combat Chromium market share again)
+- I'm a web developer by trade, so technically I use every browser, but
+  generally my main browser by now is [Arc](https://arc.net/).
 - To block unwanted content while browsing, I use
   [uBlock Origin](https://github.com/gorhill/uBlock) and
   [uBlacklist](https://github.com/iorate/ublacklist). Additionally for YouTube,
