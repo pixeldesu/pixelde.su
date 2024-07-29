@@ -10,17 +10,21 @@ am doing currently.
 
 ## What I'm working on
 
-- Setting up my new Fedora system.
-- Playing around with neovim and configuring it with a lot of plugins!
+- Preparing my talk for the TYPO3 Developer Days (and probably having held it by the next update).
+- Working on my website and adding/improving systems.
 
 ## What I'm playing
 
-- [Rabbit and Steel](https://store.steampowered.com/app/2132850/Rabbit_and_Steel/)
+- [No Man's Sky](https://store.steampowered.com/app/275850/No_Mans_Sky/)
 - [vivid/stasis](https://store.steampowered.com/app/2093940/vividstasis/)
 
 ## What I'm watching
 
-- [World Trigger](https://anilist.co/anime/20729/World-Trigger/)
+- [Fairy Tail: 100 Years Quest](https://anilist.co/anime/139095/FAIRY-TAIL-100-YEARS-QUEST/)
+
+## What I'm reading
+
+- [Gakkou Gurashi!](https://anilist.co/manga/85235/Gakkou-Gurashi/)
 
 ## What I'm listening to
 
