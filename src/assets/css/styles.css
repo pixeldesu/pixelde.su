@@ -82,6 +82,41 @@
   }
 }
 
+@view-transition {
+  navigation: auto;
+}
+
+main {
+  view-transition-name: main;
+}
+
+::view-transition-old(main) {
+  animation: 500ms ease-in-out both fade-out-top;
+}
+
+::view-transition-new(main) {
+  animation: 500ms ease-in-out both fade-in-top;
+}
+
+@keyframes fade-out-top {
+  to {
+    opacity: 0;
+    transform: translateY(-50vh);
+  }
+}
+
+@keyframes fade-in-top {
+  from {
+    opacity: 0;
+    transform: translateY(50vh);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .prose p:first-of-type,
 .prose h1:first-of-type,
 .prose h2:first-of-type,
