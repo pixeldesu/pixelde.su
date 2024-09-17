@@ -183,6 +183,6 @@ Also thanks to the organizers for putting this event together. For the first of 
 
 🧡
 
-<div class="outline-dashed outline-2 bg-lime-50 outline-lime-600 px-2 py-1 rounded-md leading-snug italic text-center mb-3">
+<div class="outline-dashed outline-2 bg-lime-50 outline-lime-600 dark:bg-lime-400/25 px-2 py-1 rounded-md leading-snug italic text-center mb-3">
   Thanks to my employer <a href="https://in2code.de" target="_blank">in2code GmbH</a> for counting the Surfcamp week as work time for me, it's much appreciated!
 </div>
