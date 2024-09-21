@@ -1,18 +1,18 @@
-{% macro item(tag, globalTagData, isLink = true, linkPrefix = '/') %}
+{% macro item(tag, globalTags, isLink = true, linkPrefix = '/') %}
 {% if isLink %}
   <li class="inline-block !p-0 !m-0">
-    <a href="{{ linkPrefix }}{{ tag }}" class="tag {{ globalTagData[tag].classes }}">
-      {% if globalTagData[tag].name %}
-        {{ globalTagData[tag].name }}
+    <a href="{{ linkPrefix }}{{ tag }}" class="tag {{ globalTags[tag].classes }}">
+      {% if globalTags[tag].name %}
+        {{ globalTags[tag].name }}
       {% else %}
         {{ tag }}
       {% endif %}
     </a>
   </li>
 {% else %}
-  <li class="inline-block !m-0 !me-1 tag {{ globalTagData[tag].classes }}">
-    {% if globalTagData[tag].name %}
-      {{ globalTagData[tag].name }}
+  <li class="inline-block !m-0 !me-1 tag {{ globalTags[tag].classes }}">
+    {% if globalTags[tag].name %}
+      {{ globalTags[tag].name }}
     {% else %}
       {{ tag }}
     {% endif %}

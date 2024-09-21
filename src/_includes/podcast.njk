@@ -1,6 +1,6 @@
 {% from "tag.njk" import item as tagItem %}
 
-{% macro item(podcast, globalTagData) %}
+{% macro item(podcast, globalTags) %}
 <a href="{{podcast.url}}" target="_blank" class="article-card">
   <h2 class="text-xl !mb-0">
     Episode {{ podcast.episode_number }} of {{ podcast.podcast }}: {{ podcast.title }}
@@ -10,7 +10,7 @@
   </p>
   <ul class="p-0 m-0">
     {% for tag in podcast.tags %}
-      {{ tagItem(tag, globalTagData, false) }}
+      {{ tagItem(tag, globalTags, false) }}
     {% endfor %}
   </ul>
 </a>

@@ -6,7 +6,7 @@
   <div class="card card--raised flex flex-col min-h-[768px] prose">
     <ul class="p-0 m-0">
       {% for tag in tags %}
-        {{ tagItem(tag, tagData.global, true, '/talks/tag/') }}
+        {{ tagItem(tag, globalTags, true, '/talks/tag/') }}
       {% endfor %}
     </ul>
     <h1>{{title}}</h1>

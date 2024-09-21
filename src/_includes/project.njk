@@ -1,13 +1,13 @@
 {% from "tag.njk" import item as tagItem %}
 
-{% macro item(project, globalTagData) %}
+{% macro item(project, globalTags) %}
 <a class="article-card group relative overflow-hidden" href="{{ project.url }}">
   <div class="relative z-10">
     <h2>{{ project.name }}</h2>
     <p>{{ project.description }}</p>
     <ul class="p-0 m-0">
       {% for tag in project.tags %}
-        {{ tagItem(tag, globalTagData, false) }}
+        {{ tagItem(tag, globalTags, false) }}
       {% endfor %}
     </ul>
   </div>

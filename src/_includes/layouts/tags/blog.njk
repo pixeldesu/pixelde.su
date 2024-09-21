@@ -6,7 +6,7 @@
 {% block main %}
   <div class="card card--raised mb-3 prose prose-headings:my-3">
     <div class="flex items-center">
-      <h2>All blog posts tagged with {{ tagItem(tag, tagData.global, false) }}</h2>
+      <h2>All blog posts tagged with {{ tagItem(tag, globalTags, false) }}</h2>
     </div>
     <p>
       {{ articles.length }}
@@ -33,6 +33,6 @@
     </a>
   </div>
   {% for article in articles %}
-    {{ item(article, tagData.global) }}
+    {{ item(article, globalTags) }}
   {% endfor %}
 {% endblock %}

@@ -2,7 +2,7 @@ export const layout = "layouts/tags/tag.njk"
 
 export const type = "page"
 
-export default function* ({ tagData, podcasts, projects, search }) {
+export default function* ({ globalTags, podcasts, projects, search }) {
     const tags = search.values("tags");
 
     for (const tag of tags) {
@@ -18,7 +18,7 @@ export default function* ({ tagData, podcasts, projects, search }) {
 
         yield {
             url: `/tag/${tag}/`,
-            title: tagData.global[tag]?.name ? `Everything tagged with ${tagData.global[tag].name}` : `Everything tagged with ${tag}`,
+            title: globalTags[tag]?.name ? `Everything tagged with ${globalTags[tag].name}` : `Everything tagged with ${tag}`,
             talks,
             articles,
             projects: tagProjects,

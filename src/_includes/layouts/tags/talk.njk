@@ -6,7 +6,7 @@
 {% block main %}
   <div class="card card--raised mb-3 prose">
     <div class="flex items-center">
-      <h2>All talks tagged with {{ tagItem(tag, tagData.global, false) }}</h2>
+      <h2>All talks tagged with {{ tagItem(tag, globalTags, false) }}</h2>
     </div>
     <p>
       {{ talks.length }}
@@ -33,6 +33,6 @@
     </a>
   </div>
   {% for talk in talks %}
-    {{ item(talk, tagData.global) }}
+    {{ item(talk, globalTags) }}
   {% endfor %}
 {% endblock %}

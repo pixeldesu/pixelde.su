@@ -1,6 +1,6 @@
 {% from "tag.njk" import item as tagItem %}
 
-{% macro item(talk, globalTagData) %}
+{% macro item(talk, globalTags) %}
 <a href="{{talk.url}}" class="article-card group">
   <h2 class="text-xl !mb-0">{{ talk.title }}</h2>
   <p class="text-sm mb-3">
@@ -10,7 +10,7 @@
   <div class="flex items-center mt-3">
     <ul class="p-0 m-0">
       {% for tag in talk.tags %}
-        {{ tagItem(tag, globalTagData, false) }}
+        {{ tagItem(tag, globalTags, false) }}
       {% endfor %}
     </ul>
     <div class="ms-auto self-end shrink-0 transition-all group-hocus:-translate-x-1">

@@ -9,7 +9,7 @@
 {% block main %}
   <div class="card card--raised mb-3 prose">
     <div class="flex items-center">
-      <h2>Everything tagged with {{ tagItem(tag, tagData.global, false) }}</h2>
+      <h2>Everything tagged with {{ tagItem(tag, globalTags, false) }}</h2>
     </div>
     <p>
       {{ count }}
@@ -26,7 +26,7 @@
     <div class="card card--grouped">
       <h3 class="font-bold">Blog articles</h3>
       {% for article in articles %}
-        {{ blogItem(article, tagData.global) }}
+        {{ blogItem(article, globalTags) }}
       {% endfor %}
       <a href="/blog" class="block text-center no-underline transition-all hocus:translate-x-1">
         All articles
@@ -41,7 +41,7 @@
     <div class="card card--grouped">
       <h3 class="font-bold">Talks</h3>
       {% for talk in talks %}
-        {{ talkItem(talk, tagData.global) }}
+        {{ talkItem(talk, globalTags) }}
       {% endfor %}
       <a href="/talks" class="block text-center no-underline transition-all hocus:translate-x-1">
         All talks
@@ -56,7 +56,7 @@
     <div class="card card--grouped">
       <h3 class="font-bold">Projects</h3>
       {% for project in projects %}
-        {{ projectItem(project, tagData.global) }}
+        {{ projectItem(project, globalTags) }}
       {% endfor %}
       <a href="/projects" class="block text-center no-underline transition-all hocus:translate-x-1">
         All projects
@@ -71,7 +71,7 @@
     <div class="card card--grouped">
       <h3 class="font-bold">Podcasts</h3>
       {% for podcast in podcasts %}
-        {{ podcastItem(podcast, tagData.global) }}
+        {{ podcastItem(podcast, globalTags) }}
       {% endfor %}
       <a href="/podcasts" class="block text-center no-underline transition-all hocus:translate-x-1">
         All podcasts
