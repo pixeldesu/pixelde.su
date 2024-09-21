@@ -15,8 +15,8 @@
       <meta name="twitter:title" content="pixeldesu"/>
     {% endif %}
     {% if description %}
-      <meta name="description" content="{{ description }}"/>
-      <meta name="twitter:description" content="{{ description }}"/>
+      <meta name="description" content="{{ description | replace("\n", " ") | trim }}"/>
+      <meta name="twitter:description" content="{{ description | replace("\n", " ") | trim }}"/>
     {% else %}
       <meta name="description" content="Personal homepage of pixeldesu, a professional web developer and open source tinkerer from Germany."/>
       <meta name="twitter:description" content="Personal homepage of pixeldesu, a professional web developer and open source tinkerer from Germany."/>
