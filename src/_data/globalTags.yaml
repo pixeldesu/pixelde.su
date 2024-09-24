@@ -1,6 +1,9 @@
 csharp:
   name: C#
   classes: text-indigo-600 bg-indigo-50 dark:text-indigo-200 dark:bg-indigo-400/25
+css:
+  name: CSS
+  classes: text-blue-700 bg-blue-100 dark:text-blue-100 dark:bg-blue-700/25
 javascript:
   name: JavaScript
   classes: text-yellow-600 bg-yellow-50 dark:text-yellow-200 dark:bg-yellow-400/25
@@ -25,6 +28,9 @@ typescript:
 typo3:
   name: TYPO3
   classes: text-orange-400 bg-orange-50 dark:text-orange-200 dark:bg-orange-400/25
+unity:
+  name: Unity
+  classes: text-zinc-800 bg-zinc-100 dark:text-zinc-200 dark:bg-zinc-800/25
 vue:
   name: Vue
   classes: text-green-600 bg-green-50 dark:text-green-200 dark:bg-green-600/25
