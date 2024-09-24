@@ -17,6 +17,14 @@
     - typescript
     - php
   accent: text-amber-500
+- name: BetterTweetDeck
+  url: https://github.com/eramdam/BetterTweetDeck
+  description: |
+    A browser extension to improve TweetDeck with a lot of features
+  tags:
+    - typescript
+    - css
+  accent: text-sky-700
 - name: Pingprovements
   url: https://thunderstore.io/package/pixeldesu/Pingprovements/
   description: |
