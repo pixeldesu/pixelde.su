@@ -22,6 +22,7 @@
   description: |
     A browser extension to improve TweetDeck with a lot of features
   tags:
+    - reverse-engineering
     - typescript
     - css
   accent: text-sky-700
@@ -30,6 +31,7 @@
   description: |
     A Risk of Rain 2 modification offering several improvements to Pings, like multiple pings and adjustable timers or colors per type.
   tags:
+    - reverse-engineering
     - csharp
     - unity
   accent: text-lime-500
@@ -38,6 +40,7 @@
   description: |
     A library to take apart Webpacks webpackJsonp
   tags:
+    - reverse-engineering
     - typescript
   accent: text-rose-500
 - name: videoline
@@ -53,5 +56,6 @@
   description: |
     A series of tools to interact with Pangya PC MMO game files
   tags:
+    - reverse-engineering
     - csharp
   accent: text-sky-500
