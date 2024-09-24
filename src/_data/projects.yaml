@@ -29,7 +29,7 @@
 - name: Pingprovements
   url: https://thunderstore.io/package/pixeldesu/Pingprovements/
   description: |
-    A Risk of Rain 2 modification offering several improvements to Pings, like multiple pings and adjustable timers or colors per type.
+    A Risk of Rain 2 modification offering several improvements to pings
   tags:
     - reverse-engineering
     - csharp
