@@ -71,6 +71,9 @@ const { stdout } = await commitCmd.output();
 const commitHash = new TextDecoder().decode(stdout);
 
 site.data("commit", commitHash);
+
+site.data("currentYear", new Date().getFullYear());
+
 site.filter("hostname", (url) => (new URL(url)).hostname, false);
 
 export default site;
