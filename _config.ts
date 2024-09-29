@@ -66,6 +66,11 @@ site.use(robots({
 
 site.hooks.addPostcssPlugin(nano);
 
+const commitCmd = new Deno.Command("git", { args: ["rev-parse", "HEAD"] });
+const { stdout } = await commitCmd.output();
+const commitHash = new TextDecoder().decode(stdout);
+
+site.data("commit", commitHash);
 site.filter("hostname", (url) => (new URL(url)).hostname, false);
 
 export default site;
