@@ -25,6 +25,9 @@
       <meta name="robots" content="noindex,nofollow"/>
     {% endif %}
     <link rel="me" href="https://desu.social/@pixel"/>
+    {% if type === "blog" or type === "talk" %}
+      <meta property="fediverse:creator" content="@pixel@desu.social">
+    {% endif %}
 
     {% if url === "/" %}
       {% for webring in webrings %}
