@@ -33,4 +33,24 @@
       {{ content | safe }}
     </div>
   </div>
+  {% if openring %}
+    <div class="card card--raised mt-3">
+      <p class="text-lg font-semibold mb-2">Articles from blogs I read</p>
+      <div class="grid md:grid-cols-2 gap-3">
+        {% for article in openring | shuffle | cut(2) %}
+          <div class="card card--flat group flex flex-col prose">
+            <h4 class="text-md !mb-0 !mt-0">
+              <a href="{{article.url}}" target="_blank" class="no-underline">
+                {{ article.title }}
+              </a>
+            </h4>
+            <p class="text-sm font-normal mb-3">
+              Published on <time datetime={{ article.date | date }}>{{ article.date | date('HUMAN_DATE') }}</time> at <a href="{{ article.sourceUrl}}" target="_blank" class="no-underline">{{ article.sourceTitle }}</a>
+            </p>
+            {{ article.content | truncate(140) }}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
 {% endblock %}

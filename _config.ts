@@ -13,6 +13,7 @@ import feed from "lume/plugins/feed.ts";
 import nano from "npm:cssnano";
 
 import tailwindOptions from "./tailwind.config.js";
+import openring from "./plugins/openring.ts";
 
 const site = lume({
   src: "./src",
@@ -62,7 +63,17 @@ site.use(feed({
 
 site.use(robots({
   disallow: ["GPTBot", "GPTBot-User", "Google-Extended", "PerplexityBot", "claudebot", "ClaudeBot"]
-}))
+}));
+
+site.use(openring({
+  sources: [
+    "https://damien.zone/feed/",
+    "https://resir014.xyz/posts/rss.xml",
+    "https://seirdy.one/posts/atom.xml",
+    "https://volpeon.ink/notebook/index.xml",
+    "https://hugo.md/index.xml",
+  ]
+}));
 
 site.hooks.addPostcssPlugin(nano);
 
@@ -75,5 +86,16 @@ site.data("commit", commitHash);
 site.data("currentYear", new Date().getFullYear());
 
 site.filter("hostname", (url) => (new URL(url)).hostname, false);
+
+site.filter("shuffle", (array: any[]) => {
+  for (let i = array.length - 1; i >= 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+  }
+
+  return array;
+});
+
+site.filter("cut", (array, length, startIndex = 0) => array.slice(startIndex, length));
 
 export default site;
