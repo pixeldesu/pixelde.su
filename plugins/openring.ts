@@ -6,9 +6,9 @@ import { convert } from "npm:html-to-text";
 interface Options {
   cache: boolean | string,
   perSource: number,
-  summaryLength: number,
   sources: string[],
-  dataKey: string
+  dataKey: string,
+  htmlToText: object
 }
 
 interface Article {
@@ -25,16 +25,11 @@ const parser = new Parser();
 const defaultOptions: Options = {
   cache: true,
   perSource: 1,
-  summaryLength: 256,
   sources: [],
-  dataKey: "openring"
-}
-
-const htmlToTextOptions = (pluginOptions: Options) => {
-  return { 
-    limits: { maxInputLength: pluginOptions.summaryLength },
+  dataKey: "openring",
+  htmlToText: {
     selectors: [
-      { selector: 'a', format: "inline" },
+      { selector: "a", format: "inline" },
       { selector: "img", format: "skip" },
       { selector: "picture", format: "skip" }
     ]
@@ -66,7 +61,7 @@ async function getItemsFromFeed(source: string, options: Options): Promise<Artic
       title: item.title,
       url: item.link,
       date: item.pubDate,
-      content: convert(item.summary, htmlToTextOptions(options)) || convert(item.content, htmlToTextOptions(options)),
+      content: convert(item.summary, options.htmlToText) || convert(item.content, options.htmlToText),
       sourceTitle: feed.title,
       sourceUrl: feed.link
     })
