@@ -54,6 +54,8 @@ export default function (userOptions: Partial<Options>) {
 
 async function getItemsFromFeed(source: string, options: Options): Promise<Article[]> {
   const articles: Article[] = [];
+  
+  console.log(`📡 Fetching ${source}`);
   const feed = await parser.parseURL(source);
 
   for (const item of feed.items) {
