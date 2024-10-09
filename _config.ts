@@ -10,10 +10,10 @@ import date from "lume/plugins/date.ts";
 import readInfo from "lume/plugins/reading_info.ts";
 import robots from "lume/plugins/robots.ts";
 import feed from "lume/plugins/feed.ts";
+import openring from "lume_openring/mod.ts";
 import nano from "npm:cssnano";
 
 import tailwindOptions from "./tailwind.config.js";
-import openring from "./plugins/openring.ts";
 
 const site = lume({
   src: "./src",
