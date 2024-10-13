@@ -10,6 +10,7 @@ import date from "lume/plugins/date.ts";
 import readInfo from "lume/plugins/reading_info.ts";
 import robots from "lume/plugins/robots.ts";
 import feed from "lume/plugins/feed.ts";
+import inline from "lume/plugins/inline.ts";
 import openring from "lume_openring/mod.ts";
 import nano from "npm:cssnano";
 
@@ -22,6 +23,7 @@ const site = lume({
 
 site.copy("assets/img");
 site.copy("assets/slides");
+site.copy("assets/svg");
 
 site.use(esbuild());
 site.use(nunjucks());
@@ -34,6 +36,8 @@ site.use(tailwindcss({
 site.use(postcss());
 site.use(minifyHTML());
 site.use(terser());
+
+site.use(inline());
 
 site.use(feed({
   output: ["/blog/posts.rss", "/blog/posts.json"],
