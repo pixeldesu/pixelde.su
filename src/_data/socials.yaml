@@ -1,10 +1,10 @@
 - name: Fediverse
-  link: https://desu.social/@pixel
+  url: https://desu.social/@pixel
   text: "@pixel@desu.social"
   icon: |
     <svg src="/assets/svg/fediverse.svg" class="h-[2rem] w-[2rem] fill-current" inline></svg>
 - name: Matrix
-  link: https://matrix.to/#/@pixel:desu.chat
+  url: https://matrix.to/#/@pixel:desu.chat
   text: "@pixel:desu.chat"
   icon: |
     <svg src="/assets/svg/matrix.svg" class="h-[2rem] w-[2rem] fill-current" inline></svg>
@@ -13,7 +13,7 @@
   icon: |
     <svg src="/assets/svg/discord.svg" class="h-[2rem] w-[2rem] fill-current" inline></svg>
 - name: Telegram
-  link: https://t.me/pixeldesu
+  url: https://t.me/pixeldesu
   text: pixeldesu
   icon: |
     <svg src="/assets/svg/telegram.svg" class="h-[2rem] w-[2rem] fill-current" inline></svg>
@@ -22,22 +22,22 @@
   icon: |
     <svg src="/assets/svg/fa-message.svg" class="h-[2rem] w-[2rem] fill-current" inline></svg>
 - name: Retrospring
-  link: https://retrospring.net/@pixeldesu
+  url: https://retrospring.net/@pixeldesu
   text: "@pixeldesu"
   icon: |
     <svg src="/assets/svg/retrospring.svg" class="h-[2rem] w-[2rem] fill-current" inline></svg>
 - name: Cohost
-  link: https://cohost.org/pixeldesu
+  url: https://cohost.org/pixeldesu
   text: "@pixeldesu"
   icon: |
     <svg src="/assets/svg/cohost.svg" class="h-[2rem] w-[2rem] fill-current" inline></svg>
 - name: Bluesky
-  link: https://bsky.app/profile/pixelde.su
+  url: https://bsky.app/profile/pixelde.su
   text: "@pixelde.su"
   icon: |
     <svg src="/assets/svg/bluesky.svg" class="h-[2rem] w-[2rem] fill-current" inline></svg>
 - name: Twitter
-  link: https://twitter.com/@pixeldesu
+  url: https://twitter.com/@pixeldesu
   text: "@pixeldesu"
   icon: |
     <svg src="/assets/svg/twitter.svg" class="h-[2rem] w-[2rem] fill-current" inline></svg>
