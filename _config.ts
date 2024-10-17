@@ -76,7 +76,8 @@ site.use(openring({
     "https://seirdy.one/posts/atom.xml",
     "https://volpeon.ink/notebook/index.xml",
     "https://hugo.md/index.xml",
-    "https://qtea.me/posts.xml"
+    "https://qtea.me/posts.xml",
+    "https://xeiaso.net/blog.rss",
   ]
 }));
 
