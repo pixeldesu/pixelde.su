@@ -11,7 +11,7 @@ title: Friends
 
 <div class="not-prose mb-3">
   <ul>
-    {% for friend in friends %}
+    {% for friend in friends | shuffle %}
       {{ item(friend) }}
     {% endfor %}
   </ul>
