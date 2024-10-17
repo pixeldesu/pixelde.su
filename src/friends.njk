@@ -28,7 +28,7 @@ title: Friends
 
 <div class="not-prose mb-10">
   <p>
-    {% for button in buttons %}
+    {% for button in buttons | shuffle %}
       <a class="inline-block" href="{{ button.url }}" rel="noreferer noopener">
         <img src="/assets/img/88x31/{{ button.image }}" alt="{{ button.title}}" width="88" height="31" loading="lazy"/>
       </a>
