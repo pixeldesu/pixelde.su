@@ -35,7 +35,13 @@
   </div>
   {% if openring %}
     <div class="card card--raised mt-3">
-      <p class="text-lg font-semibold mb-2">Articles from blogs I read</p>
+      <p class="text-lg font-bold mb-2 flex">
+        Articles from blogs I read
+        <a href="/misc/openring" class="ms-auto font-semibold text-right no-underline">
+          <span class="hidden md:inline">What's this?</span>
+          <svg src="/assets/svg/fa-help.svg" class="inline fill-current w-5 me-2 h-auto align-text-bottom" inline/>
+        </a>  
+      </p>
       <div class="grid md:grid-cols-2 gap-3">
         {% for article in openring | shuffle | cut(2) %}
           <div class="card card--flat group flex flex-col prose">

@@ -1,0 +1,23 @@
+---
+layout: layouts/main.njk
+title: Openring
+templateEngine: [njk, md]
+---
+
+{% from "feed.njk" import item %}
+
+# openring
+
+[openring](https://git.sr.ht/~sircmpwn/openring) is a project by [Drew DeVault](https://drewdevault.com/), generating a webring from RSS feeds. I'm not using the tool provided in the repository,
+I wrote [a plugin](https://github.com/pixeldesu/lume_openring) for [Lume](https://lume.land), the static site generator I am using!
+
+Here are all the sources I'm currently featuring on my site:
+
+
+<div class="not-prose mb-3">
+  <ul>
+    {% for source in openringSources | shuffle %}
+      {{ item(source) }}
+    {% endfor %}
+  </ul>
+</div>
