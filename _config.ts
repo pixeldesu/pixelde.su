@@ -25,7 +25,11 @@ site.copy("assets/img");
 site.copy("assets/slides");
 site.copy("assets/svg");
 
-site.use(esbuild());
+site.use(esbuild({
+  options: {
+    bundle: false
+  }
+}));
 site.use(nunjucks());
 site.use(date());
 site.use(readInfo());
