@@ -3,7 +3,7 @@ const getCurrentTheme = () => {
     return localStorage.getItem("theme");
   }
 
-  return (window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light");
+  return (globalThis.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light");
 }
 
 const themeToggle = document.querySelector("[data-theme-toggle]");

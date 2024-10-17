@@ -11,7 +11,7 @@ const onionrings = document.querySelectorAll("[data-onionring]");
 if (onionrings.length > 0) {
   onionrings.forEach(onionringElement => {
     const onionringNamespace = onionringElement.dataset.onionring;
-    const onionringData = window[onionringNamespace];
+    const onionringData = globalThis[onionringNamespace];
 
     const prevLink = onionringElement.querySelector("[data-webring-link-prev]");
     const nextLink = onionringElement.querySelector("[data-webring-link-next]");
