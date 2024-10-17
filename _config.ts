@@ -82,6 +82,7 @@ site.use(openring({
     "https://hugo.md/index.xml",
     "https://qtea.me/posts.xml",
     "https://xeiaso.net/blog.rss",
+    "https://chronovore.dev/posts/feed.rss",
   ]
 }));
 
