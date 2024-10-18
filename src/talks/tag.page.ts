@@ -1,4 +1,4 @@
-export const layout = "layouts/tags/talk.njk"
+export const layout = "layouts/tags/talk.vto"
 
 export const type = "page"
 

@@ -1,9 +1,9 @@
 ---
-layout: layouts/minimal.njk
+layout: layouts/minimal.vto
 title: Blog
 ---
 
-{% from "blog.njk" import item %}
+{{ import { blogItem } from "blog.vto" }}
 
 <div class="card card--raised mb-3 prose prose-headings:my-3">
   <div class="flex items-center">
@@ -18,6 +18,6 @@ title: Blog
   </div>
   <p>I write stuff sometimes!</p>
 </div>
-{% for article in search.pages("type=blog post_draft=false", "order date=desc") %}
-  {{ item(article, globalTags) }}
-{% endfor %}
+{{ for article of search.pages("type=blog post_draft=false", "order date=desc") }}
+  {{ blogItem(article, globalTags) }}
+{{ /for }}

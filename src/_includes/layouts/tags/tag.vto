@@ -1,0 +1,82 @@
+{{ layout "layouts/minimal.vto" }}
+
+{{ import { blogItem } from "blog.vto" }}
+{{ import { podcastItem } from "podcast.vto" }}
+{{ import { projectItem } from "project.vto" }}
+{{ import { talkItem } from "talk.vto" }}
+{{ import { tagItem } from "tag.vto" }}
+
+<div class="card card--raised mb-3 prose">
+  <div class="flex items-center">
+    <h2>Everything tagged with {{ tagItem(tag, globalTags, false) }}</h2>
+  </div>
+  <p>
+    {{ count }}
+    {{ if (count === 1) }}
+      item
+    {{ else }}
+      items
+    {{ /if }}
+    with this tag.
+  </p>
+</div>
+
+{{ if articles.length > 0 }}
+  <div class="card card--grouped">
+    <h3 class="font-bold">Blog articles</h3>
+    {{ for article of articles }}
+      {{ blogItem(article, globalTags) }}
+    {{ /for }}
+    <a href="/blog" class="block text-center no-underline transition-all hocus:translate-x-1">
+      All articles
+      <svg class="ms-1 inline-block" width=".8rem" height=".8rem" version="2.0">
+        <use href="#chevron-right" />
+      </svg>
+    </a>
+  </div>
+{{ /if }}
+
+{{ if talks.length > 0 }}
+  <div class="card card--grouped">
+    <h3 class="font-bold">Talks</h3>
+    {{ for talk of talks }}
+      {{ talkItem(talk, globalTags) }}
+    {{ /for }}
+    <a href="/talks" class="block text-center no-underline transition-all hocus:translate-x-1">
+      All talks
+      <svg class="ms-1 inline-block" width=".8rem" height=".8rem" version="2.0">
+        <use href="#chevron-right" />
+      </svg>
+    </a>
+  </div>
+{{ /if }}
+
+{{ if projects.length > 0 }}
+  <div class="card card--grouped">
+    <h3 class="font-bold">Projects</h3>
+    {{ for project of projects }}
+      {{ projectItem(project, globalTags) }}
+    {{ /for }}
+    <a href="/projects" class="block text-center no-underline transition-all hocus:translate-x-1">
+      All projects
+      <svg class="ms-1 inline-block" width=".8rem" height=".8rem" version="2.0">
+        <use href="#chevron-right" />
+      </svg>
+    </a>
+  </div>
+{{ /if }}
+
+{{ if podcasts.length > 0 }}
+  <div class="card card--grouped">
+    <h3 class="font-bold">Podcasts</h3>
+    {{ for podcast of podcasts }}
+      {{ podcastItem(podcast, globalTags) }}
+    {{ /for }}
+    <a href="/podcasts" class="block text-center no-underline transition-all hocus:translate-x-1">
+      All podcasts
+      <svg class="ms-1 inline-block" width=".8rem" height=".8rem" version="2.0">
+        <use href="#chevron-right" />
+      </svg>
+    </a>
+  </div>
+{{ /if }}

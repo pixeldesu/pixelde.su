@@ -1,17 +1,17 @@
-{% from "tag.njk" import item as tagItem %}
+{{ import { tagItem } from "tag.vto" }}
 
-{% macro item(talk, globalTags) %}
-<a href="{{talk.url}}" class="article-card group">
-  <h2 class="text-xl !mb-0">{{ talk.title }}</h2>
+{{ export function blogItem(article, globalTags) }}
+<a href="{{article.url}}" class="article-card group">
+  <h2 class="text-xl !mb-0">{{ article.title }}</h2>
   <p class="text-sm mb-3">
-    Presented on <time datetime={{ talk.date | date }}>{{ talk.date | date('HUMAN_DATE') }}</time> at {{ talk.event }}
+    Published on <time datetime={{ article.date |> date }}>{{ article.date |> date('HUMAN_DATE') }}</time>
   </p>
-  {{ talk.description | safe }}
+  {{ article.description |> safe }}
   <div class="flex items-center mt-3">
     <ul class="p-0 m-0">
-      {% for tag in talk.tags %}
+      {{ for tag of article.tags }}
         {{ tagItem(tag, globalTags, false) }}
-      {% endfor %}
+      {{ /for }}
     </ul>
     <div class="ms-auto self-end shrink-0 transition-all group-hocus:-translate-x-1">
       <span class="font-bold">
@@ -23,4 +23,4 @@
     </div>
   </div>
 </a>
-{% endmacro %}
+{{ /export }}

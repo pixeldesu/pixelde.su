@@ -1,4 +1,4 @@
-export const layout = "layouts/tags/tag.njk"
+export const layout = "layouts/tags/tag.vto"
 
 export const type = "page"
 

@@ -1,9 +1,10 @@
 ---
-layout: layouts/index.njk
+layout: layouts/index.vto
 title: Welcome!
+draft: false
 ---
 
-{% from "social.njk" import item as socialItem %}
+{{ import { socialItem } from "social.vto" }}
 
 <div class="text-center px-3 py-5">
   <h2 class="not-prose text-4xl font-bold italic">Hi, I'm Pixel!</h2>
@@ -17,11 +18,11 @@ title: Welcome!
 
 <h3>Latest blog articles</h3>
 <div class="grid md:grid-cols-2 gap-3">
-  {% for article in search.pages("type=blog", "order date=desc", 2) %}
+  {{ for article of search.pages("type=blog", "order date=desc", 2) }}
     <a href="{{article.url}}" class="card card--flat card--linked group flex flex-col">
       <h4 class="text-md !mb-0 !mt-0">{{ article.title }}</h4>
       <p class="text-sm font-normal mb-3">
-        Published on <time datetime={{ article.date | date }}>{{ article.date | date('HUMAN_DATE') }}</time>
+        Published on <time datetime={{ article.date |> date }}>{{ article.date |> date('HUMAN_DATE') }}</time>
       </p>
       <div class="flex justify-end items-center mt-auto transition-all group-hocus:-translate-x-1">
         <span class="font-bold">
@@ -32,7 +33,7 @@ title: Welcome!
         </svg>
       </div>
     </a>
-  {% endfor %}
+  {{ /for }}
 </div>
 <a href="/blog" class="my-2 no-underline transition-all hocus:translate-x-1">
   All articles

@@ -1,9 +1,9 @@
 ---
-layout: layouts/main.njk
+layout: layouts/main.vto
 title: Friends
 ---
 
-{% from "friend.njk" import item %}
+{{ import { friendItem } from "friend.vto" }}
 
 <h1>Friends</h1>
 
@@ -11,9 +11,9 @@ title: Friends
 
 <div class="not-prose mb-3">
   <ul>
-    {% for friend in friends | shuffle %}
-      {{ item(friend) }}
-    {% endfor %}
+    {{ for friend of friends |> shuffle }}
+      {{ friendItem(friend) }}
+    {{ /for }}
   </ul>
 </div>
 
@@ -28,11 +28,11 @@ title: Friends
 
 <div class="not-prose mb-10">
   <p>
-    {% for button in buttons | shuffle %}
+    {{ for button of buttons |> shuffle }}
       <a class="inline-block" href="{{ button.url }}" rel="noreferer noopener" target="_blank">
         <img src="/assets/img/88x31/{{ button.image }}" alt="{{ button.title}}" width="88" height="31" loading="lazy"/>
       </a>
-    {% endfor %}
+    {{ /for }}
   </p>
 </div>
 

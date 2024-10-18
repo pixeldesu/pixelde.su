@@ -99,7 +99,7 @@ site.data("currentYear", new Date().getFullYear());
 
 site.filter("hostname", (url) => (new URL(url)).hostname, false);
 
-site.filter("shuffle", (array: any[]) => {
+site.filter("shuffle", (array: any[] = []) => {
   for (let i = array.length - 1; i >= 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [array[i], array[j]] = [array[j], array[i]];
@@ -109,5 +109,7 @@ site.filter("shuffle", (array: any[]) => {
 });
 
 site.filter("cut", (array, length, startIndex = 0) => array.slice(startIndex, length));
+
+site.filter("truncate", (string, length, suffix = "...") => `${string.substring(0, length)}${suffix}`);
 
 export default site;

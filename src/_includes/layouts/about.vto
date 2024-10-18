@@ -1,9 +1,9 @@
-{% extends "layouts/base.njk" %}
+{{ layout "layouts/base.vto" }}
 
-{% block main %}
+{{ set main }}
   <div class="card card--raised overflow-visible min-h-[768px] mb-3 prose">
     <div class="relative z-10">
-      {{ content | safe }}
+      {{ content |> safe }}
     </div>
   </div>
   <a class="link-card items-center group font-semibold" href="/contact">
@@ -12,4 +12,4 @@
       <use href="#chevron-right" />
     </svg>
   </a>
-{% endblock %}
+{{ /set }}

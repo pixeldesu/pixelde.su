@@ -5,37 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="/assets/css/styles.css"/>
 
-    {% if title %}
+    {{ if title }}
       <title>{{ title }} - pixeldesu</title>
       <meta property="og:title" content="{{ title }} - pixeldesu"/>
       <meta name="twitter:title" content="{{ title }} - pixeldesu"/>
-    {% else %}
+    {{ else }}
       <title>pixeldesu</title>
       <meta property="og:title" content="pixeldesu"/>
       <meta name="twitter:title" content="pixeldesu"/>
-    {% endif %}
-    {% if description %}
-      <meta name="description" content="{{ description | replace("\n", " ") | trim }}"/>
-      <meta name="twitter:description" content="{{ description | replace("\n", " ") | trim }}"/>
-    {% else %}
+    {{ /if }}
+    {{ if description }}
+      <meta name="description" content="{{ description |> replace("\n", " ") |> trim }}"/>
+      <meta name="twitter:description" content="{{ description |> replace("\n", " ") |> trim }}"/>
+    {{ else }}
       <meta name="description" content="Personal homepage of pixeldesu, a professional web developer and open source tinkerer from Germany."/>
       <meta name="twitter:description" content="Personal homepage of pixeldesu, a professional web developer and open source tinkerer from Germany."/>
-    {% endif %}
-    {% if (index === false) or (post_draft === true) %}
+    {{ /if }}
+    {{ if (index === false) || (post_draft === true) }}
       <meta name="robots" content="noindex,nofollow"/>
-    {% endif %}
+    {{ /if }}
     <link rel="me" href="https://desu.social/@pixel"/>
-    {% if type === "blog" or type === "talk" %}
+    {{ if type === "blog" || type === "talk" }}
       <meta property="fediverse:creator" content="@pixel@desu.social">
-    {% endif %}
+    {{ /if }}
 
-    {% if url === "/" %}
-      {% for webring in webrings %}
-        {% if webring.onionring %}
+    {{ if url === "/" }}
+      {{ for webring of webrings }}
+        {{ if webring.onionring }}
           <script src="{{ webring.onionring.script }}"></script>
-        {% endif %}
-      {% endfor %}
-    {% endif %}
+        {{ /if }}
+      {{ /for }}
+    {{ /if }}
 
     <script>
       if (localStorage.getItem("theme") === "dark") {
@@ -59,9 +59,9 @@
     </svg>
 
     <div class="w-full md:w-auto min-h-[768px] md:my-[5rem] p-3 md:flex md:flex-row">
-      {% include "navigation.njk" %}
+      {{ include "navigation.vto" }}
       <main id="content" class="w-full md:min-w-[65ch] md:max-w-[65ch]">
-        {% block main %}{% endblock %}
+        {{ main }}
       </main>
     </div>
   </body>

@@ -1,16 +1,16 @@
-{% from "tag.njk" import item as tagItem %}
+{{ import { tagItem } from "tag.vto" }}
 
-{% macro item(project, globalTags) %}
+{{ export function projectItem(project, globalTags) }}
 <a class="article-card group relative overflow-hidden" href="{{ project.url }}">
   <div class="relative z-10">
     <h2>{{ project.name }}</h2>
     <p>{{ project.description }}</p>
     <ul class="p-0 m-0">
-      {% for tag in project.tags %}
+      {{ for tag of project.tags }}
         {{ tagItem(tag, globalTags, false) }}
-      {% endfor %}
+      {{ /for }}
     </ul>
   </div>
   <div class="absolute -left-5 -bottom-2 opacity-[3%] text-9xl font-bold italic uppercase z-0 pointer-events-none select-none transition-all group-hocus:{{project.accent}} group-hocus:left-0">{{ project.name }}</div>
 </a>
-{% endmacro %}
+{{ /export }}

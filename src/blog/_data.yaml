@@ -1,4 +1,4 @@
-layout: layouts/blog.njk
+layout: layouts/blog.vto
 type: blog
 index: true
 post_draft: false

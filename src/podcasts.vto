@@ -1,9 +1,9 @@
 ---
-layout: layouts/minimal.njk
+layout: layouts/minimal.vto
 title: Podcasts
 ---
 
-{% from "podcast.njk" import item %}
+{{ import { podcastItem } from "podcast.vto" }}
 
 <div class="card card--raised mb-3 prose prose-headings:my-3">
   <div class="flex items-center">
@@ -12,6 +12,6 @@ title: Podcasts
   <p>I have been a guest on these podcasts!</p>
 </div>
 
-{% for podcast in podcasts %}
-  {{ item(podcast, globalTags) }}
-{% endfor %}
+{{ for podcast of podcasts }}
+  {{ podcastItem(podcast, globalTags) }}
+{{ /for }}

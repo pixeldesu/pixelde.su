@@ -1,5 +1,5 @@
 ---
-layout: layouts/about.njk
+layout: layouts/about.vto
 title: About
 ---
 

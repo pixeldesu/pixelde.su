@@ -1,9 +1,9 @@
 ---
-layout: layouts/minimal.njk
+layout: layouts/minimal.vto
 title: Talks
 ---
 
-{% from "talk.njk" import item %}
+{{ import { talkItem } from "talk.vto" }}
 
 <div class="card card--raised mb-3 prose">
   <div class="flex items-center">
@@ -18,6 +18,6 @@ title: Talks
   </div>
   <p>I talk at events sometimes!</p>
 </div>
-{% for talk in search.pages("type=talk", "order date=desc") %}
-  {{ item(talk, globalTags) }}
-{% endfor %}
+{{ for talk of search.pages("type=talk", "order date=desc") }}
+  {{ talkItem(talk, globalTags) }}
+{{ /for }}

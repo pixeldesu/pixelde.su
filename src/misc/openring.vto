@@ -1,10 +1,10 @@
 ---
-layout: layouts/main.njk
+layout: layouts/main.vto
 title: Openring
-templateEngine: [njk, md]
+templateEngine: [vto, md]
 ---
 
-{% from "feed.njk" import item %}
+{{ import { feedItem } from "feed.vto" }}
 
 # openring
 
@@ -16,8 +16,8 @@ Here are all the sources I'm currently featuring on my site:
 
 <div class="not-prose mb-3">
   <ul>
-    {% for source in openringSources | shuffle %}
-      {{ item(source) }}
-    {% endfor %}
+    {{ for source of openringSources |> shuffle }}
+      {{ feedItem(source) }}
+    {{ /for }}
   </ul>
 </div>

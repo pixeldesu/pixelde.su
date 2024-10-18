@@ -1,0 +1,21 @@
+{{ export function tagItem(tag, globalTags, isLink = true, linkPrefix = '/') }}
+  {{ if isLink }}
+    <li class="inline-block !p-0 !m-0">
+      <a href="{{ linkPrefix }}{{ tag }}" class="tag {{ if globalTags[tag] !== undefined }}{{ globalTags[tag].classes }}{{ /if }}">
+        {{ if globalTags[tag] !== undefined && globalTags[tag].name }}
+          {{ globalTags[tag].name }}
+        {{ else }}
+          {{ tag }}
+        {{ /if }}
+      </a>
+    </li>
+  {{ else }}
+    <li class="inline-block !m-0 !me-1 tag {{ if globalTags[tag] !== undefined }}{{ globalTags[tag].classes }}{{ /if }}">
+      {{ if globalTags[tag] !== undefined && globalTags[tag].name }}
+        {{ globalTags[tag].name }}
+      {{ else }}
+        {{ tag }}
+      {{ /if }}
+    </li>
+  {{ /if }}
+{{ /export }}

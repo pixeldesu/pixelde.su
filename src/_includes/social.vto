@@ -1,19 +1,19 @@
-{% macro item(social) %}
-  {% if social.url %}
+{{ export function socialItem(social) }}
+  {{ if social.url }}
     <a class="card card--flat card--slim card--linked not-prose flex" href="{{ social.url }}" target="_blank">
-      {{ social.icon | safe }}
+      {{ social.icon |> safe }}
       <div class="ps-2">
         <span class="leading-none block font-semibold dark:text-neutral-100">{{ social.name }}</span>
         <span class="leading-none opacity-75 block italic">{{ social.text }}</span>
       </div>
     </a>
-  {% else %}
+  {{ else }}
     <div class="card card--flat card--slim not-prose flex">
-      {{ social.icon | safe }}
+      {{ social.icon |> safe }}
       <div class="ps-2">
         <span class="leading-none block font-semibold dark:text-neutral-100">{{ social.name }}</span>
         <span class="leading-none opacity-75 block italic">{{ social.text }}</span>
       </div>
     </div>
-  {% endif %}
-{% endmacro %}
+  {{ /if }}
+{{ /export }}

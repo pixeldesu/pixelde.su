@@ -1,39 +1,39 @@
-{% extends "layouts/base.njk" %}
+{{ layout "layouts/base.vto" }}
 
-{% from "tag.njk" import item as tagItem %}
+{{ import { tagItem } from "tag.vto" }}
 
-{% block main %}
+{{ set main }}
   <div class="card card--raised min-h-[768px] prose">
     <div class="relative z-10">
       <ul class="p-0 m-0">
-        {% for tag in tags %}
+        {{ for tag of tags }}
           {{ tagItem(tag, globalTags, true, '/blog/tag/') }}
-        {% endfor %}
+        {{ /for }}
       </ul>
       <h1>{{title}}</h1>
       <p class="text-sm mb-2">
-          Published on <time datetime={{ date | date }}>{{ date | date('HUMAN_DATE') }}</time>, {{ readingInfo.words }} words, {{ readingInfo.minutes }} minutes to read
+          Published on <time datetime={{ date |> date }}>{{ date |> date('HUMAN_DATE') }}</time>, {{ readingInfo.words }} words, {{ readingInfo.minutes }} minutes to read
       </p>
 
-      {% if post_draft %}
+      {{ if post_draft }}
       <div class="block p-3 py-2 mt-3 rounded-md outline-dashed outline-2 outline-sky-600 bg-sky-100 dark:bg-sky-700/25 not-prose">
         <p class="font-bold">This article is a draft!</p>
       </div>
-      {% endif %}
+      {{ /if }}
 
-      {% if deprecated %}
+      {{ if deprecated }}
       <div class="block p-3 py-2 mt-3 rounded-md outline-dashed outline-2 outline-rose-600 bg-rose-100 dark:bg-rose-700/25 not-prose">
         <p class="font-bold">This article is out of date!</p>
-        {% if deprecated.length > 0 %}
+        {{ if deprecated.length > 0 }}
           {{ deprecated }}
-        {% endif %}
+        {{ /if }}
       </div>
-      {% endif %}
+      {{ /if }}
 
-      {{ content | safe }}
+      {{ content |> safe }}
     </div>
   </div>
-  {% if openring %}
+  {{ if openring }}
     <div class="card card--raised mt-3">
       <p class="text-lg font-bold mb-2 flex">
         Articles from blogs I read
@@ -43,7 +43,7 @@
         </a>  
       </p>
       <div class="grid md:grid-cols-2 gap-3">
-        {% for article in openring | shuffle | cut(2) %}
+        {{ for article of openring |> shuffle |> cut(2) }}
           <div class="card card--flat group flex flex-col prose">
             <h4 class="text-md !mb-0 !mt-0">
               <a href="{{article.url}}" target="_blank" class="no-underline">
@@ -51,12 +51,12 @@
               </a>
             </h4>
             <p class="text-sm font-normal mb-3">
-              Published on <time datetime={{ article.date | date }}>{{ article.date | date('HUMAN_DATE') }}</time> at <a href="{{ article.sourceUrl}}" target="_blank" class="no-underline">{{ article.sourceTitle }}</a>
+              Published on <time datetime={{ article.date |> date }}>{{ article.date |> date('HUMAN_DATE') }}</time> at <a href="{{ article.sourceUrl }}" target="_blank" class="no-underline">{{ article.sourceTitle }}</a>
             </p>
-            {{ article.content | truncate(140) }}
+            {{ article.content |> truncate(140) }}
           </div>
-        {% endfor %}
+        {{ /for }}
       </div>
     </div>
-  {% endif %}
-{% endblock %}
+  {{ /if }}
+{{ /set }}
