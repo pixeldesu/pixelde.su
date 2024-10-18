@@ -11,6 +11,6 @@
   },
   "imports": {
     "lume/": "https://deno.land/x/lume@v2.3.3/",
-    "lume_openring/": "https://deno.land/x/lume_openring@1.1.0/"
+    "lume_openring/": "https://deno.land/x/lume_openring@1.1.1/"
   }
 }

@@ -2775,6 +2775,7 @@
     "https://deno.land/x/lume@v2.3.3/types.ts": "516bec311f10083c5b1d8109e8afd17f02b49cc62c45dca53706f286cb855dba",
     "https://deno.land/x/lume_openring@1.0.0/mod.ts": "47519214ec771efea00906589d46c5728d9afcf412c23d6689fe23ece33f2bb8",
     "https://deno.land/x/lume_openring@1.1.0/mod.ts": "b503c968ab14430ce510508ba3857451dbb92a018257780897e6bdd4d14ad395",
+    "https://deno.land/x/lume_openring@1.1.1/mod.ts": "7a07c010ac715168ffc6c40c17261e041d2bc7a0718b5d4ab9f0797a163ba65d",
     "https://deno.land/x/vento@v0.10.2/deps.ts": "009b5a40b5a54e669468a27d18167f443516cdbe430d660c8dca2a86ad065530",
     "https://deno.land/x/vento@v0.10.2/mod.ts": "6f2930e4365db27359810520615e5b6a9df3042ca9d476c845956ad1868d37b1",
     "https://deno.land/x/vento@v0.10.2/plugins/echo.ts": "f7c064fb6d34b29852f46f6e01583ed87656dcbbc5cae51c8f29198d6951d0cf",
