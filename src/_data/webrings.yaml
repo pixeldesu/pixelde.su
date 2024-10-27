@@ -29,3 +29,8 @@
   onionring:
     variable: FocusFirst
     script: https://owlsroost.xyz/webring/onionring-variables.js
+- name: a11y-webring
+  url: https://a11y-webring.club/
+  random: https://a11y-webring.club/random
+  next: https://a11y-webring.club/next
+  previous: https://a11y-webring.club//prev
