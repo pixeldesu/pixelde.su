@@ -1,6 +1,6 @@
 {{ function item(webring) }}
 <div class="webring webring--highlighted" data-webring {{ if webring.onionring }}data-onionring="{{ webring.onionring.variable }}"{{ /if }}>
-  <a class="webring-action webring-action--previous{{ if webring.onionring }} no-js-hidden{{ /if }}" href="{{ webring.previous }}" rel="nofollow" title="Previous {{ webring.name }} site" data-webring-link-prev>
+  <a class="webring-action webring-action--previous{{ if webring.onionring }} no-js-hidden{{ /if }}" href="{{ webring.previous }}" referrerpolicy="strict-origin" rel="external" title="Previous {{ webring.name }} site" data-webring-link-prev>
     <svg width="1rem" height="1rem" version="2.0">
       <use href="#chevron-left" />
     </svg>
@@ -10,14 +10,14 @@
     <b>{{ webring.name }}</b>
   </a>
   {{ if webring.random }}
-    <a class="webring-action ms-1{{ if webring.onionring }} no-js-hidden{{ /if }}" href="{{ webring.random }}" rel="nofollow" title="Random {{ webring.name }} site" data-webring-link-random>
+    <a class="webring-action ms-1{{ if webring.onionring }} no-js-hidden{{ /if }}" href="{{ webring.random }}" referrerpolicy="strict-origin" rel="external" title="Random {{ webring.name }} site" data-webring-link-random>
       <svg width="1rem" height="1rem" version="2.0">
         <use href="#shuffle" />
       </svg>
     </a>
   {{ /if }}
 
-  <a class="webring-action webring-action--next{{ if webring.onionring }} no-js-hidden{{ /if }}" href="{{ webring.next }}" rel="nofollow" title="Next {{ webring.name }} site" data-webring-link-next>
+  <a class="webring-action webring-action--next{{ if webring.onionring }} no-js-hidden{{ /if }}" href="{{ webring.next }}" referrerpolicy="strict-origin" rel="external" title="Next {{ webring.name }} site" data-webring-link-next>
     <svg width="1rem" height="1rem" version="2.0">
       <use href="#chevron-right" />
     </svg>
