@@ -10,26 +10,22 @@ am doing currently.
 
 ## What I'm working on
 
-- Preparing my talk for the TYPO3 Developer Days (and probably having held it by the next update).
-- Working on my website and adding/improving systems.
+- Continuously working on my website!
 
 ## What I'm playing
 
-- [No Man's Sky](https://store.steampowered.com/app/275850/No_Mans_Sky/)
-- [vivid/stasis](https://store.steampowered.com/app/2093940/vividstasis/)
+- [Satisfactory](https://store.steampowered.com/app/526870/Satisfactory/)
 
 ## What I'm watching
 
+- [Golden Kamuy](https://anilist.co/anime/110355/Golden-Kamuy-3rd-Season/)
 - [Fairy Tail: 100 Years Quest](https://anilist.co/anime/139095/FAIRY-TAIL-100-YEARS-QUEST/)
+- [Spirit Chronicles (_Seirei Gensouki_)](https://anilist.co/anime/141182/Seirei-Gensouki-2/)
 
 ## What I'm reading
 
-- [Gakkou Gurashi!](https://anilist.co/manga/85235/Gakkou-Gurashi/)
+_Nothing right now!_
 
 ## What I'm listening to
 
-- I'm not too much on _faster music_ at the moment, I'm listening to a bunch of
-  (progressive) house and trance music, usually from following labels
-  - [Diverse System](https://diverse.jp/) (the **AD:TRANCE** and
-    **AD:Progressive House** albums)
-  - [Unitone](https://unitone.fm/) (the **Unitone PHASE** albums)
+- Music from [HiTNEX TRAX](https://hitnex.net/), mostly **Kobaryo** itself. Two releases I currently have on repeat a lot are [SUPER KEY GENERATOR](https://hitnex.net/hnxcd003/) and [SUPER DREAM ZONE](https://hitnex.net/hnxcd001/).
