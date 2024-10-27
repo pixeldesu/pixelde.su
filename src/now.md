@@ -1,9 +1,15 @@
 ---
 layout: layouts/main.vto
 title: Now
+date: Git Last Modified
+templateEngine: [vto, md]
 ---
 
 # What I'm doing now
+
+<p class="text-sm mb-2">
+  Last updated on <time datetime={{ date |> date }}>{{ date |> date('HUMAN_DATE') }}</time>
+</p>
 
 This is my [now](https://nownownow.com) page, giving an overview of the things I
 am doing currently.
