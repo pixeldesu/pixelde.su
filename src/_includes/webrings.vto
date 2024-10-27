@@ -53,7 +53,7 @@
         <use href="#chevron-up" />
       </svg>
     </summary>
-    {{ for webring of webrings }}
+    {{ for webring of webrings |> shuffle }}
       {{ item(webring) }}
     {{ /for }}
   </details>
