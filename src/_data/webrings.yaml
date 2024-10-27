@@ -34,3 +34,8 @@
   random: https://a11y-webring.club/random
   next: https://a11y-webring.club/next
   previous: https://a11y-webring.club//prev
+- name: No AI Webring
+  url: https://baccyflap.com/noai
+  random: https://baccyflap.com/noai/?rnd
+  next: https://baccyflap.com/noai/?nxt&s=pxl
+  previous: https://baccyflap.com/noai/?prv&s=pxl
