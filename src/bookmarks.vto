@@ -1,0 +1,16 @@
+---
+layout: layouts/minimal.vto
+title: Bookmarks
+---
+
+{{ import { bookmarkItem } from "bookmark.vto" }}
+
+<div class="card card--raised mb-3 prose prose-headings:my-3">
+  <div class="flex items-center">
+    <h1>Bookmarks</h1>
+  </div>
+  <p>Cool things from the internet I want to remember and are (possibly) interesting for visitors of my site!</p>
+</div>
+{{ for bookmark of bookmarks }}
+  {{ bookmarkItem(bookmark, globalTags) }}
+{{ /for }}
