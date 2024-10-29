@@ -4,8 +4,6 @@ title: Welcome!
 draft: false
 ---
 
-{{ import { socialItem } from "social.vto" }}
-
 <div class="text-center px-3 py-5">
   <h2 class="not-prose text-4xl font-bold italic">Hi, I'm Pixel!</h2>
   <p class="lead">Welcome to my website!</p>
@@ -44,8 +42,8 @@ draft: false
 
 <h3>Contact me</h3>
 <div class="grid md:grid-cols-2 gap-3">
-  {{ socialItem(socials[0]) }}
-  {{ socialItem(socials[1]) }}
+  {{ comp.social({ social: socials[0] }) }}
+  {{ comp.social({ social: socials[1] }) }}
 </div>
 <a href="/contact" class="my-2 no-underline transition-all hocus:translate-x-1">
   All contact options

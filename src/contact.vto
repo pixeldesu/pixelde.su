@@ -3,12 +3,10 @@ layout: layouts/main.vto
 title: Contact
 ---
 
-{{ import { socialItem } from "social.vto" }}
-
 <h1>Contact</h1>
 
 <p>Here you can find places where you can contact me.</p>
 
 {{ for social of socials }}
-  {{ socialItem(social) }}
+  {{ comp.social({ social }) }}
 {{ /for }}
