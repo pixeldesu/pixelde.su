@@ -1,7 +1,5 @@
 {{ layout "layouts/minimal.vto" }}
 
-{{ import { blogItem } from "blog.vto" }}
-
 <div class="card card--raised mb-3 prose prose-headings:my-3">
   <div class="flex items-center">
     <h2>All blog posts tagged with {{ comp.tag({ tag, globalTags, isLink: false }) }}</h2>
@@ -31,5 +29,5 @@
   </a>
 </div>
 {{ for article of articles }}
-  {{ blogItem(article, globalTags) }}
+  {{ comp.blog({ article, globalTags }) }}
 {{ /for }}

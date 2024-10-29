@@ -1,6 +1,5 @@
 {{ layout "layouts/minimal.vto" }}
 
-{{ import { blogItem } from "blog.vto" }}
 {{ import { podcastItem } from "podcast.vto" }}
 {{ import { projectItem } from "project.vto" }}
 {{ import { talkItem } from "talk.vto" }}
@@ -24,7 +23,7 @@
   <div class="card card--grouped">
     <h3 class="font-bold">Blog articles</h3>
     {{ for article of articles }}
-      {{ blogItem(article, globalTags) }}
+      {{ comp.blog({ article, globalTags }) }}
     {{ /for }}
     <a href="/blog" class="block text-center no-underline transition-all hocus:translate-x-1">
       All articles
