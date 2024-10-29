@@ -1,7 +1,5 @@
 {{ layout "layouts/minimal.vto" }}
 
-{{ import { projectItem } from "project.vto" }}
-
 <div class="card card--raised mb-3 prose">
   <div class="flex items-center">
     <h2>Everything tagged with {{ comp.tag({ tag, globalTags, isLink: false }) }}</h2>
@@ -51,7 +49,7 @@
   <div class="card card--grouped">
     <h3 class="font-bold">Projects</h3>
     {{ for project of projects }}
-      {{ projectItem(project, globalTags) }}
+      {{ comp.project({ project, globalTags }) }}
     {{ /for }}
     <a href="/projects" class="block text-center no-underline transition-all hocus:translate-x-1">
       All projects
