@@ -1,11 +1,10 @@
 {{ layout "layouts/minimal.vto" }}
 
 {{ import { blogItem } from "blog.vto" }}
-{{ import { tagItem } from "tag.vto" }}
 
 <div class="card card--raised mb-3 prose prose-headings:my-3">
   <div class="flex items-center">
-    <h2>All blog posts tagged with {{ tagItem(tag, globalTags, false) }}</h2>
+    <h2>All blog posts tagged with {{ comp.tag({ tag, globalTags, isLink: false }) }}</h2>
   </div>
   <p>
     {{ articles.length }}

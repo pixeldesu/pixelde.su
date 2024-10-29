@@ -4,11 +4,10 @@
 {{ import { podcastItem } from "podcast.vto" }}
 {{ import { projectItem } from "project.vto" }}
 {{ import { talkItem } from "talk.vto" }}
-{{ import { tagItem } from "tag.vto" }}
 
 <div class="card card--raised mb-3 prose">
   <div class="flex items-center">
-    <h2>Everything tagged with {{ tagItem(tag, globalTags, false) }}</h2>
+    <h2>Everything tagged with {{ comp.tag({ tag, globalTags, isLink: false }) }}</h2>
   </div>
   <p>
     {{ count }}

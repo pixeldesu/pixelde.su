@@ -1,5 +1,3 @@
-{{ import { tagItem } from "tag.vto" }}
-
 {{ export function talkItem(talk, globalTags) }}
 <a href="{{talk.url}}" class="article-card group">
   <h2 class="text-xl !mb-0">{{ talk.title }}</h2>
@@ -10,7 +8,7 @@
   <div class="flex items-center mt-3">
     <ul class="p-0 m-0">
       {{ for tag of talk.tags }}
-        {{ tagItem(tag, globalTags, false) }}
+        {{ comp.tag({ tag, globalTags, isLink: false }) }}
       {{ /for }}
     </ul>
     <div class="ms-auto self-end shrink-0 transition-all group-hocus:-translate-x-1">

@@ -1,13 +1,11 @@
 {{ layout "layouts/base.vto" }}
 
-{{ import { tagItem } from "tag.vto" }}
-
 {{ set main }}
   <div class="card card--raised min-h-[768px] prose">
     <div class="relative z-10">
       <ul class="p-0 m-0">
         {{ for tag of tags }}
-          {{ tagItem(tag, globalTags, true, '/blog/tag/') }}
+          {{ comp.tag({ tag, globalTags, isLink: true, linkPrefix: '/blog/tag/' }) }}
         {{ /for }}
       </ul>
       <h1>{{title}}</h1>
@@ -43,7 +41,7 @@
         </a>  
       </p>
       <div class="grid md:grid-cols-2 gap-3">
-        {{ for article of openring |> shuffle |> cut(2) }}
+        {{ for article of openring |> cut(2) }}
           <div class="card card--flat group flex flex-col prose">
             <h4 class="text-md !mb-0 !mt-0">
               <a href="{{article.url}}" target="_blank" class="no-underline">
