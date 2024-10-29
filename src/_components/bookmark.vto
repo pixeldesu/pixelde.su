@@ -1,8 +1,7 @@
-{{ export function bookmarkItem(bookmark, globalTags) }}
 <a href="{{ bookmark.url }}" class="article-card group" rel="external" referrerpolicy="strict-origin" target="_blank">
   <h2 class="text-xl !mb-0">{{ bookmark.title }}</h2>
   <p class="text-sm mb-3">
-    Bookmarked on <time datetime={{ bookmark.date |> date }}>{{ bookmark.date |> date('HUMAN_DATE') }}</time>
+    Bookmarked on <time datetime="{{ bookmark.date |> date }}">{{ bookmark.date |> date('HUMAN_DATE') }}</time>
   </p>
   <p class="my-2 font-semibold">
     <svg src="/assets/svg/fa-link.svg" class="inline-block fill-current h-[1.5rem] w-[1.5rem]" inline></svg> {{ bookmark.url }}
@@ -16,4 +15,3 @@
     </ul>
   </div>
 </a>
-{{ /export }}
