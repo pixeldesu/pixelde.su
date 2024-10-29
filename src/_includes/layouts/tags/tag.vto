@@ -2,7 +2,6 @@
 
 {{ import { podcastItem } from "podcast.vto" }}
 {{ import { projectItem } from "project.vto" }}
-{{ import { talkItem } from "talk.vto" }}
 
 <div class="card card--raised mb-3 prose">
   <div class="flex items-center">
@@ -38,7 +37,7 @@
   <div class="card card--grouped">
     <h3 class="font-bold">Talks</h3>
     {{ for talk of talks }}
-      {{ talkItem(talk, globalTags) }}
+      {{ comp.talk({ talk, globalTags }) }}
     {{ /for }}
     <a href="/talks" class="block text-center no-underline transition-all hocus:translate-x-1">
       All talks

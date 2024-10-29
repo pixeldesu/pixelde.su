@@ -1,7 +1,5 @@
 {{ layout "layouts/minimal.vto" }}
 
-{{ import { talkItem } from "talk.vto" }}
-
 <div class="card card--raised mb-3 prose">
   <div class="flex items-center">
     <h2>All talks tagged with {{ comp.tag({ tag, globalTags, isLink: false }) }}</h2>
@@ -31,5 +29,5 @@
   </a>
 </div>
 {{ for talk of talks }}
-  {{ talkItem(talk, globalTags) }}
+  {{ comp.talk({ talk, globalTags }) }}
 {{ /for }}

@@ -3,8 +3,6 @@ layout: layouts/minimal.vto
 title: Talks
 ---
 
-{{ import { talkItem } from "talk.vto" }}
-
 <div class="card card--raised mb-3 prose">
   <div class="flex items-center">
     <h1>Talks</h1>
@@ -19,5 +17,5 @@ title: Talks
   <p>I talk at events sometimes!</p>
 </div>
 {{ for talk of search.pages("type=talk", "order date=desc") }}
-  {{ talkItem(talk, globalTags) }}
+  {{ comp.talk({ talk, globalTags }) }}
 {{ /for }}
