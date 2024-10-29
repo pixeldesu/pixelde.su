@@ -4,8 +4,6 @@ title: Openring
 templateEngine: [vto, md]
 ---
 
-{{ import { feedItem } from "feed.vto" }}
-
 # openring
 
 [openring](https://git.sr.ht/~sircmpwn/openring) is a project by [Drew DeVault](https://drewdevault.com/), generating a webring from RSS feeds. I'm not using the tool provided in the repository,
@@ -17,7 +15,7 @@ Here are all the sources I'm currently featuring on my site:
 <div class="not-prose mb-3">
   <ul>
     {{ for source of openringSources |> shuffle }}
-      {{ feedItem(source) }}
+      {{ comp.feed({ source }) }}
     {{ /for }}
   </ul>
 </div>
