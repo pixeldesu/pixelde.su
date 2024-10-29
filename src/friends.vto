@@ -3,8 +3,6 @@ layout: layouts/main.vto
 title: Friends
 ---
 
-{{ import { friendItem } from "friend.vto" }}
-
 <h1>Friends</h1>
 
 <p>Cool people whose websites you should also check out!</p>
@@ -12,7 +10,7 @@ title: Friends
 <div class="not-prose mb-3">
   <ul>
     {{ for friend of friends |> shuffle }}
-      {{ friendItem(friend) }}
+      {{ comp.friend({ friend }) }}
     {{ /for }}
   </ul>
 </div>
