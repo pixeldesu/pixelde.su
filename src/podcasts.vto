@@ -3,8 +3,6 @@ layout: layouts/minimal.vto
 title: Podcasts
 ---
 
-{{ import { podcastItem } from "podcast.vto" }}
-
 <div class="card card--raised mb-3 prose prose-headings:my-3">
   <div class="flex items-center">
     <h1>Podcasts</h1>
@@ -13,5 +11,5 @@ title: Podcasts
 </div>
 
 {{ for podcast of podcasts }}
-  {{ podcastItem(podcast, globalTags) }}
+  {{ comp.podcast({ podcast, globalTags }) }}
 {{ /for }}
