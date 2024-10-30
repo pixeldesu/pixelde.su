@@ -43,6 +43,10 @@
     @apply hocus:bg-slate-100 dark:hocus:bg-neutral-700;
   }
 
+  .card--character-poly {
+    @apply outline-dashed outline-sky-400/50 outline-2 bg-sky-50/50 dark:bg-sky-600/10;
+  }
+
   .article-card {
     @apply 
       card card--raised card--linked
