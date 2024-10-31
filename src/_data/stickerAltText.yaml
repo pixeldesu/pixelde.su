@@ -1,0 +1,11 @@
+# Alt texts for the sticker images present in dialog boxes
+#
+# YAML structure:
+# {{ character name }}:
+#   {{ emotion }}: {{ alt text }}
+
+poly:
+  happy: A blue haired girl wearing red-rimmed round glasses with a happy expression
+  confused: A blue haired girl wearing red-rimmed round glasses with a confused expression
+  thinking: A blue haired girl wearing red-rimmed round glasses with a thinking expression, holding her hand to her chin
+  glare: A blue haired girl wearing red-rimmed round glasses with a glaring expression, pushing up her glasses with a finger
