@@ -1,8 +1,8 @@
 <div class="card card--flat card--character-{{ character }} card--emotion-{{ emotion }} flex items-center mb-3 {{ if inverse }} flex-row-reverse{{ /if }}">
-  <picture class="shrink-0 m-0{{ if inverse }} ms-2 md:ms-3 -scale-x-100{{ else }} me-2 md:me-3{{ /if }}">
+  <picture class="shrink-0 w-16 md:w-auto m-0{{ if inverse }} ms-2 md:ms-3 -scale-x-100{{ else }} me-2 md:me-3{{ /if }}">
     <source media="(min-width: 768px)" srcset="https://pixeldesu-assets.fra1.cdn.digitaloceanspaces.com/stickers/{{ character }}/{{ emotion }}/128.png">
-    <source srcset="https://pixeldesu-assets.fra1.cdn.digitaloceanspaces.com/stickers/{{ character }}/{{ emotion }}/64.png">
-    <img src="https://pixeldesu-assets.fra1.cdn.digitaloceanspaces.com/stickers/{{ character }}/{{ emotion }}/64.png" alt="{{ it.stickerAltText[character][emotion] }}" loading="lazy"/>
+    <source srcset="https://pixeldesu-assets.fra1.cdn.digitaloceanspaces.com/stickers/{{ character }}/{{ emotion }}/96.png">
+    <img src="https://pixeldesu-assets.fra1.cdn.digitaloceanspaces.com/stickers/{{ character }}/{{ emotion }}/96.png" alt="{{ it.stickerAltText[character][emotion] }}" loading="lazy"/>
   </picture>
   <div class="grow">
     <b class="capitalize">{{ character }}:</b> {{ content }}
