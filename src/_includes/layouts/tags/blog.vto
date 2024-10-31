@@ -2,7 +2,7 @@
 
 <div class="card card--raised mb-3 prose prose-headings:my-3">
   <div class="flex items-center">
-    <h2>All blog posts tagged with {{ comp.tag({ tag, globalTags, isLink: false }) }}</h2>
+    <h2>All blog posts tagged with {{ comp.tag({ tag, isLink: false }) }}</h2>
   </div>
   <p>
     {{ articles.length }}
@@ -29,5 +29,5 @@
   </a>
 </div>
 {{ for article of articles }}
-  {{ comp.blog({ article, globalTags }) }}
+  {{ comp.blog({ article }) }}
 {{ /for }}

@@ -17,5 +17,5 @@ title: Talks
   <p>I talk at events sometimes!</p>
 </div>
 {{ for talk of search.pages("type=talk", "order date=desc") }}
-  {{ comp.talk({ talk, globalTags }) }}
+  {{ comp.talk({ talk }) }}
 {{ /for }}

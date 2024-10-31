@@ -7,7 +7,7 @@
   </p>
   <ul class="p-0 m-0">
     {{ for tag of podcast.tags }}
-      {{ comp.tag({ tag, globalTags, isLink: false }) }}
+      {{ comp.tag({ tag, isLink: false }) }}
     {{ /for }}
   </ul>
 </a>

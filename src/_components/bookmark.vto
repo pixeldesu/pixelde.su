@@ -10,7 +10,7 @@
   <div class="flex items-center mt-3">
     <ul class="p-0 m-0">
       {{ for tag of bookmark.tags }}
-        {{ comp.tag({ tag, globalTags, isLink: false }) }}
+        {{ comp.tag({ tag, isLink: false }) }}
       {{ /for }}
     </ul>
   </div>

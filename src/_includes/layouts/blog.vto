@@ -5,7 +5,7 @@
     <div class="relative z-10">
       <ul class="p-0 m-0">
         {{ for tag of tags }}
-          {{ comp.tag({ tag, globalTags, isLink: true, linkPrefix: '/blog/tag/' }) }}
+          {{ comp.tag({ tag, isLink: true, linkPrefix: '/blog/tag/' }) }}
         {{ /for }}
       </ul>
       <h1>{{title}}</h1>

@@ -4,7 +4,7 @@
   <div class="card card--raised flex flex-col min-h-[768px] prose">
     <ul class="p-0 m-0">
       {{ for tag of tags }}
-        {{ comp.tag({ tag, globalTags, isLink: true, linkPrefix: '/talks/tag/' }) }}
+        {{ comp.tag({ tag, isLink: true, linkPrefix: '/talks/tag/' }) }}
       {{ /for }}
     </ul>
     <h1>{{title}}</h1>

@@ -5,18 +5,18 @@ linkPrefix: "/"
 
 {{ if isLink }}
   <li class="inline-block !p-0 !m-0">
-    <a href="{{ linkPrefix }}{{ tag }}" class="tag {{ if globalTags[tag] !== undefined }}{{ globalTags[tag].classes }}{{ /if }}">
-      {{ if globalTags[tag] !== undefined && globalTags[tag].name }}
-        {{ globalTags[tag].name }}
+    <a href="{{ linkPrefix }}{{ tag }}" class="tag {{ if it.globalTags[tag] !== undefined }}{{ it.globalTags[tag].classes }}{{ /if }}">
+      {{ if it.globalTags[tag] !== undefined && it.globalTags[tag].name }}
+        {{ it.globalTags[tag].name }}
       {{ else }}
         {{ tag }}
       {{ /if }}
     </a>
   </li>
 {{ else }}
-  <li class="inline-block !m-0 !me-1 tag {{ if globalTags[tag] !== undefined }}{{ globalTags[tag].classes }}{{ /if }}">
-    {{ if globalTags[tag] !== undefined && globalTags[tag].name }}
-      {{ globalTags[tag].name }}
+  <li class="inline-block !m-0 !me-1 tag {{ if it.globalTags[tag] !== undefined }}{{ it.globalTags[tag].classes }}{{ /if }}">
+    {{ if it.globalTags[tag] !== undefined && it.globalTags[tag].name }}
+      {{ it.globalTags[tag].name }}
     {{ else }}
       {{ tag }}
     {{ /if }}

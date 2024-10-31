@@ -4,7 +4,7 @@
     <p>{{ project.description }}</p>
     <ul class="p-0 m-0">
       {{ for tag of project.tags }}
-        {{ comp.tag({ tag, globalTags, isLink: false }) }}
+        {{ comp.tag({ tag, isLink: false }) }}
       {{ /for }}
     </ul>
   </div>

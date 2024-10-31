@@ -2,7 +2,7 @@
 
 <div class="card card--raised mb-3 prose">
   <div class="flex items-center">
-    <h2>All talks tagged with {{ comp.tag({ tag, globalTags, isLink: false }) }}</h2>
+    <h2>All talks tagged with {{ comp.tag({ tag, isLink: false }) }}</h2>
   </div>
   <p>
     {{ talks.length }}
@@ -29,5 +29,5 @@
   </a>
 </div>
 {{ for talk of talks }}
-  {{ comp.talk({ talk, globalTags }) }}
+  {{ comp.talk({ talk }) }}
 {{ /for }}

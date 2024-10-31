@@ -2,7 +2,7 @@
 
 <div class="card card--raised mb-3 prose">
   <div class="flex items-center">
-    <h2>Everything tagged with {{ comp.tag({ tag, globalTags, isLink: false }) }}</h2>
+    <h2>Everything tagged with {{ comp.tag({ tag, isLink: false }) }}</h2>
   </div>
   <p>
     {{ count }}
@@ -19,7 +19,7 @@
   <div class="card card--grouped">
     <h3 class="font-bold">Blog articles</h3>
     {{ for article of articles }}
-      {{ comp.blog({ article, globalTags }) }}
+      {{ comp.blog({ article }) }}
     {{ /for }}
     <a href="/blog" class="block text-center no-underline transition-all hocus:translate-x-1">
       All articles
@@ -34,7 +34,7 @@
   <div class="card card--grouped">
     <h3 class="font-bold">Talks</h3>
     {{ for talk of talks }}
-      {{ comp.talk({ talk, globalTags }) }}
+      {{ comp.talk({ talk }) }}
     {{ /for }}
     <a href="/talks" class="block text-center no-underline transition-all hocus:translate-x-1">
       All talks
@@ -49,7 +49,7 @@
   <div class="card card--grouped">
     <h3 class="font-bold">Projects</h3>
     {{ for project of projects }}
-      {{ comp.project({ project, globalTags }) }}
+      {{ comp.project({ project }) }}
     {{ /for }}
     <a href="/projects" class="block text-center no-underline transition-all hocus:translate-x-1">
       All projects
@@ -64,7 +64,7 @@
   <div class="card card--grouped">
     <h3 class="font-bold">Podcasts</h3>
     {{ for podcast of podcasts }}
-      {{ comp.podcast({ podcast, globalTags }) }}
+      {{ comp.podcast({ podcast }) }}
     {{ /for }}
     <a href="/podcasts" class="block text-center no-underline transition-all hocus:translate-x-1">
       All podcasts

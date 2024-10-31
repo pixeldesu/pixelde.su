@@ -9,7 +9,7 @@ title: Projects
     <p>A selection of projects that I have worked on over the years or still actively contribute to!</p>
   </div>
   {{ for project of projects }}
-    {{ comp.project({ project, globalTags }) }}
+    {{ comp.project({ project }) }}
   {{ /for }}
   <a class="link-card group" href="https://github.com/pixeldesu">
     <svg src="/assets/svg/github.svg" class="fill-current w-6 me-2 h-auto" inline></svg>
