@@ -11,8 +11,11 @@ export default {
     typography,
     plugin(({ addVariant }) => {
       addVariant("hocus", ["&:hover", "&:focus"]);
-      addVariant("group-hocus", [":merge(.group):hover &", ":merge(.group):focus &"]);
-    })
+      addVariant("group-hocus", [
+        ":merge(.group):hover &",
+        ":merge(.group):focus &",
+      ]);
+    }),
   ],
   safelist: [
     "h-fit",

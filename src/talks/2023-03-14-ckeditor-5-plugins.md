@@ -13,8 +13,12 @@ downloads:
     url: /assets/slides/ckeditor5-plugins.pdf
 ---
 
-With TYPO3 v12 coming up and me already having delved into it quite a bit, I decided to give a talk on CKEditor 5 and how to write plugins for it at T3BOARD. 
+With TYPO3 v12 coming up and me already having delved into it quite a bit, I
+decided to give a talk on CKEditor 5 and how to write plugins for it at T3BOARD.
 
-I worked a lot with plugins before because I internally had to rewrite a plugin for the Lux TYPO3 extension from CKEditor 4 to 5, and was massively frustrated by the complexity I encountered.
+I worked a lot with plugins before because I internally had to rewrite a plugin
+for the Lux TYPO3 extension from CKEditor 4 to 5, and was massively frustrated
+by the complexity I encountered.
 
-This talk gave some insights into the complex structure and showcased how to overcome some problems using provided code examples.
+This talk gave some insights into the complex structure and showcased how to
+overcome some problems using provided code examples.

@@ -71,11 +71,14 @@ favorite artists, so I'll list off some of my favorite (net)labels instead:
 
 ## Anime / Manga
 
-You can see hints of japanese media across the previous sections already, so it's not too suprising that I also read manga and watch anime. I don't really have any favorite genre, I'll occassionally check out what people recommend and sometimes that sticks with me! Here's a small selection of favorites:
+You can see hints of japanese media across the previous sections already, so
+it's not too suprising that I also read manga and watch anime. I don't really
+have any favorite genre, I'll occassionally check out what people recommend and
+sometimes that sticks with me! Here's a small selection of favorites:
 
-* **Neon Genesis Evangelion** (preferably the movies over the anime, though)
-* **The Tatami Galaxy**
-* **Mawaru Penguindrum**
+- **Neon Genesis Evangelion** (preferably the movies over the anime, though)
+- **The Tatami Galaxy**
+- **Mawaru Penguindrum**
 
 <p>
   <a href="https://anilist.co/user/pixeldesu/" class="button not-prose bg-sky-700">

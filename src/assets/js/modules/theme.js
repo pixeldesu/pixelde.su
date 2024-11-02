@@ -3,8 +3,10 @@ const getCurrentTheme = () => {
     return localStorage.getItem("theme");
   }
 
-  return (globalThis.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light");
-}
+  return (globalThis.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light");
+};
 
 const themeToggle = document.querySelector("[data-theme-toggle]");
 themeToggle.addEventListener("click", () => {
@@ -16,8 +18,7 @@ themeToggle.addEventListener("click", () => {
     document.documentElement.classList.remove("light");
     document.documentElement.classList.add("dark");
     localStorage.setItem("theme", "dark");
-  }
-  else {
+  } else {
     document.documentElement.classList.remove("dark");
     document.documentElement.classList.add("light");
     localStorage.setItem("theme", "light");

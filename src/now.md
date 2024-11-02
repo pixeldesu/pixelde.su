@@ -34,4 +34,7 @@ _Nothing right now!_
 
 ## What I'm listening to
 
-- Music from [HiTNEX TRAX](https://hitnex.net/), mostly **Kobaryo** itself. Two releases I currently have on repeat a lot are [SUPER KEY GENERATOR](https://hitnex.net/hnxcd003/) and [SUPER DREAM ZONE](https://hitnex.net/hnxcd001/).
+- Music from [HiTNEX TRAX](https://hitnex.net/), mostly **Kobaryo** itself. Two
+  releases I currently have on repeat a lot are
+  [SUPER KEY GENERATOR](https://hitnex.net/hnxcd003/) and
+  [SUPER DREAM ZONE](https://hitnex.net/hnxcd001/).

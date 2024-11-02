@@ -26,8 +26,8 @@ site.copy("assets/svg");
 
 site.use(esbuild({
   options: {
-    bundle: false
-  }
+    bundle: false,
+  },
 }));
 site.use(date());
 site.use(readInfo());
@@ -46,7 +46,8 @@ site.use(feed({
   query: "type=blog index=true post_draft=false",
   info: {
     title: "pixeldesu's blog",
-    description: "Personal and technical ramblings and write-ups from pixeldesu",
+    description:
+      "Personal and technical ramblings and write-ups from pixeldesu",
   },
   items: {
     title: "=title",
@@ -68,7 +69,14 @@ site.use(feed({
 }));
 
 site.use(robots({
-  disallow: ["GPTBot", "GPTBot-User", "Google-Extended", "PerplexityBot", "claudebot", "ClaudeBot"]
+  disallow: [
+    "GPTBot",
+    "GPTBot-User",
+    "Google-Extended",
+    "PerplexityBot",
+    "claudebot",
+    "ClaudeBot",
+  ],
 }));
 
 site.use(openring({
@@ -81,8 +89,8 @@ site.use(openring({
     "https://qtea.me/posts.xml",
     "https://xeiaso.net/blog.rss",
     "https://chronovore.dev/posts/feed.rss",
-    "https://87flowers.com/rss.xml", 
-  ]
+    "https://87flowers.com/rss.xml",
+  ],
 }));
 
 site.hooks.addPostcssPlugin(nano);
@@ -99,15 +107,21 @@ site.filter("hostname", (url) => (new URL(url)).hostname, false);
 
 site.filter("shuffle", (array: any[] = []) => {
   for (let i = array.length - 1; i >= 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
   }
 
   return array;
 });
 
-site.filter("cut", (array, length, startIndex = 0) => array.slice(startIndex, length));
+site.filter(
+  "cut",
+  (array, length, startIndex = 0) => array.slice(startIndex, length),
+);
 
-site.filter("truncate", (string, length, suffix = "...") => `${string.substring(0, length)}${suffix}`);
+site.filter(
+  "truncate",
+  (string, length, suffix = "...") => `${string.substring(0, length)}${suffix}`,
+);
 
 export default site;
