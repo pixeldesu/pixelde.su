@@ -4,11 +4,13 @@
 
 @layer components {
   .prose {
-    @apply dark:prose-invert dark:prose-neutral prose-headings:my-3 prose-code:before:hidden prose-code:after:hidden;
+    @apply dark:prose-invert dark:prose-neutral prose-headings:my-3
+      prose-code:before:hidden prose-code:after:hidden;
   }
 
   .button {
-    @apply inline-flex items-center rounded-md shadow-lg font-bold text-white px-2 py-0.5 transition-all hocus:translate-y-0.5;
+    @apply inline-flex items-center rounded-md shadow-lg font-bold text-white
+      px-2 py-0.5 transition-all hocus:translate-y-0.5;
   }
 
   .button svg {
@@ -22,7 +24,7 @@
   .card--slim {
     @apply !px-2 !py-1 !mb-1;
   }
-  
+
   .card--raised {
     @apply relative bg-white dark:bg-neutral-800 shadow-lg;
   }
@@ -34,7 +36,7 @@
   .card--grouped {
     @apply mb-3 bg-slate-300/25 dark:bg-neutral-600/50 prose max-w-none;
   }
-  
+
   .card--linked {
     @apply no-underline transition-all;
   }
@@ -44,21 +46,18 @@
   }
 
   .card--character-poly {
-    @apply outline-dashed outline-sky-400/50 outline-2 bg-sky-50/50 dark:bg-sky-600/10;
+    @apply outline-dashed outline-sky-400/50 outline-2 bg-sky-50/50
+      dark:bg-sky-600/10;
   }
 
   .article-card {
-    @apply 
-      card card--raised card--linked
-      prose prose-headings:my-3
-      block overflow-hidden mb-3 hover:translate-y-1;
+    @apply card card--raised card--linked prose prose-headings:my-3 block
+      overflow-hidden mb-3 hover:translate-y-1;
   }
 
   .link-card {
-    @apply
-      card card--raised card--linked
-      flex justify-center 
-      hover:translate-y-1 hocus:bg-slate-100 dark:hocus:bg-neutral-700
+    @apply card card--raised card--linked flex justify-center
+      hover:translate-y-1 hocus:bg-slate-100 dark:hocus:bg-neutral-700;
   }
 
   .webring {
@@ -70,7 +69,8 @@
   }
 
   .webring-action {
-    @apply rounded-md px-2 py-1 hocus:bg-slate-200 dark:hocus:bg-neutral-700 transition-all;
+    @apply rounded-md px-2 py-1 hocus:bg-slate-200 dark:hocus:bg-neutral-700
+      transition-all;
   }
 
   .webring-action--previous {
@@ -82,7 +82,8 @@
   }
 
   .tag {
-    @apply font-bold whitespace-nowrap !no-underline hocus:no-underline bg-slate-200 dark:bg-neutral-700 px-2 py-0.5 me-1 !leading-5 rounded-md;
+    @apply font-bold whitespace-nowrap !no-underline hocus:no-underline
+      bg-slate-200 dark:bg-neutral-700 px-2 py-0.5 me-1 !leading-5 rounded-md;
   }
 }
 
