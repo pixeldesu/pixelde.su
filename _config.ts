@@ -1,6 +1,5 @@
 import lume from "lume/mod.ts";
 import esbuild from "lume/plugins/esbuild.ts";
-import nunjucks from "lume/plugins/nunjucks.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import tailwindcss from "lume/plugins/tailwindcss.ts";
 import postcss from "lume/plugins/postcss.ts";
@@ -30,7 +29,6 @@ site.use(esbuild({
     bundle: false
   }
 }));
-site.use(nunjucks());
 site.use(date());
 site.use(readInfo());
 site.use(sitemap());
