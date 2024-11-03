@@ -4,6 +4,9 @@ csharp:
 css:
   name: CSS
   classes: text-blue-700 bg-blue-100 dark:text-blue-100 dark:bg-blue-700/25
+fediverse:
+  name: Fediverse
+  classes: text-pink-600 bg-pink-100 dark:text-pink-100 dark:bg-pink-700/25
 javascript:
   name: JavaScript
   classes: text-yellow-600 bg-yellow-50 dark:text-yellow-200 dark:bg-yellow-400/25
