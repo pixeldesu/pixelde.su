@@ -2,7 +2,6 @@
 title: On Productivity Methods
 description: |
   An update on my view on productivity methods and what changed since my last blog post about them.
-date: 2024-10-13
 tags:
   - personal
   - productivity

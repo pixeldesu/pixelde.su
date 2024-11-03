@@ -2,7 +2,6 @@
 title: Why I'm Reverse Engineering a Anime Golf Game
 description: |
   This is going to be the first entry of a series of blog posts detailing my ongoing journey of reverse engineering parts of the video game "PangYa!" by Ntreev Soft.
-date: 2019-10-29
 tags:
   - reverse-engineering
   - pangya

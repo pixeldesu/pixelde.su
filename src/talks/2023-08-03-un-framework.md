@@ -6,7 +6,6 @@ tags:
   - javascript
 event: TYPO3 Developer Days 2023
 language: English
-date: 2023-08-03
 urls:
   - name: Session page on T3DD23 website
     url: https://t3dd23.typo3.com/program/sessions/un-framework-delivering-dynamic-experiences-with-html-over-the-wire-541

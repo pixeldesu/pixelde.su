@@ -3,7 +3,6 @@ title: Out of the Loop(s)
 description: |
   Loops (by Pixelfed) is all in the news, and in this post I'll talk about
   why it won't work out in the long term.
-date: 2024-11-04
 tags:
   - fediverse
 ---

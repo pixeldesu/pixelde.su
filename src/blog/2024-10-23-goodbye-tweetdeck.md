@@ -3,7 +3,6 @@ title: Goodbye TweetDeck
 description: |
   With TweetDeck long gone and me shutting down my TweetDeck hacking community, it's finally time to lose some words about
   all the things I did for it.
-date: 2024-10-23
 tags:
   - reverse-engineering
   - twitter

@@ -7,7 +7,6 @@ tags:
   - typo3
 event: T3BOARD23
 language: German
-date: 2023-03-14
 downloads:
   - name: Slides
     url: /assets/slides/ckeditor5-plugins.pdf

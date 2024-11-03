@@ -2,7 +2,6 @@
 title: "Reverse Engineering Pangya – File Formats #2: .iff"
 description: |
   Even though I talked about a different file format in my first post about reverse engineering Pangya, that actually wasn't the first format that I took apart, or messed with.
-date: 2021-12-19
 tags:
   - reverse-engineering
   - pangya

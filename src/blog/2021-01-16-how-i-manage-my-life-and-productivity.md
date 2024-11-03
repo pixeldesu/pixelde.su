@@ -2,7 +2,6 @@
 title: How I manage my Life and Productivity
 description: |
   I've wanted to write this blogpost for quite a while now, since October I believe. Finally got some time on my hands and feeling like writing after my year-in-review post, so here we go.
-date: 2021-01-16
 deprecated: I don't use the productivity management methods outlined in this article anymore.
 tags:
   - personal

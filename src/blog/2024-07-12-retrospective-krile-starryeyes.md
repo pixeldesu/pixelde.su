@@ -3,7 +3,6 @@ title: A retrospective on the coolest Twitter client you (probably) didn't know
 description: |
   A retrospective on the japanese Twitter client Krile StarryEyes by karno, why it was so cool
   and what my personal involvement with it was back 10 years ago.
-date: 2024-07-12
 tags:
   - twitter
 ---

@@ -7,7 +7,6 @@ tags:
   - vue
 event: TYPO3camp München 2021
 language: German
-date: 2021-09-26
 urls:
   - name: Session page on T3CM website (Archived)
     url: https://web.archive.org/web/20211017103006/https://www.typo3camp-muenchen.de/session/vuejs-26

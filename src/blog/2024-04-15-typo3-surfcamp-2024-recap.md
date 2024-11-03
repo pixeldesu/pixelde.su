@@ -2,7 +2,6 @@
 title: Recap of TYPO3 Surfcamp 2024
 description: |
   I participated in the very first TYPO3 Surfcamp, hosted in Fuerteventura. I'll talk a bit about what it is, my expectations, and what went down on that one Canary Island.
-date: 2024-04-15
 tags:
   - event-recap
   - typo3

@@ -2,7 +2,6 @@
 title: I miss Hacktoberfest
 description: |
   Thoughts on the recent iterations of Hacktoberfest and why I miss the ones from a few years ago.
-date: 2024-10-14
 tags:
   - open-source
 ---

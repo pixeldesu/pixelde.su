@@ -2,7 +2,6 @@
 title: Recap of TYPO3 Developer Days 2024
 description: |
   It once again was time for the annual TYPO3 Developer Days in Karlsruhe. I'll share my experiences and thoughts about this years iteration here!
-date: 2024-09-18
 tags:
   - event-recap
   - typo3

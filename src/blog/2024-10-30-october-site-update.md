@@ -2,7 +2,6 @@
 title: October 2024 Site Updates
 description: |
   Let's look at all the changes on this site that happened in October!
-date: 2024-10-30
 tags:
   - personal
   - changelog

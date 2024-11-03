@@ -7,7 +7,6 @@ tags:
   - typo3
 event: TYPO3 Developer Days 2024
 language: English
-date: 2024-08-01
 urls:
   - name: Session page on T3DD24 website
     url: https://t3dd24.typo3.com/program/sessions/migrating-from-jquery-core-journey-to-vanilla-js-775
