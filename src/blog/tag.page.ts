@@ -14,8 +14,8 @@ export default function* ({ globalTags, search }) {
     yield {
       url: `/blog/tag/${tag}/`,
       title: globalTags[tag]?.name
-        ? `All posts tagged with ${globalTags[tag].name}`
-        : `All posts tagged with ${tag}`,
+        ? `All blog posts tagged with ${globalTags[tag].name}`
+        : `All blog posts tagged with ${tag}`,
       articles: search.pages(
         `type=blog post_draft=false ${tag}`,
         "order date=desc",
