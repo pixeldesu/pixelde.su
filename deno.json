@@ -10,7 +10,7 @@
     ]
   },
   "imports": {
-    "lume/": "https://deno.land/x/lume@v2.3.3/",
+    "lume/": "https://deno.land/x/lume@v2.4.1/",
     "lume_openring/": "https://deno.land/x/lume_openring@1.1.1/"
   }
 }
