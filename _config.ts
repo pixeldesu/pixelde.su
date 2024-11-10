@@ -39,7 +39,12 @@ site.use(postcss());
 site.use(minifyHTML());
 site.use(terser());
 
-site.use(inline());
+site.use(inline({
+  copyAttributes: [
+    /^data-/,
+    /^aria-/
+  ]
+}));
 
 site.use(feed({
   output: ["/blog/posts.rss", "/blog/posts.json"],
