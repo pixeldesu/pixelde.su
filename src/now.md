@@ -26,7 +26,10 @@ am doing currently.
 
 - [Golden Kamuy](https://anilist.co/anime/110355/Golden-Kamuy-3rd-Season/)
 - [Fairy Tail: 100 Years Quest](https://anilist.co/anime/139095/FAIRY-TAIL-100-YEARS-QUEST/)
-- [Spirit Chronicles (_Seirei Gensouki_)](https://anilist.co/anime/141182/Seirei-Gensouki-2/)
+- [Spirit Chronicles](https://anilist.co/anime/141182/Seirei-Gensouki-2/)
+- [BLEACH: Thousand-Year Blood War - The Conflict](https://anilist.co/anime/169755/BLEACH-Sennen-Kessenhen--Soukokutan/)
+- [Assassination Classroom](https://anilist.co/anime/21170/Ansatsu-Kyoushitsu-2/)
+- [Sword Art Online Alternative: Gun Gale Online II](https://anilist.co/anime/167141/Sword-Art-Online-Alternative-Gun-Gale-Online-II/)
 
 ## What I'm reading
 
@@ -34,7 +37,6 @@ _Nothing right now!_
 
 ## What I'm listening to
 
-- Music from [HiTNEX TRAX](https://hitnex.net/), mostly **Kobaryo** itself. Two
-  releases I currently have on repeat a lot are
-  [SUPER KEY GENERATOR](https://hitnex.net/hnxcd003/) and
-  [SUPER DREAM ZONE](https://hitnex.net/hnxcd001/).
+- [Taishi/compllege](https://compllege.bandcamp.com/) (mostly the **Phant Solo**
+  releases)
+- [Apex Legends: Music From The Outlands, Vol. 1](https://eagames.bandcamp.com/album/apex-legends-music-from-the-outlands-vol-1-original-soundtrack)
