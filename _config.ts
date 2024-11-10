@@ -124,4 +124,16 @@ site.filter(
   (string, length, suffix = "...") => `${string.substring(0, length)}${suffix}`,
 );
 
+site.filter(
+  "filterByTag",
+  (array: (Partial<{ tags: string[] }>)[], tag: string) =>
+    array.filter((item) => item.tags?.includes(tag)),
+);
+
+site.filter(
+  "filterNoTags",
+  (array: (Partial<{ tags: string[] }>)[]) =>
+    array.filter((item) => !item.tags),
+);
+
 export default site;
