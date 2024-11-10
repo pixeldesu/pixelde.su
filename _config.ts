@@ -42,8 +42,8 @@ site.use(terser());
 site.use(inline({
   copyAttributes: [
     /^data-/,
-    /^aria-/
-  ]
+    /^aria-/,
+  ],
 }));
 
 site.use(feed({
