@@ -7,6 +7,49 @@ title: Contact
 
 <p>Here you can find places where you can contact me.</p>
 
-{{ for social of socials }}
-  {{ comp.social({ social }) }}
+<div class="outline-dashed outline-2 outline-yellow-700 dark:outline-yellow-400 px-2 py-1 rounded-md leading-snug text-center italic mb-3">
+  Items with a <svg src="/assets/svg/fa-warning.svg" class="inline-block h-[1rem] w-[1rem] fill-yellow-700 dark:fill-yellow-400" inline></svg> indicate that they shouldn't
+  be used for contact and any other option from the same category is preferred.
+</div>
+
+<h2>Microblogging</h2>
+
+{{ for microbloggingSocial of socials |> filterByTag("microblogging") }}
+  {{ comp.social({ social: microbloggingSocial }) }}
+{{ /for }}
+
+<h2>Chat</h2>
+
+{{ for chatSocial of socials |> filterByTag("chat") }}
+  {{ comp.social({ social: chatSocial }) }}
+{{ /for }}
+
+<h2>Code</h2>
+
+{{ for codeSocial of socials |> filterByTag("code") }}
+  {{ comp.social({ social: codeSocial }) }}
+{{ /for }}
+
+<h2>Music</h2>
+
+{{ for musicSocial of socials |> filterByTag("music") }}
+  {{ comp.social({ social: musicSocial }) }}
+{{ /for }}
+
+<h2>Gaming</h2>
+
+{{ for gamingSocial of socials |> filterByTag("gaming") }}
+  {{ comp.social({ social: gamingSocial }) }}
+{{ /for }}
+
+<h2>List Tracking</h2>
+
+{{ for listSocial of socials |> filterByTag("list-tracking") }}
+  {{ comp.social({ social: listSocial }) }}
+{{ /for }}
+
+<h2>Others</h2>
+
+{{ for otherSocial of socials |> filterNoTags }}
+  {{ comp.social({ social: otherSocial }) }}
 {{ /for }}
