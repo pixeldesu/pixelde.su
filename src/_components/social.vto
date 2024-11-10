@@ -1,5 +1,5 @@
 {{ if social.url }}
-  <a class="card card--flat card--slim card--linked not-prose flex{{ if social.deprecated }} card--deprecated{{ /if }}" href="{{ social.url }}" target="_blank" title="{{ social.deprecated }}">
+  <a class="card card--flat card--slim card--linked not-prose !mb-0 flex items-center {{ if social.deprecated }} card--deprecated{{ /if }}" href="{{ social.url }}" target="_blank" title="{{ social.deprecated }}">
     <svg src="/assets/svg/{{ social.icon }}" class="h-[2rem] w-[2rem] fill-current" aria-hidden inline></svg>
     <div class="ps-2">
       <span class="leading-none block font-semibold dark:text-neutral-100 {{ if social.deprecated }} dark:text-yellow-100{{ /if }}">{{ social.name }}</span>
@@ -10,7 +10,7 @@
     {{ /if }}
   </a>
 {{ else }}
-  <div class="card card--flat card--slim not-prose flex{{ if social.deprecated }} card--deprecated{{ /if }}" title="{{ social.deprecated }}">
+  <div class="card card--flat card--slim not-prose !mb-0 flex items-center {{ if social.deprecated }} card--deprecated{{ /if }}" title="{{ social.deprecated }}">
     <svg src="/assets/svg/{{ social.icon }}" class="h-[2rem] w-[2rem] fill-current" aria-hidden inline></svg>
     <div class="ps-2">
       <span class="leading-none block font-semibold dark:text-neutral-100 {{ if social.deprecated }} dark:text-yellow-100{{ /if }}">{{ social.name }}</span>

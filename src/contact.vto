@@ -14,42 +14,56 @@ title: Contact
 
 <h2>Microblogging</h2>
 
-{{ for microbloggingSocial of socials |> filterByTag("microblogging") }}
-  {{ comp.social({ social: microbloggingSocial }) }}
-{{ /for }}
+<div class="grid md:grid-cols-2 gap-1">
+  {{ for microbloggingSocial of socials |> filterByTag("microblogging") }}
+    {{ comp.social({ social: microbloggingSocial }) }}
+  {{ /for }}
+</div>
 
 <h2>Chat</h2>
 
-{{ for chatSocial of socials |> filterByTag("chat") }}
-  {{ comp.social({ social: chatSocial }) }}
-{{ /for }}
+<div class="grid md:grid-cols-2 gap-1">
+  {{ for chatSocial of socials |> filterByTag("chat") }}
+    {{ comp.social({ social: chatSocial }) }}
+  {{ /for }}
+</div>
 
 <h2>Code</h2>
 
-{{ for codeSocial of socials |> filterByTag("code") }}
-  {{ comp.social({ social: codeSocial }) }}
-{{ /for }}
+<div class="grid md:grid-cols-2 gap-1">
+  {{ for codeSocial of socials |> filterByTag("code") }}
+    {{ comp.social({ social: codeSocial }) }}
+  {{ /for }}
+</div>
 
 <h2>Music</h2>
 
-{{ for musicSocial of socials |> filterByTag("music") }}
-  {{ comp.social({ social: musicSocial }) }}
-{{ /for }}
+<div class="grid md:grid-cols-2 gap-1">
+  {{ for musicSocial of socials |> filterByTag("music") }}
+    {{ comp.social({ social: musicSocial }) }}
+  {{ /for }}
+</div>
 
 <h2>Gaming</h2>
 
-{{ for gamingSocial of socials |> filterByTag("gaming") }}
-  {{ comp.social({ social: gamingSocial }) }}
-{{ /for }}
+<div class="grid md:grid-cols-2 gap-1">
+  {{ for gamingSocial of socials |> filterByTag("gaming") }}
+    {{ comp.social({ social: gamingSocial }) }}
+  {{ /for }}
+</div>
 
 <h2>List Tracking</h2>
 
-{{ for listSocial of socials |> filterByTag("list-tracking") }}
-  {{ comp.social({ social: listSocial }) }}
-{{ /for }}
+<div class="grid md:grid-cols-2 gap-1">
+  {{ for listSocial of socials |> filterByTag("list-tracking") }}
+    {{ comp.social({ social: listSocial }) }}
+  {{ /for }}
+</div>
 
 <h2>Others</h2>
 
-{{ for otherSocial of socials |> filterNoTags }}
-  {{ comp.social({ social: otherSocial }) }}
-{{ /for }}
+<div class="grid md:grid-cols-2 gap-1">
+  {{ for otherSocial of socials |> filterNoTags }}
+    {{ comp.social({ social: otherSocial }) }}
+  {{ /for }}
+</div>
