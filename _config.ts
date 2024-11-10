@@ -3,7 +3,7 @@ import esbuild from "lume/plugins/esbuild.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import tailwindcss from "lume/plugins/tailwindcss.ts";
 import postcss from "lume/plugins/postcss.ts";
-import minifyHTML from "lume/plugins/minify_html.ts";
+// import minifyHTML from "lume/plugins/minify_html.ts";
 import terser from "lume/plugins/terser.ts";
 import date from "lume/plugins/date.ts";
 import readInfo from "lume/plugins/reading_info.ts";
@@ -36,7 +36,7 @@ site.use(tailwindcss({
   options: tailwindOptions,
 }));
 site.use(postcss());
-site.use(minifyHTML());
+// site.use(minifyHTML());
 site.use(terser());
 
 site.use(inline({
