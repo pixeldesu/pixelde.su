@@ -82,7 +82,7 @@ sometimes that sticks with me! Here's a small selection of favorites:
 
 <p>
   <a href="https://anilist.co/user/pixeldesu/" class="button not-prose bg-sky-700">
-    <svg src="/assets/svg/fa-tv.svg" inline></svg>
+    <svg src="/assets/svg/anilist.svg" inline></svg>
     <span>AniList</span>
   </a>
 </p>
