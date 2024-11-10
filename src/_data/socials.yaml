@@ -3,24 +3,34 @@
   text: "@pixel@desu.social"
   icon: |
     <svg src="/assets/svg/fediverse.svg" class="h-[2rem] w-[2rem] fill-current" inline></svg>
+  tags:
+    - microblogging
 - name: Matrix
   url: https://matrix.to/#/@pixel:desu.chat
   text: "@pixel:desu.chat"
   icon: |
     <svg src="/assets/svg/matrix.svg" class="h-[2rem] w-[2rem] fill-current" inline></svg>
+  tags:
+    - chat
 - name: Discord
   text: pixeldesu
   icon: |
     <svg src="/assets/svg/discord.svg" class="h-[2rem] w-[2rem] fill-current" inline></svg>
+  tags:
+    - chat
 - name: Telegram
   url: https://t.me/pixeldesu
   text: pixeldesu
   icon: |
     <svg src="/assets/svg/telegram.svg" class="h-[2rem] w-[2rem] fill-current" inline></svg>
+  tags:
+    - chat
 - name: IRC
   text: pixeldesu at libera.chat / hackint
   icon: |
     <svg src="/assets/svg/fa-message.svg" class="h-[2rem] w-[2rem] fill-current" inline></svg>
+  tags:
+    - chat
 - name: Retrospring
   url: https://retrospring.net/@pixeldesu
   text: "@pixeldesu"
@@ -36,8 +46,111 @@
   text: "@pixelde.su"
   icon: |
     <svg src="/assets/svg/bluesky.svg" class="h-[2rem] w-[2rem] fill-current" inline></svg>
+  tags:
+    - microblogging
 - name: Twitter
   url: https://twitter.com/@pixeldesu
   text: "@pixeldesu"
   icon: |
     <svg src="/assets/svg/twitter.svg" class="h-[2rem] w-[2rem] fill-current" inline></svg>
+  tags:
+    - microblogging
+  deprecated: "More active on Fediverse and Bluesky after Musk acquisition"
+- name: Apple Music
+  url: https://music.apple.com/profile/pixeldesu
+  text: "pixeldesu"
+  icon: |
+    <svg src="/assets/svg/fa-music.svg" class="h-[2rem] w-[2rem] fill-current" inline></svg>
+  tags:
+    - music
+- name: Bandcamp
+  url: https://bandcamp.com/pixeldesu
+  text: "pixeldesu"
+  icon: |
+    <svg src="/assets/svg/bandcamp.svg" class="h-[2rem] w-[2rem] fill-current" inline></svg>
+  tags:
+    - music
+- name: last.fm
+  url: https://www.last.fm/user/pixelkatsu
+  text: "pixelkatsu"
+  icon: |
+    <svg src="/assets/svg/lastfm.svg" class="h-[2rem] w-[2rem] fill-current" inline></svg>
+  tags:
+    - music
+- name: Spotify
+  url: https://open.spotify.com/user/pixeldesu
+  text: "pixeldesu"
+  icon: |
+    <svg src="/assets/svg/spotify.svg" class="h-[2rem] w-[2rem] fill-current" inline></svg>
+  tags:
+    - music
+  deprecated: "Switched to Apple Music"
+- name: Steam
+  url: https://steamcommunity.com/id/pixeldesu
+  text: "pixeldesu"
+  icon: |
+    <svg src="/assets/svg/steam.svg" class="h-[2rem] w-[2rem] fill-current" inline></svg>
+  tags:
+    - gaming
+- name: GOG
+  url: https://www.gog.com/u/pixeldesu
+  text: "pixeldesu"
+  icon: |
+    <svg src="/assets/svg/gog.svg" class="h-[2rem] w-[2rem] fill-current" inline></svg>
+  tags:
+    - gaming
+- name: itch.io
+  url: https://pixeldesu.itch.io/
+  text: "pixeldesu"
+  icon: |
+    <svg src="/assets/svg/itch-io.svg" class="h-[2rem] w-[2rem] fill-current" inline></svg>
+  tags:
+    - gaming
+- name: Epic Games
+  url: https://store.epicgames.com/en-US/u/7575be26b013459da03783e59e2511d6
+  text: "pixeldesu"
+  icon: |
+    <svg src="/assets/svg/epic-games.svg" class="h-[2rem] w-[2rem] fill-current" inline></svg>
+  tags:
+    - gaming
+- name: Ubisoft Connect
+  text: "pixeldesu"
+  icon: |
+    <svg src="/assets/svg/ubisoft.svg" class="h-[2rem] w-[2rem] fill-current" inline></svg>
+  tags:
+    - gaming
+- name: AniList
+  url: https://anilist.co/user/pixeldesu/
+  text: "pixeldesu"
+  icon: |
+    <svg src="/assets/svg/anilist.svg" class="h-[2rem] w-[2rem] fill-current" inline></svg>
+  tags:
+    - list-tracking
+- name: VNDB
+  url: https://vndb.org/u176209
+  text: "pixeldesu"
+  icon: |
+    <svg src="/assets/svg/fa-book.svg" class="h-[2rem] w-[2rem] fill-current" inline></svg>
+  tags:
+    - list-tracking
+- name: GitHub
+  url: https://github.com/pixeldesu
+  text: "pixeldesu"
+  icon: |
+    <svg src="/assets/svg/github.svg" class="h-[2rem] w-[2rem] fill-current" inline></svg>
+  tags:
+    - code
+- name: GitLab
+  url: https://gitlab.com/pixeldesu
+  text: "pixeldesu"
+  icon: |
+    <svg src="/assets/svg/gitlab.svg" class="h-[2rem] w-[2rem] fill-current" inline></svg>
+  tags:
+    - code
+- name: SourceHut
+  url: https://sr.ht/~pixeldesu/
+  text: "pixeldesu"
+  icon: |
+    <svg src="/assets/svg/fa-o.svg" class="h-[2rem] w-[2rem] fill-current" inline></svg>
+  tags:
+    - code
