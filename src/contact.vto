@@ -12,58 +12,72 @@ title: Contact
   be used for contact and any other option from the same category is preferred.
 </div>
 
-<h2>Microblogging</h2>
+<section id="microblogging" class="my-3">
+  <h2>Microblogging</h2>
 
-<div class="grid md:grid-cols-2 gap-1">
-  {{ for microbloggingSocial of socials |> filterByTag("microblogging") }}
-    {{ comp.social({ social: microbloggingSocial }) }}
-  {{ /for }}
-</div>
+  <div class="grid md:grid-cols-2 gap-1">
+    {{ for microbloggingSocial of socials |> filterByTag("microblogging") }}
+      {{ comp.social({ social: microbloggingSocial }) }}
+    {{ /for }}
+  </div>
+</section>
 
-<h2>Chat</h2>
+<section id="chat" class="my-3">
+  <h2>Chat</h2>
 
-<div class="grid md:grid-cols-2 gap-1">
-  {{ for chatSocial of socials |> filterByTag("chat") }}
-    {{ comp.social({ social: chatSocial }) }}
-  {{ /for }}
-</div>
+  <div class="grid md:grid-cols-2 gap-1">
+    {{ for chatSocial of socials |> filterByTag("chat") }}
+      {{ comp.social({ social: chatSocial }) }}
+    {{ /for }}
+  </div>
+</section>
 
-<h2>Code</h2>
+<section id="code" class="my-3">
+  <h2>Code</h2>
 
-<div class="grid md:grid-cols-2 gap-1">
-  {{ for codeSocial of socials |> filterByTag("code") }}
-    {{ comp.social({ social: codeSocial }) }}
-  {{ /for }}
-</div>
+  <div class="grid md:grid-cols-2 gap-1">
+    {{ for codeSocial of socials |> filterByTag("code") }}
+      {{ comp.social({ social: codeSocial }) }}
+    {{ /for }}
+  </div>
+</section>
 
-<h2>Music</h2>
+<section id="music" class="my-3">
+  <h2>Music</h2>
 
-<div class="grid md:grid-cols-2 gap-1">
-  {{ for musicSocial of socials |> filterByTag("music") }}
-    {{ comp.social({ social: musicSocial }) }}
-  {{ /for }}
-</div>
+  <div class="grid md:grid-cols-2 gap-1">
+    {{ for musicSocial of socials |> filterByTag("music") }}
+      {{ comp.social({ social: musicSocial }) }}
+    {{ /for }}
+  </div>
+</section>
 
-<h2>Gaming</h2>
+<section id="gaming" class="my-3">
+  <h2>Gaming</h2>
 
-<div class="grid md:grid-cols-2 gap-1">
-  {{ for gamingSocial of socials |> filterByTag("gaming") }}
-    {{ comp.social({ social: gamingSocial }) }}
-  {{ /for }}
-</div>
+  <div class="grid md:grid-cols-2 gap-1">
+    {{ for gamingSocial of socials |> filterByTag("gaming") }}
+      {{ comp.social({ social: gamingSocial }) }}
+    {{ /for }}
+  </div>
+</section>
 
-<h2>List Tracking</h2>
+<section id="list-tracking" class="my-3">
+  <h2>List Tracking</h2>
 
-<div class="grid md:grid-cols-2 gap-1">
-  {{ for listSocial of socials |> filterByTag("list-tracking") }}
-    {{ comp.social({ social: listSocial }) }}
-  {{ /for }}
-</div>
+  <div class="grid md:grid-cols-2 gap-1">
+    {{ for listSocial of socials |> filterByTag("list-tracking") }}
+      {{ comp.social({ social: listSocial }) }}
+    {{ /for }}
+  </div>
+</section>
 
-<h2>Others</h2>
+<section id="others" class="mt-3">
+  <h2>Others</h2>
 
-<div class="grid md:grid-cols-2 gap-1">
-  {{ for otherSocial of socials |> filterNoTags }}
-    {{ comp.social({ social: otherSocial }) }}
-  {{ /for }}
-</div>
+  <div class="grid md:grid-cols-2 gap-1">
+    {{ for otherSocial of socials |> filterNoTags }}
+      {{ comp.social({ social: otherSocial }) }}
+    {{ /for }}
+  </div>
+</section>
