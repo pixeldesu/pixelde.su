@@ -131,3 +131,9 @@
   icon: fa-o.svg
   tags:
     - code
+- name: Signal
+  url: https://signal.me/#eu/WMwGOlqd8nF2I9RV16gtI2AuP914HDynwYkrrx6t3dF26gPIuWdKqp_EwLy-vuox
+  text: "pixeldesu.64"
+  icon: signal-messenger.svg
+  tags:
+    - chat
