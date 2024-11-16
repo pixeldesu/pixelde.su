@@ -137,6 +137,12 @@
   icon: signal-messenger.svg
   tags:
     - chat
+- name: Nintendo Switch Online
+  url: https://nin.codes/pixeldesu
+  text: 1794-0018-9996
+  icon: nintendo-switch.svg
+  tags:
+    - gaming
 - name: Final Fantasy XIV
   url: https://na.finalfantasyxiv.com/lodestone/character/25931194/
   text: "Ruruka Ruka @ Cerberus"
