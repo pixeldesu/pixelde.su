@@ -143,3 +143,9 @@
   icon: ffxiv.svg
   tags:
     - gaming
+- name: "Elite: Dangerous"
+  url: https://inara.cz/elite/cmdr/38007/
+  text: "CMDR pixeldesu"
+  icon: inara.svg
+  tags:
+    - gaming
