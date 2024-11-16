@@ -8,7 +8,7 @@ title: About
 <div class="relative">
 <div class="md:w-3/4 md:ms-2 md:-me-[25%] lg:-me-[50%] h-auto md:float-right md:card md:card--raised !p-2">
   <figure class="m-0">
-    <img class="rounded-md" src="/assets/img/me.jpg" alt="A picture of me (Andreas Nedbal) standing in front of a Mac display, in front of a white wall"/>
+    <img class="rounded-md" src="/assets/img/me.jpg" alt="A picture of me (Andreas Nedbal) standing in front of a Mac display, in front of a white wall" height="467px" width="700px"/>
     <figcaption class="italic">That's me! Can you believe I'm not actually a cute blue-haired anime girl?</figcaption>
   </figure>
 </div>
