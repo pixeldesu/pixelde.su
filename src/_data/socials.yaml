@@ -137,3 +137,9 @@
   icon: signal-messenger.svg
   tags:
     - chat
+- name: Final Fantasy XIV
+  url: https://na.finalfantasyxiv.com/lodestone/character/25931194/
+  text: "Ruruka Ruka @ Cerberus"
+  icon: ffxiv.svg
+  tags:
+    - gaming
