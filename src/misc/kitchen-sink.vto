@@ -1,0 +1,118 @@
+---
+layout: layouts/minimal.vto
+title: Kitchen Sink
+index: false
+---
+
+<div class="card card--raised mb-3 prose prose-headings:my-3">
+  <h1>Kitchen Sink</h1>
+  <p>The closest thing to seeing whatever the <i>design system</i> of website is.</p>
+</div>
+
+<div class="card card--raised mb-3 prose prose-headings:my-3">
+  <h2>Cards</h2>
+
+  <p>The main building blocks of this site</p>
+
+  <h3>Raised Cards</h3>
+
+  <p>Raised and linked cards are top-level elements and not contained in other cards</p>
+</div>
+
+<div class="card card--raised mb-3">
+  Raised Card
+</div>
+
+<a href="#" class="link-card mb-3">
+  Linked Card
+</a>
+
+<div class="card card--raised mb-3 prose prose-headings:my-3">
+  <h3>Card Groups</h3>
+
+  <p>The only exception where raised cards are not the top-level</p>
+</div>
+
+<div class="card card--grouped">
+  <h3 class="font-bold">Card group</h3>
+  <div class="card card--raised mb-3">
+    Raised Card
+  </div>
+  <div class="card card--raised mb-3">
+    Raised Card
+  </div>
+</div>
+
+<div class="card card--raised mb-3 prose prose-headings:my-3">
+  <h3>Flat Cards</h3>
+
+  <p>Flat cards are child elements to raised cards</p>
+
+  <div class="card card--flat mb-3">
+    Flat Card
+  </div>
+
+  <a href="#" class="card card--flat card--linked block mb-3">
+    Flat Linked Card
+  </a>
+</div>
+
+<div class="card card--raised mb-3 prose prose-headings:my-3">
+  <h2>Boxes</h2>
+
+  <p>Notices and similar stuff</p>
+
+  {{ comp Box }}
+    Uncolored box
+  {{ /comp }}
+
+  {{ comp Box { color: "rose" } }}
+    Colored box
+  {{ /comp }}
+
+  {{ comp Box { color: "rose", transparent: true } }}
+    Colored transparent box
+  {{ /comp }}
+</div>
+
+<div class="card card--raised mb-3 prose prose-headings:my-3">
+  <h2>Figures</h2>
+
+  <p>Images with captions</p>
+
+  {{ comp.Figure({ 
+    image: "/assets/img/blog/surfcamp-recap/finca-amicab-sunset.jpg", 
+    alt: "A picture of the sun setting on the Fuerteventura coast", 
+    caption: "Sunset from the Finca AMICAB" 
+  }) }}
+</div>
+
+<div class="card card--raised mb-3 prose prose-headings:my-3">
+  <h2>Tags</h2>
+
+  <p>Categorizing all the things</p>
+
+  <h3>Unspecified tag</h3>
+
+  <p>
+    Unspecified tags are tags that are used 
+    once or maybe a few times on the site and
+    feature some default styling
+  </p>
+
+  <ul class="p-0 m-0">
+    {{ comp.tag({ tag: "a-random-tag", isLink: false }) }}
+  </ul>
+
+  <h3>Global tag</h3>
+
+  <p>
+    Global tags are used frequently on the site and across
+    topics as well so they have a proper title and the tags
+    have color definitions as well
+  </p>
+
+  <ul class="p-0 m-0">
+    {{ comp.tag({ tag: "reverse-engineering", isLink: false }) }}
+  </ul>
+</div>
