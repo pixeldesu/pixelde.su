@@ -191,6 +191,6 @@ take place in Karlsruhe again on **7th to 9th August 2025**!
 _I swear I'm not late with this, I forgot I had this post sit in my drafts for
 over a month..._
 
-<div class="outline-dashed outline-2 bg-lime-50 outline-lime-600 dark:bg-lime-400/25 px-2 py-1 rounded-md leading-snug italic text-center mb-3">
-  Thanks to my employer <a href="https://in2code.de" target="_blank">in2code GmbH</a> for allowing me to participate at this event on work-time!
-</div>
+{{ comp Box { color: "lime" } }} Thanks to my employer
+<a href="https://in2code.de" target="_blank">in2code GmbH</a> for allowing me to
+participate at this event on work-time! {{ /comp }}
