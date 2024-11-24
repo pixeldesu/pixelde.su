@@ -1,0 +1,13 @@
+{{ if url }}
+  <a href="{{ url }}" class="no-underline" target="_blank">
+    <figure class="m-0">
+      <img class="rounded-md m-auto" src="{{ image }}" {{ if width }}width="{{ width }}"{{ /if }} {{ if height }}height="{{ height }}"{{ /if }} alt="{{ alt }}"/>
+      <figcaption class="italic text-center font-normal">{{ caption }}</figcaption>
+    </figure>
+  </a>
+{{ else }}
+  <figure class="m-0">
+    <img class="rounded-md m-auto" src="{{ image }}" {{ if width }}width="{{ width }}"{{ /if }} {{ if height }}height="{{ height }}"{{ /if }} alt="{{ alt }}"/>
+    <figcaption class="italic text-center font-normal">{{ caption }}</figcaption>
+  </figure>
+{{ /if }}

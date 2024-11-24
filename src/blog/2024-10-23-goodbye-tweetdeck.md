@@ -7,6 +7,7 @@ tags:
   - reverse-engineering
   - twitter
   - open-source
+templateEngine: [vto, md]
 ---
 
 _I'm a little bit late, aren't I?_
@@ -30,12 +31,14 @@ I quickly found my way around Stylus (and whatever its precursor at the time was
 called) and managed to whip up a custom style for TweetDeck, naming it
 **Technicolour** (for no real reason...naming is hard).
 
-<a href="/assets/img/blog/tweetdeck/technicolour.png" class="no-underline" target="_blank">
-  <figure class="m-0">
-    <img class="rounded-md" src="/assets/img/blog/tweetdeck/technicolour.png" alt=" Screenshot of TweetDeck with the Technicolour user style being applied, changing the font and colors and spacing, a prominent change being colored column headers."/>
-    <figcaption class="italic text-center font-normal">The Technicolour user style applied to TweetDeck (ca. 2014)</figcaption>
-  </figure>
-</a>
+<!-- deno-fmt-ignore-start -->
+{{ comp.Figure({
+  url: "/assets/img/blog/tweetdeck/technicolour.png",
+  image: "/assets/img/blog/tweetdeck/technicolour.png",
+  alt: "Screenshot of TweetDeck with the Technicolour user style being applied, changing the font and colors and spacing, a prominent change being colored column headers.", 
+  caption: "The Technicolour user style applied to TweetDeck (ca. 2014)"
+}) }}
+<!-- deno-fmt-ignore-end -->
 
 Visible in that screenshot is one feature of my user style that I would later
 contribute to BetterTweetDeck.
@@ -82,12 +85,14 @@ Initially, we also had a Discord bot/website that notified us of new TweetDeck
 releases, as 2017/2018 was a timeframe of active development on TweetDeck (after
 it was laying dormant between 2014 and 2017).
 
-<a href="/assets/img/blog/tweetdeck/deckcheck.png" class="no-underline" target="_blank">
-  <figure class="m-0">
-    <img class="rounded-md" src="/assets/img/blog/tweetdeck/deckcheck.png" alt="Screenshot of a website export of deckcheck, a tool that notified us on TweetDeck changes listing a diff view of important values that changed across versions."/>
-    <figcaption class="italic text-center font-normal">A deckcheck report for a new version of TweetDeck</figcaption>
-  </figure>
-</a>
+<!-- deno-fmt-ignore-start -->
+{{ comp.Figure({
+  url: "/assets/img/blog/tweetdeck/deckcheck.png",
+  image: "/assets/img/blog/tweetdeck/deckcheck.png",
+  alt: "Screenshot of a website export of deckcheck, a tool that notified us on TweetDeck changes listing a diff view of important values that changed across versions.", 
+  caption: "A deckcheck report for a new version of TweetDeck"
+}) }}
+<!-- deno-fmt-ignore-end -->
 
 _This bot/script also saved all assets from the new versions onto a server, and
 after TweetDeck was closed,

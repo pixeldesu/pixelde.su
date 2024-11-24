@@ -5,6 +5,7 @@ description: |
   and what my personal involvement with it was back 10 years ago.
 tags:
   - twitter
+templateEngine: [vto, md]
 ---
 
 People know I've been an avid Twitter user back in the good old days (_good old
@@ -25,22 +26,27 @@ Krile StarryEyes was a desktop Twitter client, made by
 [@karno@mstdn.maud.io](https://mstdn.maud.io/@karno)). It was written in C#
 utilizing .NET Framework and featured a Metro-style interface.
 
-<a href="/assets/img/blog/krile-retro/ui.png" class="no-underline" target="_blank">
-  <figure class="m-0">
-    <img class="rounded-md m-auto" src="/assets/img/blog/krile-retro/ui-thumb.png" alt="Screenshot of the Krile StarryEyes interface, showing a multi-column layout in a Metro-style application"/>
-    <figcaption class="italic text-center font-normal">The Krile StarryEyes user interface, click it for a full-size screenshot</figcaption>
-  </figure>
-</a>
+<!-- deno-fmt-ignore-start -->
+{{ comp.Figure({
+  url: "/assets/img/blog/krile-retro/ui.png",
+  image: "/assets/img/blog/krile-retro/ui-thumb.png", 
+  alt: "Screenshot of the Krile StarryEyes interface, showing a multi-column layout in a Metro-style application", 
+  caption: "The Krile StarryEyes user interface, click it for a full-size screenshot"
+}) }}
+<!-- deno-fmt-ignore-end -->
 
 The UI instantly stuck with me, not just because of its simplicity, but because
 it also reminded me a lot of my favorite desktop Twitter client from before
 that: [MetroTwit](https://metrotwit.com/) (RIP, also succumbed to the token
 limit).
 
-<figure class="m-0">
-    <img class="rounded-md" src="/assets/img/blog/krile-retro/metrotwit-ui.gif" alt="Screenshot of the MetroTwit interface, showing a multi-column layout in a Metro-style application, with a sidebar and the composer at the bottom"/>
-    <figcaption class="italic text-center font-normal">The MetroTwit user interface</figcaption>
-</figure>
+<!-- deno-fmt-ignore-start -->
+{{ comp.Figure({
+  image: "/assets/img/blog/krile-retro/metrotwit-ui.gif", 
+  alt: "Screenshot of the MetroTwit interface, showing a multi-column layout in a Metro-style application, with a sidebar and the composer at the bottom", 
+  caption: "The MetroTwit user interface"
+}) }}
+<!-- deno-fmt-ignore-end -->
 
 Just like MetroTwit, Krile StaryEyes supported the Twitter streaming API, which
 was just perfect for power users. Additionally, Krile also was fully
@@ -120,20 +126,26 @@ which was released in 2013, and there having been two major releases beforehand.
 I wasn't able to find much about the first version of Krile, just that it was
 teased on Karno's website as far back as 2008!
 
-<figure class="m-0">
-    <img class="rounded-md m-auto" src="/assets/img/blog/krile-retro/krile_small.png" alt="Screenshot of Krile, in a Windows Forms-ish look"/>
-    <figcaption class="italic text-center font-normal">Tiny teaser screenshot of Krile's user interface, shown on Karno's website in 2008</figcaption>
-</figure>
+<!-- deno-fmt-ignore-start -->
+{{ comp.Figure({
+  image: "/assets/img/blog/krile-retro/krile_small.png", 
+  alt: "Screenshot of Krile, in a Windows Forms-ish look", 
+  caption: "Tiny teaser screenshot of Krile's user interface, shown on Karno's website in 2008"
+}) }}
+<!-- deno-fmt-ignore-end -->
 
 ### Krile 2 (Mystique)
 
 Krile 2, codenamed Mystique, was released sometime between 2010/2011. According
 to documents on the website it already included features like Krile Query.
 
-<figure class="m-0">
-    <img class="rounded-md m-auto" src="/assets/img/blog/krile-retro/krile_whole_s.png" alt="Screenshot of Krile Mystique, the second version of Krile, in a Windows Forms-ish look"/>
-    <figcaption class="italic text-center font-normal">The Krile Mystique user interface</figcaption>
-</figure>
+<!-- deno-fmt-ignore-start -->
+{{ comp.Figure({
+  image: "/assets/img/blog/krile-retro/krile_whole_s.png", 
+  alt: "Screenshot of Krile Mystique, the second version of Krile, in a Windows Forms-ish look", 
+  caption: "The Krile Mystique user interface"
+}) }}
+<!-- deno-fmt-ignore-end -->
 
 Here's an
 [archived version of the Krile website from 2013](http://krile.starwing.net/index.html)
@@ -147,10 +159,14 @@ Phone was a given! I don't know too many details about this version of Krile,
 but
 [the web archive has its website preserved quite well](https://web.archive.org/web/20131026022503/http://krile.starwing.net/wp/)!
 
-<figure class="m-0">
-    <img class="rounded-md m-auto" src="/assets/img/blog/krile-retro/krile_wp.png" width="240" alt="Screenshot of Krile for Windows Phone, a Twitter client in a relatively WP-ish look"/>
-    <figcaption class="italic text-center font-normal">Screenshot of the home timeline in Krile for Windows Phone</figcaption>
-</figure>
+<!-- deno-fmt-ignore-start -->
+{{ comp.Figure({
+  image: "/assets/img/blog/krile-retro/krile_wp.png",
+  width: "240",
+  alt: "Screenshot of Krile for Windows Phone, a Twitter client in a relatively WP-ish look", 
+  caption: "Screenshot of the home timeline in Krile for Windows Phone"
+}) }}
+<!-- deno-fmt-ignore-end -->
 
 ## Where are they now, and what's next?
 
@@ -165,12 +181,15 @@ react-three-fiber.
 Karno also has been playing around with VRChat a lot, bringing the beloved
 mascot Krile-tan into the third dimension!
 
-<a href="https://mstdn.maud.io/@karno/112767102039696113" class="no-underline" target="_blank">
-  <figure class="m-0">
-    <img class="rounded-md m-auto" src="/assets/img/blog/krile-retro/kriletan_vr.png" width="360" alt="Screenshot of VRChat, showing Krile-tan, Krile's mascot, with teal hair, wearing a kimono in a forest"/>
-    <figcaption class="italic text-center font-normal">Krile-tan in VRChat!</figcaption>
-  </figure>
-</a>
+<!-- deno-fmt-ignore-start -->
+{{ comp.Figure({
+  url: "https://mstdn.maud.io/@karno/112767102039696113",
+  image: "/assets/img/blog/krile-retro/kriletan_vr.png",
+  width: "360",
+  alt: "Screenshot of VRChat, showing Krile-tan, Krile's mascot, with teal hair, wearing a kimono in a forest", 
+  caption: "Krile-tan in VRChat!"
+}) }}
+<!-- deno-fmt-ignore-end -->
 
 With Karno using the fediverse quite a bit, and being present on both a Mastodon
 instance and Misskey, might there be the possibility of Krile for the Fediverse

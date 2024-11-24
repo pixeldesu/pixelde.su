@@ -98,10 +98,13 @@ I also did a lot of technical changes on the site, some of the highlights:
   similar to Nunjucks but better interoperable with JavaScript/TypeScript
   syntax.
 - [Add fediverse:creator meta property to blog/talk pages](https://github.com/pixeldesu/pixelde.su/commit/696bba88a0e1a7e22571abeca02145f84dd02f97)
-  <figure class="m-0">
-    <img class="rounded-md" src="/assets/img/blog/site-update-october-2024/fediverse-creator.png" alt="Screenshot of a Mastodon post card from my blog post 'Goodbye TweetDeck' showing a 'More from @pixel' section below it"/>
-    <figcaption class="italic text-center font-normal">Example of the "More from" section added using the <code>fediverse:creator</code> meta tag</figcaption>
-  </figure>
+  <!-- deno-fmt-ignore-start -->
+  {{ comp.Figure({
+    image: "/assets/img/blog/site-update-october-2024/fediverse-creator.png",
+    alt: "Screenshot of a Mastodon post card from my blog post 'Goodbye TweetDeck' showing a 'More from @pixel' section below it", 
+    caption: "Example of the 'More from' section added using the <code>fediverse:creator</code> meta tag"
+  }) }}
+  <!-- deno-fmt-ignore-end -->
 - [Randomly order various things on build](https://github.com/search?q=repo:pixeldesu/pixelde.su+Randomly+order&type=commits)\
   In order to further emphasize that I don't favor anything that I have on
   lists, I now randomly shuffle my friend list, buttons and the webring list on

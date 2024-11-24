@@ -5,6 +5,7 @@ description: |
 tags:
   - event-recap
   - typo3
+templateEngine: [vto, md]
 ---
 
 I participated in the very first [TYPO3 Surfcamp](https://surfcamp.typo3.com/),
@@ -50,10 +51,13 @@ proven otherwise. _More on that later, however!_
 
 ## Day 0 - Saturday: Munich to Fuerteventura
 
-<figure class="m-0">
-  <img class="rounded-md" src="/assets/img/blog/surfcamp-recap/flight-munich.jpg" alt="Picture taken out of a plane window, showing a green landscape down below"/>
-  <figcaption class="italic text-center font-normal">Picture out the plane window from my flight to Fuerteventura</figcaption>
-</figure>
+<!-- deno-fmt-ignore-start -->
+{{ comp.Figure({ 
+  image: "/assets/img/blog/surfcamp-recap/flight-munich.jpg",
+  alt: "Picture taken out of a plane window, showing a green landscape down below", 
+  caption: "Picture out the plane window from my flight to Fuerteventura"
+}) }}
+<!-- deno-fmt-ignore-end -->
 
 The trip started with me already meeting a few other attendees of the Surfcamp
 at Munich Airport. With about an hour of delay (and voice comm complaints from
@@ -83,10 +87,13 @@ pool, exploring the area, and getting to know the other participants.
 
 ## Day 1 - Sunday: Let's get started
 
-<figure class="m-0">
-  <img class="rounded-md" src="/assets/img/blog/surfcamp-recap/fuerteventura-poolside-day.jpg" alt="A orange-red-ish hotel building in front of a bright blue hotel pool"/>
-  <figcaption class="italic text-center font-normal">The pool area of the La Pared by Playitas sports hotel</figcaption>
-</figure>
+<!-- deno-fmt-ignore-start -->
+{{ comp.Figure({ 
+  image: "/assets/img/blog/surfcamp-recap/fuerteventura-poolside-day.jpg",
+  alt: "A orange-red-ish hotel building in front of a bright blue hotel pool", 
+  caption: "The pool area of the La Pared by Playitas sports hotel" 
+}) }}
+<!-- deno-fmt-ignore-end -->
 
 After breakfast, the day started with us getting an introduction to what would
 happen over the week. We also got our first look into what would await us at the
@@ -140,10 +147,13 @@ MK8 Rainbow Road. Regardless, it was a fun time and I enjoyed it a lot!
 
 ## Day 3 - Tuesday: Content elements galore
 
-<figure class="m-0">
-  <img class="rounded-md" src="/assets/img/blog/surfcamp-recap/finca-amicab-sunset.jpg" alt="A picture of the sun setting on the Fuerteventura coast"/>
-  <figcaption class="italic text-center font-normal">Sunset from the Finca AMICAB</figcaption>
-</figure>
+<!-- deno-fmt-ignore-start -->
+{{ comp.Figure({ 
+  image: "/assets/img/blog/surfcamp-recap/finca-amicab-sunset.jpg", 
+  alt: "A picture of the sun setting on the Fuerteventura coast", 
+  caption: "Sunset from the Finca AMICAB" 
+}) }}
+<!-- deno-fmt-ignore-end -->
 
 The day started with another surfing lesson at the usual place. This time we
 also had quite windy conditions on the east side of the island, creating massive
@@ -185,10 +195,13 @@ some of the tricky questions were able to confuse everyone!
 
 ## Day 5 - Thursday: Suddenly, frontend!
 
-<figure class="m-0">
-  <img class="rounded-md" src="/assets/img/blog/surfcamp-recap/fuerteventura-poolside-night.jpg" alt="Picture of a hotel pool at night that is illuminated by green lights"/>
-  <figcaption class="italic text-center font-normal">The pool area of the La Pared by Playitas sport hotel, at night</figcaption>
-</figure>
+<!-- deno-fmt-ignore-start -->
+{{ comp.Figure({ 
+  image: "/assets/img/blog/surfcamp-recap/fuerteventura-poolside-night.jpg", 
+  alt: "Picture of a hotel pool at night that is illuminated by green lights", 
+  caption: "The pool area of the La Pared by Playitas sport hotel, at night" 
+}) }}
+<!-- deno-fmt-ignore-end -->
 
 The first day without surfing, and instead of heading out there in the morning,
 the team assembled at 9:30 and we went right ahead with working.
@@ -215,12 +228,14 @@ We prioritized our tasks for the day and went right ahead finishing the final
 things and fixing every bug that we came across. We were this close, the final
 deployment happened one minute before our presentation.
 
-<a href="/assets/img/blog/surfcamp-recap/team4-fullpage.png" class="no-underline" target="_blank">
-  <figure class="m-0">
-    <img class="rounded-md" src="/assets/img/blog/surfcamp-recap/team4-thumbnail.png" alt="Picture of the FC Bigfoot website, showcasing a large header element and some game scores below it"/>
-    <figcaption class="italic text-center font-normal">The final FC Bigfoot website from Friday, click it for a full-page screenshot</figcaption>
-  </figure>
-</a>
+<!-- deno-fmt-ignore-start -->
+{{ comp.Figure({ 
+  url: "/assets/img/blog/surfcamp-recap/team4-fullpage.png",
+  image: "/assets/img/blog/surfcamp-recap/team4-thumbnail.png", 
+  alt: "Picture of the FC Bigfoot website, showcasing a large header element and some game scores below it", 
+  caption: "View of the Airport Fuerteventura from the airfield" 
+}) }}
+<!-- deno-fmt-ignore-end -->
 
 We didn't manage to complete the website entirely, but we're still quite happy
 with the progress we made over the week. Here's a summary of the features the
@@ -252,10 +267,13 @@ lounging around the pool and hotel bar).
 
 ## Day 7 - Saturday: Back home
 
-<figure class="m-0">
-  <img class="rounded-md" src="/assets/img/blog/surfcamp-recap/airport-fuerteventura.jpg" alt="Picture of the airport of Fuerteventura from the perspective of the airfield"/>
-  <figcaption class="italic text-center font-normal">View of the Airport Fuerteventura from the airfield</figcaption>
-</figure>
+<!-- deno-fmt-ignore-start -->
+{{ comp.Figure({ 
+  image: "/assets/img/blog/surfcamp-recap/airport-fuerteventura.jpg", 
+  alt: "Picture of the airport of Fuerteventura from the perspective of the airfield", 
+  caption: "View of the Airport Fuerteventura from the airfield"
+}) }}
+<!-- deno-fmt-ignore-end -->
 
 On Friday, the day started with a quick explainer of the plans for the day, and
 shortly after we were put in mixed groups to do a retrospective of the entire
