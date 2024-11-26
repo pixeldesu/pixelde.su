@@ -89,11 +89,6 @@
   .webring-action--next {
     @apply ms-auto;
   }
-
-  .tag {
-    @apply font-bold whitespace-nowrap !no-underline hocus:no-underline
-      bg-slate-200 dark:bg-neutral-700 px-2 py-0.5 me-1 !leading-5 rounded-md;
-  }
 }
 
 .prose p:first-of-type,
