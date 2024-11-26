@@ -30,11 +30,11 @@
   }
 
   .card--flat {
-    @apply bg-slate-50/50 dark:bg-neutral-600/50 prose;
+    @apply bg-slate-50/50 dark:bg-neutral-600/50;
   }
 
   .card--grouped {
-    @apply mb-3 bg-slate-300/25 dark:bg-neutral-600/50 prose max-w-none;
+    @apply mb-3 bg-slate-300/25 dark:bg-neutral-600/50 max-w-none;
   }
 
   .card--linked {
@@ -60,7 +60,7 @@
   }
 
   .article-card {
-    @apply card card--raised card--linked prose prose-headings:my-3 block
+    @apply card card--raised card--linked block
       overflow-hidden mb-3 hover:translate-y-1;
   }
 
