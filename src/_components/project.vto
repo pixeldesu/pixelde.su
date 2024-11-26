@@ -1,4 +1,4 @@
-<a class="article-card group relative overflow-hidden" href="{{ project.url }}">
+{{ comp ui.articleCard { url: project.url, classes: "group relative overflow-hidden", target: "_blank" } }}
   <div class="relative z-10">
     <h2>{{ project.name }}</h2>
     <p>{{ project.description }}</p>
@@ -9,4 +9,4 @@
     </ul>
   </div>
   <div class="absolute -left-5 -bottom-2 opacity-[3%] text-9xl font-bold italic uppercase z-0 pointer-events-none select-none transition-all group-hocus:{{project.accent}} group-hocus:left-0">{{ project.name }}</div>
-</a>
+{{ /comp }}

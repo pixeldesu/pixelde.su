@@ -1,4 +1,4 @@
-<a href="{{talk.url}}" class="article-card group prose prose-headings:my-3">
+{{ comp ui.articleCard { url: talk.url, classes: "group prose prose-headings:my-3" } }}
   <h2 class="text-xl !mb-0">{{ talk.title }}</h2>
   <p class="text-sm mb-3">
     Presented on <time datetime={{ talk.date |> date }}>{{ talk.date |> date('HUMAN_DATE') }}</time> at {{ talk.event }}
@@ -19,4 +19,4 @@
       </svg>
     </div>
   </div>
-</a>
+{{ /comp }}

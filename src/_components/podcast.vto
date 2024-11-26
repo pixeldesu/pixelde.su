@@ -1,4 +1,4 @@
-<a href="{{podcast.url}}" target="_blank" class="article-card prose prose-headings:my-3">
+{{ comp ui.articleCard { url: podcast.url, classes: "prose prose-headings:my-3", target: "_blank" } }}
   <h2 class="text-xl !mb-0">
     Episode {{ podcast.episode_number }} of {{ podcast.podcast }}: {{ podcast.title }}
   </h2>
@@ -10,4 +10,4 @@
       {{ comp.tag({ tag, isLink: false }) }}
     {{ /for }}
   </ul>
-</a>
+{{ /comp }}
