@@ -1,7 +1,7 @@
 {{ layout "layouts/base.vto" }}
 
 {{ set main }}
-  <div class="card card--raised min-h-[768px] md:w-[65ch] prose">
+  <div class="card card--raised overflow-hidden min-h-[768px] md:w-[65ch] prose">
     <div class="absolute -right-5 left-full bottom-0 origin-bottom-right -rotate-90 opacity-10 dark:mix-blend-overlay text-9xl font-bold italic uppercase z-0 pointer-events-none select-none" aria-hidden>{{ title }}</div>
     <div class="relative z-10">
       {{ content |> safe }}
