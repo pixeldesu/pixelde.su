@@ -5,8 +5,8 @@ linkPrefix: "/"
 
 {{ if isLink }}
   <li class="inline-block !p-0 !m-0">
-    <a href="{{ linkPrefix }}{{ tag }}" class="font-bold whitespace-nowrap !no-underline hocus:no-underline
-      bg-slate-200 dark:bg-neutral-700 px-2 py-0.5 me-1 !leading-5 rounded-md {{ if it.globalTags[tag] !== undefined }}{{ it.globalTags[tag].classes }}{{ /if }}">
+    <a href="{{ linkPrefix }}{{ tag }}" class="{{ if it.globalTags[tag] !== undefined }}{{ it.globalTags[tag].classes }}{{ else }}bg-slate-200 dark:bg-neutral-700{{ /if }} font-bold whitespace-nowrap !no-underline hocus:no-underline
+      px-2 py-0.5 me-1 !leading-5 rounded-md">
       {{ if it.globalTags[tag] !== undefined && it.globalTags[tag].name }}
         {{ it.globalTags[tag].name }}
       {{ else }}
@@ -15,8 +15,8 @@ linkPrefix: "/"
     </a>
   </li>
 {{ else }}
-  <li class="inline-block !m-0 !me-1 font-bold whitespace-nowrap !no-underline hocus:no-underline
-      bg-slate-200 dark:bg-neutral-700 px-2 py-0.5 me-1 !leading-5 rounded-md {{ if it.globalTags[tag] !== undefined }}{{ it.globalTags[tag].classes }}{{ /if }}">
+  <li class="{{ if it.globalTags[tag] !== undefined }}{{ it.globalTags[tag].classes }}{{ else }}bg-slate-200 dark:bg-neutral-700{{ /if }} inline-block !m-0 !me-1 font-bold whitespace-nowrap !no-underline hocus:no-underline
+      px-2 py-0.5 me-1 !leading-5 rounded-md">
     {{ if it.globalTags[tag] !== undefined && it.globalTags[tag].name }}
       {{ it.globalTags[tag].name }}
     {{ else }}
