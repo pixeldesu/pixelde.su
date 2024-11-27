@@ -32,7 +32,7 @@ index: false
   <p>The only exception where raised cards are not the top-level</p>
 {{ /comp }}
 
-<div class="card card--grouped">
+{{ comp ui.groupCard }}
   <h3 class="font-bold">Card group</h3>
   {{ comp ui.raisedCard { classes: "mb-3" } }}
     Raised Card
@@ -40,7 +40,7 @@ index: false
   {{ comp ui.raisedCard { classes: "mb-3" } }}
     Raised Card
   {{ /comp }}
-</div>
+{{ /comp }}
 
 {{ comp ui.raisedCard { classes: "mb-3 prose prose-headings:my-3" } }}
   <h3>Flat Cards</h3>

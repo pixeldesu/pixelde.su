@@ -16,7 +16,7 @@
 {{ /comp }}
 
 {{ if articles.length > 0 }}
-  <div class="card card--grouped">
+  {{ comp ui.groupCard }}
     <h3 class="font-bold">Blog articles</h3>
     {{ for article of articles }}
       {{ comp.blog({ article }) }}
@@ -27,11 +27,11 @@
         <use href="#chevron-right" />
       </svg>
     </a>
-  </div>
+  {{ /comp }}
 {{ /if }}
 
 {{ if talks.length > 0 }}
-  <div class="card card--grouped">
+  {{ comp ui.groupCard }}
     <h3 class="font-bold">Talks</h3>
     {{ for talk of talks }}
       {{ comp.talk({ talk }) }}
@@ -42,11 +42,11 @@
         <use href="#chevron-right" />
       </svg>
     </a>
-  </div>
+  {{ /comp }}
 {{ /if }}
 
 {{ if projects.length > 0 }}
-  <div class="card card--grouped">
+  {{ comp ui.groupCard }}
     <h3 class="font-bold">Projects</h3>
     {{ for project of projects }}
       {{ comp.project({ project }) }}
@@ -57,11 +57,11 @@
         <use href="#chevron-right" />
       </svg>
     </a>
-  </div>
+  {{ /comp }}
 {{ /if }}
 
 {{ if podcasts.length > 0 }}
-  <div class="card card--grouped">
+  {{ comp ui.groupCard }}
     <h3 class="font-bold">Podcasts</h3>
     {{ for podcast of podcasts }}
       {{ comp.podcast({ podcast }) }}
@@ -72,5 +72,5 @@
         <use href="#chevron-right" />
       </svg>
     </a>
-  </div>
+  {{ /comp }}
 {{ /if }}

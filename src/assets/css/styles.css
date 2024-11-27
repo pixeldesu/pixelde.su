@@ -33,10 +33,6 @@
     @apply bg-slate-50/50 dark:bg-neutral-600/50;
   }
 
-  .card--grouped {
-    @apply mb-3 bg-slate-300/25 dark:bg-neutral-600/50 max-w-none;
-  }
-
   .card--linked {
     @apply no-underline transition-all;
   }
