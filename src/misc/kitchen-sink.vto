@@ -3,13 +3,12 @@ layout: layouts/minimal.vto
 title: Kitchen Sink
 index: false
 ---
-
-<div class="card card--raised mb-3 prose prose-headings:my-3">
+{{ comp ui.raisedCard { classes: "mb-3 prose prose-headings:my-3" } }}
   <h1>Kitchen Sink</h1>
   <p>The closest thing to seeing whatever the <i>design system</i> of website is.</p>
-</div>
+{{ /comp }}
 
-<div class="card card--raised mb-3 prose prose-headings:my-3">
+{{ comp ui.raisedCard { classes: "mb-3 prose prose-headings:my-3" } }}
   <h2>Cards</h2>
 
   <p>The main building blocks of this site</p>
@@ -17,33 +16,33 @@ index: false
   <h3>Raised Cards</h3>
 
   <p>Raised and linked cards are top-level elements and not contained in other cards</p>
-</div>
+{{ /comp }}
 
-<div class="card card--raised mb-3">
+{{ comp ui.raisedCard { classes: "mb-3" } }}
   Raised Card
-</div>
+{{ /comp }}
 
 <a href="#" class="link-card mb-3">
   Linked Card
 </a>
 
-<div class="card card--raised mb-3 prose prose-headings:my-3">
+{{ comp ui.raisedCard { classes: "mb-3 prose prose-headings:my-3" } }}
   <h3>Card Groups</h3>
 
   <p>The only exception where raised cards are not the top-level</p>
-</div>
+{{ /comp }}
 
 <div class="card card--grouped">
   <h3 class="font-bold">Card group</h3>
-  <div class="card card--raised mb-3">
+  {{ comp ui.raisedCard { classes: "mb-3" } }}
     Raised Card
-  </div>
-  <div class="card card--raised mb-3">
+  {{ /comp }}
+  {{ comp ui.raisedCard { classes: "mb-3" } }}
     Raised Card
-  </div>
+  {{ /comp }}
 </div>
 
-<div class="card card--raised mb-3 prose prose-headings:my-3">
+{{ comp ui.raisedCard { classes: "mb-3 prose prose-headings:my-3" } }}
   <h3>Flat Cards</h3>
 
   <p>Flat cards are child elements to raised cards</p>
@@ -55,9 +54,9 @@ index: false
   <a href="#" class="card card--flat card--linked block mb-3">
     Flat Linked Card
   </a>
-</div>
+{{ /comp }}
 
-<div class="card card--raised mb-3 prose prose-headings:my-3">
+{{ comp ui.raisedCard { classes: "mb-3 prose prose-headings:my-3" } }}
   <h2>Boxes</h2>
 
   <p>Notices and similar stuff</p>
@@ -73,9 +72,9 @@ index: false
   {{ comp Box { color: "rose", transparent: true } }}
     Colored transparent box
   {{ /comp }}
-</div>
+{{ /comp }}
 
-<div class="card card--raised mb-3 prose prose-headings:my-3">
+{{ comp ui.raisedCard { classes: "mb-3 prose prose-headings:my-3" } }}
   <h2>Figures</h2>
 
   <p>Images with captions</p>
@@ -85,9 +84,9 @@ index: false
     alt: "A picture of the sun setting on the Fuerteventura coast", 
     caption: "Sunset from the Finca AMICAB" 
   }) }}
-</div>
+{{ /comp }}
 
-<div class="card card--raised mb-3 prose prose-headings:my-3">
+{{ comp ui.raisedCard { classes: "mb-3 prose prose-headings:my-3" } }}
   <h2>Tags</h2>
 
   <p>Categorizing all the things</p>
@@ -115,4 +114,4 @@ index: false
   <ul class="p-0 m-0">
     {{ comp.tag({ tag: "reverse-engineering", isLink: false }) }}
   </ul>
-</div>
+{{ /comp }}
