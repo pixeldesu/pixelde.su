@@ -60,8 +60,8 @@
   }
 
   .article-card {
-    @apply card card--raised card--linked block
-      overflow-hidden mb-3 hover:translate-y-1;
+    @apply card card--raised card--linked block overflow-hidden mb-3
+      hover:translate-y-1;
   }
 
   .link-card {
