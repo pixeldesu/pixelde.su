@@ -1,7 +1,7 @@
 {{ layout "layouts/base.vto" }}
 
 {{ set main }}
-  <div class="card card--raised flex flex-col min-h-[768px] prose">
+  {{ comp ui.raisedCard { classes: "flex flex-col min-h-[768px] prose" } }}
     <ul class="p-0 m-0">
       {{ for tag of tags }}
         {{ comp.tag({ tag, isLink: true, linkPrefix: '/talks/tag/' }) }}
@@ -39,5 +39,5 @@
         </a>
       {{ /for }}
     </div>
-  </div>
+  {{ /comp }}
 {{ /set }}

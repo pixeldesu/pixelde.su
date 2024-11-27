@@ -1,11 +1,11 @@
 {{ layout "layouts/base.vto" }}
 
 {{ set main }}
-  <div class="card card--raised overflow-visible min-h-[768px] mb-3 prose">
+  {{ comp ui.raisedCard { classes: "overflow-visible min-h-[768px] mb-3 prose" } }}
     <div class="relative z-10">
       {{ content |> safe }}
     </div>
-  </div>
+  {{ /comp }}
   <a class="link-card items-center group font-semibold" href="/contact">
     <span>Want to talk? Check out my contact info!</span>
     <svg class="fill-current ms-2" width="1rem" height="1rem" version="2.0">

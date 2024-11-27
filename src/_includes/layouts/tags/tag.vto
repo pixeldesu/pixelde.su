@@ -1,6 +1,6 @@
 {{ layout "layouts/minimal.vto" }}
 
-<div class="card card--raised mb-3 prose">
+{{ comp ui.raisedCard { classes: "mb-3 prose" } }}
   <div class="flex items-center">
     <h2>Everything tagged with {{ comp.tag({ tag, isLink: false }) }}</h2>
   </div>
@@ -13,7 +13,7 @@
     {{ /if }}
     with this tag.
   </p>
-</div>
+{{ /comp }}
 
 {{ if articles.length > 0 }}
   <div class="card card--grouped">

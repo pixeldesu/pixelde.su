@@ -3,7 +3,7 @@ layout: layouts/minimal.vto
 title: Blog
 ---
 
-<div class="card card--raised mb-3 prose prose-headings:my-3">
+{{ comp ui.raisedCard { classes: "mb-3 prose prose-headings:my-3" } }}
   <div class="flex items-center">
     <h1>Blog</h1>
 
@@ -15,7 +15,7 @@ title: Blog
     </a>
   </div>
   <p>I write stuff sometimes!</p>
-</div>
+{{ /comp }}
 {{ for article of search.pages("type=blog post_draft=false", "order date=desc") }}
   {{ comp.blog({ article }) }}
 {{ /for }}

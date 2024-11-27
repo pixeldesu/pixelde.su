@@ -3,12 +3,12 @@ layout: layouts/minimal.vto
 title: Podcasts
 ---
 
-<div class="card card--raised mb-3 prose prose-headings:my-3">
+{{ comp ui.raisedCard { classes: "mb-3 prose prose-headings:my-3" } }}
   <div class="flex items-center">
     <h1>Podcasts</h1>
   </div>
   <p>I have been a guest on these podcasts!</p>
-</div>
+{{ /comp }}
 
 {{ for podcast of podcasts }}
   {{ comp.podcast({ podcast }) }}

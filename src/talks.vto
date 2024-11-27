@@ -3,7 +3,7 @@ layout: layouts/minimal.vto
 title: Talks
 ---
 
-<div class="card card--raised mb-3 prose">
+{{ comp ui.raisedCard { classes: "mb-3 prose prose-headings:my-3" } }}
   <div class="flex items-center">
     <h1>Talks</h1>
 
@@ -15,7 +15,7 @@ title: Talks
     </a>
   </div>
   <p>I talk at events sometimes!</p>
-</div>
+{{ /comp }}
 {{ for talk of search.pages("type=talk", "order date=desc") }}
   {{ comp.talk({ talk }) }}
 {{ /for }}

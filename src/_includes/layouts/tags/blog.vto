@@ -1,6 +1,6 @@
 {{ layout "layouts/minimal.vto" }}
 
-<div class="card card--raised mb-3 prose prose-headings:my-3">
+{{ comp ui.raisedCard { classes: "mb-3 prose prose-headings:my-3" } }}
   <div class="flex items-center">
     <h2>All blog posts tagged with {{ comp.tag({ tag, isLink: false }) }}</h2>
   </div>
@@ -13,7 +13,7 @@
     {{ /if }}
     with this tag.
   </p>
-</div>
+{{ /comp }}
 <div class="grid md:grid-cols-2 gap-3 mb-3">
   <a class="link-card items-center group font-semibold" href="/blog">
     <svg class="fill-current me-2" width="1rem" height="1rem" version="2.0">

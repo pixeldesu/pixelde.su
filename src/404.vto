@@ -5,7 +5,7 @@ index: false
 ---
 
 <div class="min-h-[calc(100vh-92px)] md:min-h-[768px] flex flex-col">
-  <div class="card card--raised flex flex-grow prose">
+  {{ comp ui.raisedCard { classes: "flex flex-grow prose overflow-hidden" } }}
     <div class="absolute -right-5 left-full bottom-0 origin-bottom-right -rotate-90 opacity-10 dark:mix-blend-overlay text-9xl font-bold italic uppercase z-0 pointer-events-none select-none" aria-hidden>404</div>
     <div class="relative flex flex-col justify-center items-center z-10 w-full">
       <img class="m-0 drop-shadow-xl" src="https://pixeldesu-assets.fra1.cdn.digitaloceanspaces.com/stickers/poly/thinking/256.png" height="256px" width="256px"/>
@@ -15,5 +15,5 @@ index: false
         <p><a href="/">Go home.</a></p>
       </div>
     </div>
-  </div>
+  {{ /comp }}
 </div>

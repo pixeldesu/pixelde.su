@@ -1,7 +1,7 @@
 {{ layout "layouts/base.vto" }}
 
 {{ set main }}
-  <div class="card card--raised min-h-[768px] prose">
+  {{ comp ui.raisedCard { classes: "min-h-[768px] prose" } }}
     <div class="relative z-10">
       <ul class="p-0 m-0">
         {{ for tag of tags }}
@@ -30,14 +30,14 @@
 
       {{ content |> safe }}
     </div>
-  </div>
+  {{ /comp }}
   {{ if openring }}
-    <div class="card card--raised mt-3">
+    {{ comp ui.raisedCard { classes: "mt-3" } }}
       <p class="text-lg font-bold mb-2 flex">
         Articles from blogs I read
         <a href="/misc/openring" class="ms-auto font-semibold text-right no-underline">
           <span class="hidden md:inline">What's this?</span>
-          <svg src="/assets/svg/fa-help.svg" class="inline fill-current w-5 me-2 h-auto align-text-bottom" inline/>
+          <svg src="/assets/svg/fa-help.svg" class="inline fill-current w-5 me-2 h-auto align-text-bottom" inline></svg>
         </a>  
       </p>
       <div class="grid md:grid-cols-2 gap-3">
@@ -55,6 +55,6 @@
           </div>
         {{ /for }}
       </div>
-    </div>
+    {{ /comp }}
   {{ /if }}
 {{ /set }}
