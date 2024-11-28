@@ -15,18 +15,18 @@
   </p>
 {{ /comp }}
 <div class="grid md:grid-cols-2 gap-3 mb-3">
-  <a class="link-card items-center group font-semibold" href="/talks">
+  {{ comp ui.linkCard { href: "/talk", classes: "items-center group font-semibold" } }}
     <svg class="fill-current me-2" width="1rem" height="1rem" version="2.0">
       <use href="#chevron-left" />
     </svg>
     <span>Back to all talks</span>
-  </a>
-  <a class="link-card items-center group font-semibold" href="/tag/{{ tag }}">
+  {{ /comp }}
+  {{ comp ui.linkCard { href: `/tag/${tag}`, classes: "items-center group font-semibold" } }}
     <span>Everything with this tag</span>
     <svg class="fill-current ms-2" width="1rem" height="1rem" version="2.0">
       <use href="#chevron-right" />
     </svg>
-  </a>
+  {{ /comp }}
 </div>
 {{ for talk of talks }}
   {{ comp.talk({ talk }) }}

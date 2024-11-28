@@ -11,8 +11,8 @@ title: Projects
   {{ for project of projects }}
     {{ comp.project({ project }) }}
   {{ /for }}
-  <a class="link-card group" href="https://github.com/pixeldesu">
+  {{ comp ui.linkCard { href: "https://github.com/pixeldesu", classes: "group" } }}
     <svg src="/assets/svg/github.svg" class="fill-current w-6 me-2 h-auto" inline></svg>
     <span>More projects on GitHub</span>
-  </a>
+  {{ /comp }}
 </div>

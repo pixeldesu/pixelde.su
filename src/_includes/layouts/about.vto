@@ -6,10 +6,10 @@
       {{ content |> safe }}
     </div>
   {{ /comp }}
-  <a class="link-card items-center group font-semibold" href="/contact">
+  {{ comp ui.linkCard { href: "/contact", classes: "items-center group font-semibold" } }}
     <span>Want to talk? Check out my contact info!</span>
     <svg class="fill-current ms-2" width="1rem" height="1rem" version="2.0">
       <use href="#chevron-right" />
     </svg>
-  </a>
+  {{ /comp }}
 {{ /set }}
