@@ -55,11 +55,6 @@
       dark:bg-sky-600/10;
   }
 
-  .link-card {
-    @apply card card--raised card--linked flex justify-center
-      hover:translate-y-1 hocus:bg-slate-100 dark:hocus:bg-neutral-700;
-  }
-
   .webring {
     @apply flex p-1 items-center mb-1 justify-center rounded-md;
   }
