@@ -1,4 +1,4 @@
 <a href="{{ url }}" class="p-3 rounded-md relative bg-white dark:bg-neutral-800 shadow-lg no-underline transition-all block
-      overflow-hidden mb-3 hover:translate-y-1 {{ classes }}" {{ if target }}target="{{ target }}"{{ /if }}>
+      overflow-hidden mb-3 hover:translate-y-1 {{ classes }}" {{ attributes |> attr |> safe }}>
   {{ content }}
 </a>
