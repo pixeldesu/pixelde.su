@@ -25,10 +25,6 @@
     @apply !px-2 !py-1 !mb-1;
   }
 
-  .card--raised {
-    @apply relative bg-white dark:bg-neutral-800 shadow-lg;
-  }
-
   .card--flat {
     @apply bg-slate-50/50 dark:bg-neutral-600/50;
   }
