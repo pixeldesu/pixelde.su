@@ -10,6 +10,7 @@ import readInfo from "lume/plugins/reading_info.ts";
 import robots from "lume/plugins/robots.ts";
 import feed from "lume/plugins/feed.ts";
 import inline from "lume/plugins/inline.ts";
+import attributes from "lume/plugins/attributes.ts";
 import openring from "lume_openring/mod.ts";
 import nano from "npm:cssnano";
 
@@ -45,6 +46,8 @@ site.use(inline({
     /^aria-/,
   ],
 }));
+
+site.use(attributes());
 
 site.use(feed({
   output: ["/blog/posts.rss", "/blog/posts.json"],
