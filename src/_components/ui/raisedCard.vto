@@ -1,3 +1,9 @@
-<div class="p-3 rounded-md relative bg-white dark:bg-neutral-800 shadow-lg {{ classes }}" {{ attributes |> attr |> safe }}>
-  {{ content }}
-</div>
+{{ if href }}
+  <a href="{{ href }}" class="p-3 rounded-md relative bg-white dark:bg-neutral-800 shadow-lg {{ classes }}" {{ attributes |> attr |> safe }}>
+    {{ content }}
+  </a>
+{{ else }}
+  <div class="p-3 rounded-md relative bg-white dark:bg-neutral-800 shadow-lg {{ classes }}" {{ attributes |> attr |> safe }}>
+    {{ content }}
+  </div>
+{{ /if }}
