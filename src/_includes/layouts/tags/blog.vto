@@ -1,6 +1,6 @@
 {{ layout "layouts/minimal.vto" }}
 
-{{ comp ui.raisedCard { classes: "mb-3 prose prose-headings:my-3" } }}
+{{ comp ui.raisedCard { classes: "mb-3 prose" } }}
   <div class="flex items-center">
     <h2>All blog posts tagged with {{ comp.tag({ tag, isLink: false }) }}</h2>
   </div>

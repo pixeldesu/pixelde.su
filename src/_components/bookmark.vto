@@ -1,4 +1,4 @@
-{{ comp ui.articleCard { url: bookmark.url, classes: "group prose prose-headings:my-3", attributes: { target: "_blank" } } }}
+{{ comp ui.articleCard { url: bookmark.url, classes: "group prose", attributes: { target: "_blank" } } }}
   <h2 class="text-xl !mb-0">{{ bookmark.title }}</h2>
   <p class="text-sm mb-3">
     Bookmarked on <time datetime="{{ bookmark.date |> date }}">{{ bookmark.date |> date('HUMAN_DATE') }}</time>
