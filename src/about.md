@@ -7,7 +7,7 @@ templateEngine: [vto, md]
 # About
 
 <div class="relative">
-<div class="md:w-3/4 md:ms-2 md:-me-[25%] lg:-me-[50%] h-auto md:float-right md:card md:card--raised !p-2">
+<div class="md:w-3/4 md:ms-2 md:-me-[25%] lg:-me-[50%] h-auto md:float-right md:p-3 md:rounded-md md:relative md:bg-white md:dark:bg-neutral-800 md:shadow-lg !p-2">
   <!-- deno-fmt-ignore-start -->
   {{ comp.Figure({
     image: "/assets/img/me.jpg",
