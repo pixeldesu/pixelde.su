@@ -3,16 +3,14 @@ layout: layouts/minimal.vto
 title: Projects
 ---
 
-<div class="prose">
-  {{ comp ui.raisedCard { classes: "mb-3 prose" } }}
-    <h1>Projects</h1>
-    <p>A selection of projects that I have worked on over the years or still actively contribute to!</p>
-  {{ /comp }}
-  {{ for project of projects }}
-    {{ comp.project({ project }) }}
-  {{ /for }}
-  {{ comp ui.linkCard { href: "https://github.com/pixeldesu", classes: "group" } }}
-    <svg src="/assets/svg/github.svg" class="fill-current w-6 me-2 h-auto" inline></svg>
-    <span>More projects on GitHub</span>
-  {{ /comp }}
-</div>
+{{ comp ui.raisedCard { classes: "mb-3 prose" } }}
+  <h1>Projects</h1>
+  <p>A selection of projects that I have worked on over the years or still actively contribute to!</p>
+{{ /comp }}
+{{ for project of projects }}
+  {{ comp.project({ project }) }}
+{{ /for }}
+{{ comp ui.linkCard { href: "https://github.com/pixeldesu", classes: "group" } }}
+  <svg src="/assets/svg/github.svg" class="fill-current w-6 me-2 h-auto" inline></svg>
+  <span>More projects on GitHub</span>
+{{ /comp }}
