@@ -17,40 +17,6 @@
     @apply inline-block fill-white h-[1.33rem] align-text-bottom w-auto me-1;
   }
 
-  .card {
-    @apply p-3 rounded-md;
-  }
-
-  .card--slim {
-    @apply !px-2 !py-1 !mb-1;
-  }
-
-  .card--flat {
-    @apply bg-slate-50/50 dark:bg-neutral-600/50;
-  }
-
-  .card--linked {
-    @apply no-underline transition-all;
-  }
-
-  .card--flat.card--linked {
-    @apply hocus:bg-slate-100 dark:hocus:bg-neutral-700;
-  }
-
-  .card--deprecated {
-    @apply text-yellow-700 dark:text-yellow-400 bg-yellow-50/50
-      dark:bg-yellow-600/25;
-  }
-
-  .card--flat.card--linked.card--deprecated {
-    @apply hocus:bg-yellow-100/75 dark:hocus:bg-yellow-700/50;
-  }
-
-  .card--character-poly {
-    @apply outline-dashed outline-sky-400/50 outline-2 bg-sky-50/50
-      dark:bg-sky-600/10;
-  }
-
   .webring {
     @apply flex p-1 items-center mb-1 justify-center rounded-md;
   }
