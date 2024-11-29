@@ -47,13 +47,13 @@ index: false
 
   <p>Flat cards are child elements to raised cards</p>
 
-  <div class="card card--flat mb-3">
+  {{ comp ui.flatCard { classes: "mb-3" } }}
     Flat Card
-  </div>
+  {{ /comp }}
 
-  <a href="#" class="card card--flat card--linked block mb-3">
+  {{ comp ui.flatCard { href: "#", classes: "block mb-3" } }}
     Flat Linked Card
-  </a>
+  {{ /comp }}
 {{ /comp }}
 
 {{ comp ui.raisedCard { classes: "mb-3 prose" } }}

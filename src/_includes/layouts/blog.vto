@@ -42,7 +42,7 @@
       </p>
       <div class="grid md:grid-cols-2 gap-3">
         {{ for article of openring |> shuffle |> cut(2) }}
-          <div class="card card--flat group flex flex-col prose">
+          {{ comp ui.flatCard { classes: "group flex flex-col prose" } }}
             <h4 class="text-md !mb-0 !mt-0">
               <a href="{{article.url}}" target="_blank" class="no-underline">
                 {{ article.title }}
@@ -52,7 +52,7 @@
               Published on <time datetime={{ article.date |> date }}>{{ article.date |> date('HUMAN_DATE') }}</time> at <a href="{{ article.sourceUrl }}" target="_blank" class="no-underline">{{ article.sourceTitle }}</a>
             </p>
             {{ article.content |> truncate(140) }}
-          </div>
+          {{ /comp }}
         {{ /for }}
       </div>
     {{ /comp }}

@@ -1,0 +1,9 @@
+{{ if href }}
+  <a class="p-3 rounded-md no-underline transition-all bg-slate-50/50 dark:bg-neutral-600/50 hocus:bg-slate-100 dark:hocus:bg-neutral-700 {{ if slim }}!px-2 !py-1 !mb-1{{ /if }} {{ classes }}" href="{{ href }}" {{ attributes |> attr |> safe }}>
+    {{ content }}
+  </a>
+{{ else }}
+  <div class="p-3 rounded-md bg-slate-50/50 dark:bg-neutral-600/50 {{ if slim }}!px-2 !py-1 !mb-1{{ /if }} {{ classes }}" {{ attributes |> attr |> safe }}>
+    {{ content }}
+  </div>
+{{ /if }}
