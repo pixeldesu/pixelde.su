@@ -53,6 +53,15 @@
       }
     </script>
     <script type="module" src="/assets/js/main.js"></script>
+    {{ if type === "blog" }}
+      <script type="module" src="/assets/js/components/tab-panel.js"></script>
+      {{ if comments?.fediverse }}
+        <script type="module" src="/assets/js/components/mastodon-comments.js"></script>
+      {{ /if }}
+      {{ if comments?.bluesky }}
+        <script type="module" src="/assets/js/components/bluesky-comments.js"></script>
+      {{ /if }}
+    {{ /if }}
   </head>
   <body class="min-h-full min-w-full flex justify-center md:items-start bg-slate-100 dark:bg-neutral-900 dark:text-neutral-200 md:bg-[url('/assets/img/poly.png')] dark:md:bg-[url('/assets/img/poly-light.png')] bg-no-repeat bg-[right_50vh] bg-fixed">
     <svg xmlns="http://www.w3.org/2000/svg" class="hidden" aria-hidden="true">
