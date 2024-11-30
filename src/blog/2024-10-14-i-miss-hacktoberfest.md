@@ -6,9 +6,7 @@ tags:
   - open-source
 comments:
   fediverse: https://desu.social/@pixel/113302514870406091
-  bluesky:
-    url: https://bsky.app/profile/pixelde.su/post/3l6p3n3e6k22i
-    uri: at://did:plc:u75m626seejet3zy76fq7kiw/app.bsky.feed.post/3l6p3n3e6k22i
+  bluesky: https://bsky.app/profile/pixelde.su/post/3l6p3n3e6k22i
 ---
 
 _At least the ones before 2020._

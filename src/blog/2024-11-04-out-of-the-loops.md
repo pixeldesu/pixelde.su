@@ -7,9 +7,7 @@ tags:
   - fediverse
 comments:
   fediverse: https://desu.social/@pixel/113421567944508221
-  bluesky:
-    url: https://bsky.app/profile/pixelde.su/post/3la3h2w67hu26
-    uri: at://did:plc:u75m626seejet3zy76fq7kiw/app.bsky.feed.post/3la3h2w67hu26
+  bluesky: https://bsky.app/profile/pixelde.su/post/3la3h2w67hu26
 ---
 
 _[Loops](https://loops.video), a TikTok alternative by Daniel Supernault

@@ -42,10 +42,10 @@
           <mastodon-comments src="{{ comments.fediverse }}"></mastodon-comments>
         </div>
         {{ /if }}
-        {{ if comments.bluesky?.url && comments.bluesky?.uri }}
+        {{ if comments.bluesky }}
         <button slot="tab" class="p-3 font-semibold">Bluesky</button>
         <div slot="content">
-          <bluesky-comments uri="{{ comments.bluesky.uri }}" url="{{ comments.bluesky.url }}"></bluesky-comments>
+          <bluesky-comments src="{{ comments.bluesky }}"></bluesky-comments>
         </div>
         {{ /if }}
       </tab-panel>

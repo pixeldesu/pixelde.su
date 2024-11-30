@@ -7,9 +7,7 @@ tags:
   - small-web
 comments:
   fediverse: https://desu.social/@pixel/113473973230508493
-  bluesky:
-    url: https://bsky.app/profile/pixelde.su/post/3lasm7eqvi22r
-    uri: at://did:plc:u75m626seejet3zy76fq7kiw/app.bsky.feed.post/3lasm7eqvi22r
+  bluesky: https://bsky.app/profile/pixelde.su/post/3lasm7eqvi22r
 ---
 
 _This is not your run-of-the-mill article on making your personal website. Well,
