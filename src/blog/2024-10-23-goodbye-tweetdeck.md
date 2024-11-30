@@ -7,6 +7,11 @@ tags:
   - reverse-engineering
   - twitter
   - open-source
+comments:
+  fediverse: https://desu.social/@pixel/113353491762817208
+  bluesky:
+    url: https://bsky.app/profile/pixelde.su/post/3l75436bppx26
+    uri: at://did:plc:u75m626seejet3zy76fq7kiw/app.bsky.feed.post/3l75436bppx26
 templateEngine: [vto, md]
 ---
 

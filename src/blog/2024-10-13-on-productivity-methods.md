@@ -5,6 +5,11 @@ description: |
 tags:
   - personal
   - productivity
+comments:
+  fediverse: https://desu.social/@pixel/113301503571872628
+  bluesky:
+    url: https://bsky.app/profile/pixelde.su/post/3l6fzcduvmx2q
+    uri: at://did:plc:u75m626seejet3zy76fq7kiw/app.bsky.feed.post/3l6fzcduvmx2q
 ---
 
 _This post serves as an update to my previous post

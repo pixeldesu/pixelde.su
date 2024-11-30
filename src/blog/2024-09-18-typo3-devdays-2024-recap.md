@@ -5,6 +5,8 @@ description: |
 tags:
   - event-recap
   - typo3
+comments:
+  fediverse: https://desu.social/@pixel/113159287523059717
 ---
 
 At the beginning of August, it once again was time for the TYPO3 Developer Days

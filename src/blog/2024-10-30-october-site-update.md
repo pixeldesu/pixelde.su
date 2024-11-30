@@ -5,6 +5,11 @@ description: |
 tags:
   - personal
   - changelog
+comments:
+  fediverse: https://desu.social/@pixel/113398716828156084
+  bluesky:
+    url: https://bsky.app/profile/pixelde.su/post/3l7r6r372sm2a
+    uri: at://did:plc:u75m626seejet3zy76fq7kiw/app.bsky.feed.post/3l7r6r372sm2a
 templateEngine: [vto, md]
 ---
 

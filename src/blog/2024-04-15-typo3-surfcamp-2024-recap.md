@@ -5,6 +5,8 @@ description: |
 tags:
   - event-recap
   - typo3
+comments:
+  fediverse: https://desu.social/@pixel/112277585933461813
 templateEngine: [vto, md]
 ---
 

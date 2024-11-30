@@ -5,6 +5,8 @@ description: |
 tags:
   - documentation
   - open-source
+comments:
+  fediverse: https://desu.social/@pixel/112663649631011330
 ---
 
 _This article was originally published on
