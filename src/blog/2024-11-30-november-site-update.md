@@ -5,6 +5,9 @@ description: |
 tags:
   - personal
   - changelog
+comments:
+  fediverse: https://desu.social/@pixel/113573733038883980
+  bluesky: https://bsky.app/profile/pixelde.su/post/3lc6vtwx34k2z
 templateEngine: [vto, md]
 ---
 
