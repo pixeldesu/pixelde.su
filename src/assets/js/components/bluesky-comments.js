@@ -18,7 +18,9 @@ export default class BlueskyCommentsElement extends HTMLElement {
     const postUrl = new URL(url);
     const { pathname } = postUrl;
 
-    const [, handle, rkey] = pathname.match(/\/profile\/([\w\.]+)\/post\/(\w+)/);
+    const [, handle, rkey] = pathname.match(
+      /\/profile\/([\w\.]+)\/post\/(\w+)/,
+    );
 
     if (!handle || !rkey) {
       return;
@@ -38,8 +40,8 @@ export default class BlueskyCommentsElement extends HTMLElement {
 
   async resolveHandle(handle) {
     const didData = await cachedFetch(
-      `https://public.api.bsky.app/xrpc/com.atproto.identity.resolveHandle?handle=${handle}`
-    )
+      `https://public.api.bsky.app/xrpc/com.atproto.identity.resolveHandle?handle=${handle}`,
+    );
 
     return didData.did;
   }
