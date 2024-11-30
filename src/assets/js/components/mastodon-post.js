@@ -1,8 +1,14 @@
 export default class MastodonPostElement extends HTMLElement {
   constructor() {
     super();
+    const lang = this.closest("[lang]")?.lang || navigator.language || "en";
     this._post = {};
     this._rootPost = false;
+
+    this.dateTimeFormatter = new Intl.DateTimeFormat(lang, {
+      dateStyle: "medium",
+      timeStyle: "short",
+    });
   }
 
   get post() {
@@ -33,9 +39,21 @@ export default class MastodonPostElement extends HTMLElement {
     }">
         <img src="${account.avatar_static}" loading="lazy" class="rounded-md h-[2rem] w-[2rem] !me-2"/>
         <div class="prose">
-        <div class="leading-none">
-        <a class="no-underline" href="${account.url}">${account.username}</a>
-        </div>
+          <div class="leading-none">
+            <a class="no-underline" href="${account.url}">
+              ${account.display_name} 
+              <small class="opacity-50">${
+      this.getAccountHandle(account)
+    }</small>
+            </a>
+          </div>
+          <div class="leading-none mb-2">
+            <small>
+              <a class="no-underline" href="${this.post.url}" target="_blank">
+                ${this.formatDate(this.post.created_at)}
+              </a>
+            </small>
+          </div>
         ${this.post.content}
         ${
       this.rootPost
@@ -49,6 +67,16 @@ export default class MastodonPostElement extends HTMLElement {
           </div>
       </div>
     `;
+  }
+
+  getAccountHandle(account) {
+    const { hostname } = new URL(account.url);
+
+    return `@${account.username}@${hostname}`;
+  }
+
+  formatDate(date) {
+    return this.dateTimeFormatter.format(new Date(date));
   }
 }
 

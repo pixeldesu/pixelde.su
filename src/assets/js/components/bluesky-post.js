@@ -1,9 +1,15 @@
 export default class BlueskyPostElement extends HTMLElement {
   constructor() {
     super();
+    const lang = this.closest("[lang]")?.lang || navigator.language || "en";
     this._post = {};
     this._rootPost = false;
     this._url = "";
+
+    this.dateTimeFormatter = new Intl.DateTimeFormat(lang, {
+      dateStyle: "medium",
+      timeStyle: "short",
+    });
   }
 
   get post() {
@@ -42,9 +48,21 @@ export default class BlueskyPostElement extends HTMLElement {
     }">
         <img src="${author.avatar}" loading="lazy" class="rounded-md h-[2rem] w-[2rem] !me-2"/>
         <div class="prose">
-        <div class="leading-none">
-        <a class="no-underline" href="https://bsky.app/user/${author.handle}">${author.displayName}</a>
-        </div>
+          <div class="leading-none">
+            <a class="no-underline" href="https://bsky.app/user/${author.handle}" target="_blank">
+              ${author.displayName}
+              <small class="opacity-50">@${author.handle}</small>
+            </a>
+          </div>
+          <div class="leading-none mb-2">
+            <small>
+              <a class="no-underline" href="https://bsky.app/user/${author.handle}/post/${
+      this.getRkeyFromUri(this.post.uri)
+    }" target="_blank">
+                ${this.formatDate(record.createdAt)}
+              </a>
+            </small>
+          </div>
         ${record.text}
         ${
       this.rootPost
@@ -58,6 +76,14 @@ export default class BlueskyPostElement extends HTMLElement {
           </div>
       </div>
     `;
+  }
+
+  getRkeyFromUri(uri) {
+    return uri.split("/").at(-1);
+  }
+
+  formatDate(date) {
+    return this.dateTimeFormatter.format(new Date(date));
   }
 }
 

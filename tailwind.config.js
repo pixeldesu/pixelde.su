@@ -18,6 +18,7 @@ export default {
     }),
   ],
   safelist: [
+    "opacity-50",
     "h-fit",
   ],
 };
