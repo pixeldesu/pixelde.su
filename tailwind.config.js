@@ -18,6 +18,7 @@ export default {
     }),
   ],
   safelist: [
+    "text-6xl",
     "opacity-50",
     "h-fit",
   ],

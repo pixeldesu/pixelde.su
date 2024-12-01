@@ -1,0 +1,30 @@
+{{ layout "layouts/base.vto" }}
+
+{{ set main }}
+  {{ comp ui.raisedCard { classes: "prose mb-3" } }}
+    <h1>Statistics</h1>
+
+    {{ comp ui.flatCard { classes: "text-center mb-3" } }}
+      <p class="leading-none font-bold text-6xl text-sky-500 m-0 mb-2">{{ statistics.totalPostCount }}</p>
+      <p class="leading-none font-semibold mt-0 mb-0">Total Posts</p>
+    {{ /comp }}
+    <div class="grid md:grid-cols-2 gap-3">
+      {{ comp ui.flatCard }}
+        <p class="leading-none font-semibold mb-0">Total Word Count</p>
+        <p class="leading-none font-bold text-3xl text-sky-500 m-0 mt-2">{{ statistics.totalWordCount }}</p>
+      {{ /comp }}
+      {{ comp ui.flatCard }}
+        <p class="leading-none font-semibold mb-0">Total Reading Minutes</p>
+        <p class="leading-none font-bold text-3xl text-sky-500 m-0 mt-2">{{ statistics.totalMinutes }}</p>
+      {{ /comp }}
+    </div>
+  {{ /comp }}
+  {{ comp ui.groupCard { classes: "prose mb-3" } }}
+    <p class="leading-none font-semibold mb-3">Longest Blog Post - {{ statistics.longestPost.readingInfo.words }} words </p>
+    {{ comp.blog({ article: statistics.longestPost }) }}
+  {{ /comp }}
+  {{ comp ui.groupCard { classes: "prose mb-3" } }}
+    <p class="leading-none font-semibold mb-3">Shortest Blog Post - {{ statistics.shortestPost.readingInfo.words }} words</p>
+    {{ comp.blog({ article: statistics.shortestPost }) }}
+  {{ /comp }}
+{{ /set }}
