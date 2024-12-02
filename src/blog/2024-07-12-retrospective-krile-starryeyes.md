@@ -7,9 +7,7 @@ tags:
   - twitter
 comments:
   fediverse: https://desu.social/@pixel/112772239478536819
-  bluesky:
-    url: https://bsky.app/profile/pixelde.su/post/3kx2xznpo262e
-    uri: at://did:plc:u75m626seejet3zy76fq7kiw/app.bsky.feed.post/3kx2xznpo262e
+  bluesky: https://bsky.app/profile/pixelde.su/post/3kx2xznpo262e
 templateEngine: [vto, md]
 ---
 
