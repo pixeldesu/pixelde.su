@@ -16,3 +16,13 @@
     - video
     - essay
     - gaming
+- url: https://boehs.org/node/dark-web-security
+  title: The fascinating security model of dark web marketplaces
+  description: |
+    Interesting article on the security model of dark web marketplaces, showcasing little to no usage of JS
+    and other means.
+  date: 2024-12-03 16:15:00
+  tags:
+    - article
+    - javascript
+    - security
