@@ -56,7 +56,7 @@ export default class BlueskyPostElement extends HTMLElement {
           </div>
           <div class="leading-none mb-2">
             <small>
-              <a class="no-underline" href="https://bsky.app/user/${author.handle}/post/${
+              <a class="no-underline" href="https://bsky.app/profile/${author.handle}/post/${
       this.getRkeyFromUri(this.post.uri)
     }" target="_blank">
                 ${this.formatDate(record.createdAt)}
