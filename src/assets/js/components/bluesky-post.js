@@ -49,7 +49,7 @@ export default class BlueskyPostElement extends HTMLElement {
         <img src="${author.avatar}" loading="lazy" class="rounded-md h-[2rem] w-[2rem] !me-2"/>
         <div class="prose">
           <div class="leading-none">
-            <a class="no-underline" href="https://bsky.app/user/${author.handle}" target="_blank">
+            <a class="no-underline" href="https://bsky.app/profile/${author.handle}" target="_blank">
               ${author.displayName}
               <small class="opacity-50">@${author.handle}</small>
             </a>
