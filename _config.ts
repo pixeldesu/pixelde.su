@@ -92,7 +92,7 @@ site.use(openring({
     "https://damien.zone/feed/",
     "https://resir014.xyz/posts/rss.xml",
     "https://seirdy.one/posts/atom.xml",
-    "https://volpeon.ink/notebook/index.xml",
+    "https://volpeon.ink/notebook/rss.xml",
     "https://hugo.md/index.xml",
     "https://qtea.me/posts.xml",
     "https://xeiaso.net/blog.rss",
