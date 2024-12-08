@@ -144,4 +144,20 @@ site.filter(
     array.filter((item) => !item.tags),
 );
 
+site.filter(
+  "sortDatebyDateDesc",
+  (array: (Partial<{ date: string }>)[]) =>
+    array.toSorted((a, b) =>
+      (new Date(b.date!)).valueOf() - (new Date(a.date!)).valueOf()
+    ),
+);
+
+site.filter(
+  "sortDatebyDateAsc",
+  (array: (Partial<{ date: string }>)[]) =>
+    array.toSorted((a, b) =>
+      (new Date(a.date!)).valueOf() - (new Date(b.date!)).valueOf()
+    ),
+);
+
 export default site;
