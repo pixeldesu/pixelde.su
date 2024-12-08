@@ -2,7 +2,7 @@ const webrings = Array.from(document.querySelectorAll("[data-webring]"));
 const randomWebringIndex = Math.floor(Math.random() * webrings.length);
 
 const randomWebring = webrings[randomWebringIndex].cloneNode(true);
-randomWebring.classList.remove("webring--highlighted");
+randomWebring.classList.remove("bg-slate-50/50", "dark:bg-neutral-600/50");
 
 const webringPlaceholder = document.querySelector("[data-webring-placeholder]");
 webringPlaceholder.replaceWith(randomWebring);

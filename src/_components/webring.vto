@@ -1,0 +1,27 @@
+<div class="flex p-1 items-center mb-1 justify-center rounded-md bg-slate-50/50 dark:bg-neutral-600/50" data-webring {{ if webring.onionring }}data-onionring="{{ webring.onionring.variable }}"{{ /if }}>
+  <a class="rounded-md px-2 py-1 hocus:bg-slate-200 dark:hocus:bg-neutral-800/50
+      transition-all me-auto{{ if webring.onionring }} no-js-hidden{{ /if }}" href="{{ webring.previous }}" referrerpolicy="strict-origin" rel="external" aria-label="Previous {{ webring.name }} site" data-webring-link-prev>
+    <svg width="1rem" height="1rem" version="2.0">
+      <use href="#chevron-left" />
+    </svg>
+  </a>
+
+  <a class="inline-block self-center" href="{{ webring.url }}" rel="nofollow">
+    <b>{{ webring.name }}</b>
+  </a>
+  {{ if webring.random }}
+    <a class="rounded-md px-2 py-1 hocus:bg-slate-200 dark:hocus:bg-neutral-800/50
+      transition-all ms-1{{ if webring.onionring }} no-js-hidden{{ /if }}" href="{{ webring.random }}" referrerpolicy="strict-origin" rel="external" aria-label="Random {{ webring.name }} site" data-webring-link-random>
+      <svg width="1rem" height="1rem" version="2.0">
+        <use href="#shuffle" />
+      </svg>
+    </a>
+  {{ /if }}
+
+  <a class="rounded-md px-2 py-1 hocus:bg-slate-200 dark:hocus:bg-neutral-800/50
+      transition-all ms-auto{{ if webring.onionring }} no-js-hidden{{ /if }}" href="{{ webring.next }}" referrerpolicy="strict-origin" rel="external" aria-label="Next {{ webring.name }} site" data-webring-link-next>
+    <svg width="1rem" height="1rem" version="2.0">
+      <use href="#chevron-right" />
+    </svg>
+  </a>
+</div>
