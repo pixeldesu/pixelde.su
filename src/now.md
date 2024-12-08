@@ -28,8 +28,8 @@ am doing currently.
 - [Fairy Tail: 100 Years Quest](https://anilist.co/anime/139095/FAIRY-TAIL-100-YEARS-QUEST/)
 - [Spirit Chronicles](https://anilist.co/anime/141182/Seirei-Gensouki-2/)
 - [BLEACH: Thousand-Year Blood War - The Conflict](https://anilist.co/anime/169755/BLEACH-Sennen-Kessenhen--Soukokutan/)
-- [Assassination Classroom](https://anilist.co/anime/21170/Ansatsu-Kyoushitsu-2/)
 - [Sword Art Online Alternative: Gun Gale Online II](https://anilist.co/anime/167141/Sword-Art-Online-Alternative-Gun-Gale-Online-II/)
+- [Re:ZERO -Starting Life in Another World-](https://anilist.co/anime/108632/ReZero-kara-Hajimeru-Isekai-Seikatsu-2nd-Season/)
 
 ## What I'm reading
 
