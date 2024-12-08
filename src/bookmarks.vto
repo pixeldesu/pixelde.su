@@ -9,6 +9,6 @@ title: Bookmarks
   </div>
   <p>Cool things from the internet I want to remember and are (possibly) interesting for visitors of my site!</p>
 {{ /comp }}
-{{ for bookmark of bookmarks }}
+{{ for bookmark of bookmarks |> sortDatebyDateDesc }}
   {{ comp.bookmark({ bookmark }) }}
 {{ /for }}
