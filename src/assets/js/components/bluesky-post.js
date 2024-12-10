@@ -46,7 +46,7 @@ export default class BlueskyPostElement extends HTMLElement {
         ? "outline-2 outline-sky-400/50 outline-dashed !bg-sky-50/50 dark:!bg-sky-600/10"
         : ""
     }">
-        <img src="${author.avatar}" loading="lazy" class="rounded-md h-[2rem] w-[2rem] !me-2"/>
+        <img src="${author.avatar}" alt="${author.handle}'s avatar" height="32" width="32" loading="lazy" class="rounded-md h-[2rem] w-[2rem] !me-2"/>
         <div class="prose">
           <div class="leading-none">
             <a class="no-underline" href="https://bsky.app/profile/${author.handle}" target="_blank">
