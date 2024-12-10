@@ -37,7 +37,7 @@ export default class MastodonPostElement extends HTMLElement {
         ? "outline-2 outline-sky-400/50 outline-dashed !bg-sky-50/50 dark:!bg-sky-600/10"
         : ""
     }">
-        <img src="${account.avatar_static}" loading="lazy" class="rounded-md h-[2rem] w-[2rem] !me-2"/>
+        <img src="${account.avatar_static}" alt="${account.username}'s avatar" height="32" width="32" loading="lazy" class="rounded-md h-[2rem] w-[2rem] !me-2"/>
         <div class="prose">
           <div class="leading-none">
             <a class="no-underline" href="${account.url}">
