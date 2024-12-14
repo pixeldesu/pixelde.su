@@ -39,7 +39,7 @@
     {{ if url === "/" }}
       {{ for webring of webrings }}
         {{ if webring.onionring }}
-          <script src="{{ webring.onionring.script }}"></script>
+          <script src="{{ webring.onionring.script }}" async defer></script>
         {{ /if }}
       {{ /for }}
     {{ /if }}
