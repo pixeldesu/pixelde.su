@@ -20,6 +20,12 @@
   }
 }
 
+.dark {
+  --parvus-background-color: rgb(23 23 23 / 1);
+  --parvus-color: #d4d4d4;
+  --parvus-caption-color: #d4d4d4;
+}
+
 .prose p:first-of-type,
 .prose h1:first-of-type,
 .prose h2:first-of-type,
