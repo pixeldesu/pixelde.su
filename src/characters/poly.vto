@@ -91,7 +91,7 @@ artworks:
               <li><strong>No NSFW!</strong> While Rule 34 is a thing, Poly will stay innocent.</li>
             </ul>
           {{ /comp }}
-          <div class="grid grid-cols-2 gap-3 mb-3 md:mb-12">
+          <div class="grid grid-cols-2 gap-3 mb-3">
             {{ for artwork of artworks }}
               {{ comp ui.raisedCard { href: artwork.url, classes: "aspect-square !p-0 overflow-hidden lightbox", attributes: { "data-group": "gallery" } } }}
                 <figure class="w-full h-full">
@@ -103,6 +103,12 @@ artworks:
               {{ /comp }}
             {{ /for }}
           </div>
+          {{ comp ui.linkCard { href: "/characters/", classes: "items-center group prose font-semibold md:mb-12" } }}
+            <svg class="fill-current me-2" width="1rem" height="1rem" version="2.0">
+              <use href="#chevron-left" />
+            </svg>
+            Return to character listing
+          {{ /comp }}
         </div>
       </div>
     </div>
