@@ -95,7 +95,7 @@ artworks:
             {{ for artwork of artworks }}
               {{ comp ui.raisedCard { href: artwork.url, classes: "aspect-square !p-0 overflow-hidden lightbox", attributes: { "data-group": "gallery" } } }}
                 <figure class="w-full h-full">
-                  <img src="{{ artwork.thumbnail }}" width="250" height="250" alt="{{ artwork.description |> safe }}" class="object-cover"/>
+                  <img src="{{ artwork.thumbnail }}" width="250" height="250" alt="{{ artwork.description |> safe }}" loading="lazy" class="object-cover"/>
                   <figcaption data-caption class="hidden">
                     {{ artwork.description |> safe }}
                   </figcaption>
