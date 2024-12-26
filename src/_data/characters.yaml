@@ -1,5 +1,5 @@
 - nickname: Poly
-  enabled: false
+  enabled: true
   cover: "/assets/img/characters/poly-cover.png"
 - nickname: Pixel
   enabled: false
