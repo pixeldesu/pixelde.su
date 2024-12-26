@@ -24,6 +24,17 @@ const site = lume({
 site.copy("assets/img");
 site.copy("assets/slides");
 site.copy("assets/svg");
+site.copy("assets/misc");
+
+site.remoteFile(
+  "assets/css/vendor/parvus.css",
+  "https://unpkg.com/parvus@2.6.0/dist/css/parvus.min.css",
+);
+
+site.remoteFile(
+  "assets/js/vendor/parvus.js",
+  "https://unpkg.com/parvus@2.6.0/dist/js/parvus.min.js",
+);
 
 site.use(esbuild({
   options: {

@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
   document.documentElement.classList.remove("no-js");
 
   if (document.querySelector(".js-nav-wrapper")) {
@@ -11,5 +11,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (document.querySelector("[data-webring-container]")) {
     import("./modules/webring.js");
+  }
+
+  if (document.querySelector(".lightbox")) {
+    const Parvus = (await import("./vendor/parvus.js")).default;
+
+    new Parvus({
+      captionsSelector: "[data-caption]",
+    });
   }
 });
