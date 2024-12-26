@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 463.02 463.02" xmlns="http://www.w3.org/2000/svg" style="transform-origin: 50% 50%; transform-box: content-box;">
+<g fill="none" style="transform-origin: 50% 50%; transform-box: content-box;">
+   <g class="motion-safe:animate-spin-speed-1x" style="transform-origin: 50% 50%; transform-box: content-box;">
+      <path transform="matrix(.92334 0 0 .91457 167.96 177.76)" d="m2.545 43.519 66.538-47.808 66.029 48.508-25.73 77.787-81.931-0.43274z" stroke="#2d4263" stroke-width="1.4396"/>
+   </g>
+   <g class="motion-safe:animate-spin-speed-2x" style="transform-origin: 50% 50%; transform-box: content-box;">
+      <path transform="matrix(1.631 0 0 1.631 -76.897 -41.2)" d="m242.32 197.93-53.222 30.728-53.222-30.728v-61.456l53.222-30.728 53.222 30.728z" stroke="#d72859" stroke-width=".81111"/>
+   </g>
+   <g class="motion-safe:animate-spin-speed-3x" style="transform-origin: 50% 50%; transform-box: content-box;">
+      <path transform="matrix(-1.131 4.2209 -4.2209 -1.131 1043.2 -369.56)" d="m207.93 159.57-23.275 15.755-26.829-8.374-10.181-26.197 14.134-24.293 27.806-4.096 20.539 19.185z" stroke="#e88e27" stroke-width=".33693"/>
+   </g>
+   <g class="motion-safe:animate-spin-speed-4x" style="transform-origin: 50% 50%; transform-box: content-box;">
+      <path transform="matrix(6.9318 0 0 6.9318 -913.41 -340.07)" d="m184 101.8-19.193 7.6518-18.982-8.1608-7.6518-19.193 8.1608-18.982 19.193-7.6518 18.982 8.1608 7.6518 19.193z" stroke="#bce236" stroke-width=".20922"/>
+   </g>
+   <g class="motion-safe:animate-spin-speed-5x" style="transform-origin: 50% 50%; transform-box: content-box;">
+      <path transform="matrix(15.753 4.221 -4.221 15.753 -1898.1 -1704.6)" d="m165.42 92.383-9.1628 2.7786-8.8051-3.7612-4.3275-8.5411 2.175-9.3245 7.6598-5.7449 9.5605 0.52282 6.9877 6.5459 1.1453 9.5061z" stroke="#27aad7" stroke-width=".08508"/>
+   </g>
+</g>
+</svg>

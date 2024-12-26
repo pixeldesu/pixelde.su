@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="size-full no-js" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="light dark" name="supported-color-schemes">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <meta property="og:type" content="website">
+    {{ if title }}
+      <title>{{ title }} - pixeldesu</title>
+      <meta property="og:title" content="{{ title }} - pixeldesu">
+      <meta name="twitter:title" content="{{ title }} - pixeldesu">
+    {{ else }}
+      <title>pixeldesu</title>
+      <meta property="og:title" content="pixeldesu">
+      <meta name="twitter:title" content="pixeldesu">
+    {{ /if }}
+    {{ if description }}
+      <meta name="description" content="{{ description |> replace("\n", " ") |> trim }}">
+      <meta property="og:description" content="{{ description |> replace("\n", " ") |> trim }}">
+      <meta name="twitter:description" content="{{ description |> replace("\n", " ") |> trim }}">
+    {{ else }}
+      <meta name="description" content="Personal homepage of pixeldesu, a professional web developer and open source tinkerer from Germany.">
+      <meta property="og:description" content="Personal homepage of pixeldesu, a professional web developer and open source tinkerer from Germany.">
+      <meta name="twitter:description" content="Personal homepage of pixeldesu, a professional web developer and open source tinkerer from Germany.">
+    {{ /if }}
+    <meta property="og:image" content="https://pixelde.su/assets/img/avatar.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@pixeldesu">
+    {{ if (index === false) }}
+      <meta name="robots" content="noindex,nofollow">
+    {{ /if }}
+    <link rel="me" href="https://desu.social/@pixel">
+
+    <script>
+      if (localStorage.getItem("theme") === "dark") {
+        document.documentElement.classList.add("dark");
+      }
+      else if (localStorage.getItem("theme") === "light") {
+        document.documentElement.classList.add("light");
+      }
+    </script>
+    <script type="module" src="/assets/js/main.js"></script>
+  </head>
+  <body class="min-h-full min-w-full flex bg-slate-100 dark:bg-neutral-900">
+    {{ content |> safe }}
+  </body>
+</html>
