@@ -35,3 +35,12 @@
     - video
     - essay
     - gaming
+- url: https://www.youtube.com/watch?v=qcMuyHzhvpI
+  title: A Brief Look at Text Rendering
+  description: |
+    Right as the title says, a brief look into the different concepts required to render text to a screen.
+  date: 2024-12-29 22:00:00
+  tags:
+    - video
+    - informational
+    - programming
