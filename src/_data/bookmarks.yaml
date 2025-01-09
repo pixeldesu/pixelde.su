@@ -44,3 +44,13 @@
     - video
     - informational
     - programming
+- url: https://www.youtube.com/watch?v=YThelfB2fvg
+  title: Mouse Cursor History (and why I made my own)
+  description: |
+    A cool video on the history of the pointer across hardware and systems. Mostly bookmarking it so I remember
+    the cool cursor set of the video creator.
+  date: 2025-01-09 22:00:00
+  tags:
+    - video
+    - essay
+    - computer
