@@ -1,0 +1,63 @@
+---
+layout: layouts/minimal.vto
+title: History
+versions:
+  - name: June 2014
+    description: |
+      The oldest version of my site that I could find. Features artwork of my OC "Pixel" and includes several collapsible sections for the content.
+    thumbnail: 2014-06_pixeldesu_thumb.png
+    full: 2014-06_pixeldesu_full.png
+  - name: July 2014
+    description: |
+      The same concept as the previous version, just with a large accordion (only one panel can be opened) and without the OC artwork.
+    thumbnail: 2014-07_pixeldesu_thumb.png
+    full: 2014-07_pixeldesu_full.png
+  - name: August 2014
+    description: |
+      A complete switch from the previous site concept, now featuring large colored full-height sections.
+    thumbnail: 2014-08_pixeldesu_thumb.png
+    full: 2014-08_pixeldesu_full.png
+  - name: November 2014
+    description: |
+      An iteration of the previous version, mainly adjusting the first section, now featuring a logo, and some more content in others.
+    thumbnail: 2014-11_pixeldesu_thumb.png
+    full: 2014-11_pixeldesu_full.png
+  - name: January 2016
+    description: |
+      A new site following the same full-height section scheme. New colors, new font and the different sections being a bit more stylized.
+    thumbnail: 2016-01_pixeldesu_thumb.png
+    full: 2016-01_pixeldesu_full.png
+  - name: October 2016
+    description: |
+      Another new site, now featuring a dark scheme with accents of my signature color scheme. Also introduced a new-ish "logo".
+    thumbnail: 2016-10_pixeldesu_thumb.png
+    full: 2016-10_pixeldesu_full.png
+  - name: December 2016
+    description: |
+      (Probably) a continuation of the style from the previous version, now featuring way more content and prominent sections again.
+    thumbnail: 2016-12_pixeldesu_thumb.png
+    full: 2016-12_pixeldesu_full.png
+  - name: April 2019
+    description: |
+      Complete shift to super-minimal. My main goal with this one was to make it as small as possible (the total size was 15kB).
+    thumbnail: 2019-04_pixeldesu_thumb.png
+    full: 2019-04_pixeldesu_full.png
+---
+
+{{ comp ui.raisedCard { classes: "mb-3 prose" } }}
+  <h1>History</h1>
+  <p>My website went through quite a few iterations over the years, here's a historical snapshot of all of them (or at least the ones that I was able to still get hold of).</p>
+  <p><b>Full-site screenshots can be accessed with clicking on the thumbnails!</b></p>
+{{ /comp }}
+
+{{ for version of versions }}
+  {{ comp ui.raisedCard { classes: "md:flex !p-0 mb-3 prose overflow-hidden" } }}
+    <div class="p-3 md:w-[60%]">
+    <h2>{{ version.name }}</h2>
+    {{ version.description |> safe }}
+    </div>
+    <a href="https://pixeldesu-assets.fra1.cdn.digitaloceanspaces.com/history/{{ version.full }}" target="_blank" class="not-prose md:w-[40%] lightbox" data-group="history">
+      <img class="object-cover object-center" src="/assets/img/history/{{ version.thumbnail }}"/>
+    </a>
+  {{ /comp }}
+{{ /for }}
