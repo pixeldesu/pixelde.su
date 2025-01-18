@@ -23,4 +23,6 @@ themeToggle.addEventListener("click", () => {
     document.documentElement.classList.add("light");
     localStorage.setItem("theme", "light");
   }
+
+  document.body.dispatchEvent(new CustomEvent("theme-toggle"));
 });
