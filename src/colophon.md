@@ -28,6 +28,9 @@ alternative experience without it:
 - The mobile navigation is always open without JavaScript
 - The webring widget doesn't show a random Webring at the top and only is a
   collapsed list instead
+- Lightboxes are powered by [Parvus](https://github.com/deoostfrees/Parvus) (and
+  are just regular image links without JS)
+- The map on the events page is powered by [Leaflet](https://leafletjs.com)
 
 ## Accessibility
 
