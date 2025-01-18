@@ -36,6 +36,31 @@ site.remoteFile(
   "https://unpkg.com/parvus@2.6.0/dist/js/parvus.min.js",
 );
 
+site.remoteFile(
+  "assets/css/vendor/leaflet.css",
+  "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css",
+);
+
+site.remoteFile(
+  "assets/js/vendor/leaflet.js",
+  "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",
+);
+
+site.remoteFile(
+  "assets/img/vendor/leaflet/marker-icon.png",
+  "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
+);
+
+site.remoteFile(
+  "assets/img/vendor/leaflet/marker-icon-2x.png",
+  "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
+);
+
+site.remoteFile(
+  "assets/img/vendor/leaflet/marker-shadow.png",
+  "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+);
+
 site.use(esbuild({
   options: {
     bundle: false,
