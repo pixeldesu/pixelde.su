@@ -59,18 +59,3 @@
     </a>
   {{ /comp }}
 {{ /if }}
-
-{{ if podcasts.length > 0 }}
-  {{ comp ui.groupCard }}
-    <h3 class="font-bold">Podcasts</h3>
-    {{ for podcast of podcasts }}
-      {{ comp.podcast({ podcast }) }}
-    {{ /for }}
-    <a href="/podcasts" class="block text-center no-underline transition-all hocus:translate-x-1">
-      All podcasts
-      <svg class="ms-1 inline-block" width=".8rem" height=".8rem" version="2.0">
-        <use href="#chevron-right" />
-      </svg>
-    </a>
-  {{ /comp }}
-{{ /if }}

@@ -2,7 +2,7 @@ export const layout = "layouts/tags/tag.vto";
 
 export const type = "page";
 
-export default function* ({ globalTags, podcasts, projects, search }) {
+export default function* ({ globalTags, projects, search }) {
   const tags = search.values("tags");
 
   for (const tag of tags) {
@@ -14,9 +14,6 @@ export default function* ({ globalTags, podcasts, projects, search }) {
     const tagProjects = projects
       .filter((project) => project.tags.includes(tag));
 
-    const tagPodcasts = podcasts
-      .filter((podcast) => podcast.tags.includes(tag));
-
     const talks = search.pages(`type=talk ${tag}`, "order date=desc");
 
     yield {
@@ -27,9 +24,8 @@ export default function* ({ globalTags, podcasts, projects, search }) {
       talks,
       articles,
       projects: tagProjects,
-      podcasts: tagPodcasts,
       tag,
-      count: articles.length + tagProjects.length + tagPodcasts.length +
+      count: articles.length + tagProjects.length +
         talks.length,
     };
   }
