@@ -1,0 +1,88 @@
+- name: FOSDEM 2025
+  date:
+    start: 2025-02-01
+    end: 2025-02-02
+  location:
+    name: Brussels, BE
+    lat: 50.813472
+    lng: 4.381236
+  url: https://fosdem.org/2025/
+  tags:
+    - open-source
+- name: Web Camp Venlo
+  date:
+    start: 2025-02-13
+    end: 2025-02-15
+  location:
+    name: Venlo, NL
+    lat: 51.373329
+    lng: 6.173340
+  url: https://www.webcampvenlo.nl/
+  tags:
+    - typo3
+- name: T3BOARD
+  date:
+    start: 2025-03-15
+    end: 2025-03-22
+  location:
+    name: Serfaus Fiss Ladis, AT
+    lat: 47.038410
+    lng: 10.607730
+  url: https://t3board.typo3.org/
+  tags:
+    - typo3
+- name: Revision Demoparty
+  date:
+    start: 2025-04-18
+    end: 2025-04-21
+  location:
+    name: Saarbrücken, DE
+    lat: 49.23791157740996
+    lng: 6.9967841277197795
+  url: https://2025.revision-party.net
+  tags:
+    - demoscene
+- name: DoKomi
+  date:
+    start: 2025-06-06
+    end: 2025-06-08
+  location:
+    name: Düsseldorf, DE
+    lat: 51.22342263848014
+    lng: 6.769677235644505
+  url: https://www.dokomi.de
+  tags:
+    - anime
+- name: GPN23
+  date:
+    start: 2025-06-19
+    end: 2025-06-22
+  location:
+    name: Karlsruhe, DE
+    lat: 49.00681209060267
+    lng: 8.402322438548207
+  url: https://entropia.de/GPN23
+  tags:
+    - chaos
+- name: TYPO3 Developer Days
+  date:
+    start: 2025-08-07
+    end: 2025-08-09
+  location:
+    name: Karlsruhe, DE
+    lat: 49.00681209060267
+    lng: 8.502322438548207
+  url: https://t3dd24.typo3.com
+  tags:
+    - typo3
+- name: CORTEX IMPLANT Meetup
+  date:
+    start: 2025-09-01
+    end: 2025-09-05
+  location:
+    name: Berlin, DE
+    lat: 52.520592068943834
+    lng: 13.40548278026983
+  url: https://obeythesystem.com
+  tags:
+    - community

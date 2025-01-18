@@ -1,0 +1,33 @@
+---
+layout: layouts/minimal.vto
+title: Events
+---
+
+{{ comp ui.raisedCard { classes: "mb-3 prose" } }}
+  <h1>Events</h1>
+  <p>Events that I will attend or contribute to!</p>
+{{ /comp }}
+
+{{ comp ui.raisedCard { classes: "mb-3 !p-0 overflow-hidden" } }}
+  <div class="aspect-video" id="map" data-events="{{ events |> JSON.stringify |> encodeURI }}"></div>
+{{ /comp }}
+
+{{ for event of events }}
+  {{ comp ui.raisedCard { classes: "mb-3 prose" } }}
+    <h2 class="mb-0">{{ event.name }}</h2>
+    <p class="text-sm mb-2">
+      From {{ event.date.start |> date('HUMAN_DATE') }} to {{ event.date.end |> date('HUMAN_DATE') }} in {{ event.location.name }}
+    </p>
+    <div class="flex items-center mt-3">
+      <ul class="p-0 m-0">
+        {{ for tag of event.tags }}
+          {{ comp.tag({ tag, isLink: false }) }}
+        {{ /for }}
+      </ul>
+      <a href="{{ event.url }}" class="ms-auto self-end shrink-0 transition-all font-semibold no-underline" target="_blank">
+        <img src="/assets/svg/fa-link.svg" class="fill-current inline-block h-[1.4rem] w-[1.4rem] me-1 align-middle" inline/>
+        Website
+      </a>
+    </div>
+  {{ /comp }}
+{{ /for }}

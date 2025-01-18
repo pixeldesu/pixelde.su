@@ -20,4 +20,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       captionsSelector: "[data-caption]",
     });
   }
+
+  if (document.getElementById("map")) {
+    import("./modules/events.js");
+  }
 });
