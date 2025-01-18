@@ -1,4 +1,5 @@
 @import url("./vendor/parvus.css");
+@import url("./vendor/leaflet.css");
 
 @tailwind base;
 @tailwind components;
