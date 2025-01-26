@@ -75,14 +75,14 @@
   url: https://t3dd24.typo3.com
   tags:
     - typo3
-- name: CORTEX IMPLANT Meetup
+- name: Evoke Demoparty
   date:
-    start: 2025-09-01
-    end: 2025-09-05
+    start: 2025-08-15
+    end: 2025-08-17
   location:
-    name: Berlin, DE
-    lat: 52.520592068943834
-    lng: 13.40548278026983
-  url: https://obeythesystem.com
+    name: Cologne, DE
+    lat: 50.936505364762304
+    lng: 6.956860156399147
+  url: https://2025.evoke.eu/
   tags:
-    - community
+    - demoscene
