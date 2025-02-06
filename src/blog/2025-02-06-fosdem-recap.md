@@ -5,6 +5,9 @@ description: |
 tags:
   - fosdem
   - event-recap
+comments:
+  fediverse: https://desu.social/@pixel/113954006218111756
+  bluesky: https://bsky.app/profile/pixelde.su/post/3lhhruiyvhc2w
 templateEngine: [vto, md]
 ---
 
