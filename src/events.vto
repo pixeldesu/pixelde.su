@@ -9,10 +9,10 @@ title: Events
 {{ /comp }}
 
 {{ comp ui.raisedCard { classes: "mb-3 !p-0 overflow-hidden no-js-hidden" } }}
-  <div class="aspect-video" id="map" data-events="{{ events |> JSON.stringify |> encodeURI }}"></div>
+  <div class="aspect-video" id="map" data-events="{{ events |> filterEventInFuture |> JSON.stringify |> encodeURI }}"></div>
 {{ /comp }}
 
-{{ for event of events }}
+{{ for event of events |> filterEventInFuture }}
   {{ comp ui.raisedCard { classes: "mb-3 prose" } }}
     <h2 class="mb-0">{{ event.name }}</h2>
     <p class="text-sm mb-2">
