@@ -16,8 +16,7 @@ am doing currently.
 
 ## What I'm working on
 
-- Preparing things for FOSDEM!
-- Also preparing my talk for Web Camp Venlo ahead of time!
+- Preparing things for Web Camp Venlo!
 
 ## What I'm playing
 
@@ -28,9 +27,6 @@ am doing currently.
 - [Ameku M.D.: Doctor Detective](https://anilist.co/anime/176642/Ameku-Takao-no-Suiri-Karte/)
 - [SAKAMOTO DAYS](https://anilist.co/anime/177709/SAKAMOTO-DAYS/)
 - [I May Be a Guild Receptionist, but I’ll Solo Any Boss to Clock Out on Time](https://anilist.co/anime/167143/Guild-no-Uketsukejou-desu-ga-Zangyou-wa-Iya-nanode-Boss-wo-Solo-Tobatsu-Shiyou-to-Omoimasu/)
-- [Fairy Tail: 100 Years Quest](https://anilist.co/anime/139095/FAIRY-TAIL-100-YEARS-QUEST/)
-- [BLEACH: Thousand-Year Blood War - The Conflict](https://anilist.co/anime/169755/BLEACH-Sennen-Kessenhen--Soukokutan/)
-- [Re:ZERO -Starting Life in Another World-](https://anilist.co/anime/108632/ReZero-kara-Hajimeru-Isekai-Seikatsu-2nd-Season/)
 - [Golden Kamuy](https://anilist.co/anime/110355/Golden-Kamuy-3rd-Season/)
 
 ## What I'm reading
