@@ -208,4 +208,19 @@ site.filter(
     array.filter((event) => event.date!.start < (new Date())),
 );
 
+site.filter(
+  "removeTrailingSlash",
+  (url: string) => url.replace(/\/$/, ""),
+);
+
+site.filter(
+  "removeProtocol",
+  (url: string) => url.replace(/(^\w+:|^)\/\//, ""),
+);
+
+site.filter(
+  "removeWWWSubdomain",
+  (url: string) => url.replace(/^www\./, ""),
+);
+
 export default site;

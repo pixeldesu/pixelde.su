@@ -1,0 +1,18 @@
+---
+layout: layouts/minimal.vto
+title: Artist Spotlight
+---
+
+{{ comp ui.raisedCard { classes: "mb-3 prose" } }}
+  <h1>Artist Spotlight</h1>
+  <p>All artists that I worked with and links to their websites or social profiles!</p>
+{{ /comp }}
+
+<div class="grid md:grid-cols-2 gap-3">
+  {{ for artist of artists }}
+    {{ comp ui.raisedCard { href: artist.url, attributes: { target: "_blank" } } }}
+      <h2 class="font-semibold">{{ artist.name }}</h2>
+      <p class="text-sm opacity-50 dark:opacity-60">{{ artist.url |> removeTrailingSlash |> removeProtocol |> removeWWWSubdomain }} </p>
+    {{ /comp }}
+  {{ /for }}
+</div>
