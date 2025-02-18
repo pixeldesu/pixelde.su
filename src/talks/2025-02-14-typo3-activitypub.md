@@ -17,6 +17,10 @@ downloads:
     url:  /assets/slides/typo3-activitypub.pdf
 ---
 
-ActivityPub is a rising star in the social media sphere with a lot of sites, including Instagrams Threads' adding support for it. This talk discusses how you can share your websites' content (like articles) to ActivityPub-enabled sites, offering an alternative to specific APIs or RSS-feed sharing services.
+ActivityPub is a rising star in the social media sphere with a lot of sites,
+including Instagrams Threads' adding support for it. This talk discusses how you
+can share your websites' content (like articles) to ActivityPub-enabled sites,
+offering an alternative to specific APIs or RSS-feed sharing services.
 
-GitHub repository for my work-in-progress TYPO3 ActivityPub integration: [pixeldesu/typo3-activitypub](https://github.com/pixeldesu/typo3-activitypub)
+GitHub repository for my work-in-progress TYPO3 ActivityPub integration:
+[pixeldesu/typo3-activitypub](https://github.com/pixeldesu/typo3-activitypub)
