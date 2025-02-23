@@ -4,6 +4,9 @@ description: |
   I switched to Apple Music from Spotify, these are my thoughts after one year.
 tags:
   - review
+comments:
+  fediverse: https://desu.social/@pixel/114055649842311419
+  bluesky: https://bsky.app/profile/pixelde.su/post/3liuwcmgs5k2g
 templateEngine: [vto, md]
 ---
 
