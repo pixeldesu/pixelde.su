@@ -24,4 +24,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (document.getElementById("map")) {
     import("./modules/events.js");
   }
+
+  if (document.querySelector("[data-vscode-file]")) {
+    import("./modules/vscode.js");
+  }
 });

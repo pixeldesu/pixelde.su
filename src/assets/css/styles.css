@@ -19,6 +19,15 @@
   .button svg {
     @apply inline-block fill-white h-[1.33rem] align-text-bottom w-auto me-1;
   }
+
+  [data-vscode-file] {
+    @apply transition-all rounded-md;
+  }
+
+  [data-vscode-file]:hover {
+    @apply transition-all outline outline-sky-400 outline-2 outline-offset-4
+      dark:bg-sky-800/10 bg-sky-50/10;
+  }
 }
 
 .dark {

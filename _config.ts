@@ -13,6 +13,7 @@ import inline from "lume/plugins/inline.ts";
 import attributes from "lume/plugins/attributes.ts";
 import openring from "lume_openring/mod.ts";
 import nano from "npm:cssnano";
+import vscode from "./plugins/markdown-it/vscode.ts";
 
 import tailwindOptions from "./tailwind.config.js";
 
@@ -84,6 +85,10 @@ site.use(inline({
 }));
 
 site.use(attributes());
+
+if (site.options.location.hostname === "localhost") {
+  site.use(vscode());
+}
 
 site.use(feed({
   output: ["/blog/posts.rss", "/blog/posts.json"],
