@@ -108,7 +108,7 @@ site.use(feed({
   output: ["/talks/posts.rss", "/talks/posts.json"],
   query: "type=talk index=true",
   info: {
-    title: "pixeldesu's blog",
+    title: "pixeldesu's talks",
     description: "Sessions and talks presented by pixeldesu at various events",
   },
   items: {
