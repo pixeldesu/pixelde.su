@@ -7,6 +7,7 @@ export default function* ({ search }) {
     search.pages("type=blog post_draft=false", "order date=desc"),
   );
   const totalPostCount = posts.length;
+  const tagCounts: Record<string, number> = {};
   let totalWordCount = 0;
   let totalMinutes = 0;
 
@@ -16,7 +17,18 @@ export default function* ({ search }) {
   posts.forEach((post) => {
     totalMinutes += post.readingInfo.minutes;
     totalWordCount += post.readingInfo.words;
+
+    post.tags.forEach((tag) => {
+      if (tagCounts[tag]) {
+        tagCounts[tag]++;
+      } else {
+        tagCounts[tag] = 1;
+      }
+    });
   });
+
+  const tagEntries = Object.entries(tagCounts);
+  tagEntries.sort((a, b) => b[1] - a[1]);
 
   const statistics = {
     totalPostCount,
@@ -24,6 +36,8 @@ export default function* ({ search }) {
     totalMinutes,
     longestPost: longestPosts[0],
     shortestPost: longestPosts.at(-1),
+    mostUsedTag: tagEntries[0],
+    leastUsedTag: tagEntries.at(-1),
   };
 
   yield {
