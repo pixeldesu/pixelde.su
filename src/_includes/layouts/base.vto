@@ -37,6 +37,10 @@
     {{ if type === "blog" || type === "talk" }}
       <meta property="fediverse:creator" content="@pixel@desu.social">
     {{ /if }}
+    <link rel="alternate" href="/blog/posts.rss"  title="pixeldesu's blog" type="application/rss+xml">
+    <link rel="alternate" href="/blog/posts.json" title="pixeldesu's blog" type="application/json">
+    <link rel="alternate" href="/talks/posts.rss"  title="pixeldesu's talks" type="application/rss+xml">
+    <link rel="alternate" href="/talks/posts.json" title="pixeldesu's talks" type="application/json">
 
     {{ if url === "/" }}
       {{ for webring of webrings }}
