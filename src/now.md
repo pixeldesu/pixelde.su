@@ -16,11 +16,11 @@ am doing currently.
 
 ## What I'm working on
 
-- Preparing things for Web Camp Venlo!
+- Post-shutdown Retrospring updates
 
 ## What I'm playing
 
-- [Satisfactory](https://store.steampowered.com/app/526870/Satisfactory/)
+- [No Man's Sky](https://www.nomanssky.com/) - Expedition 17
 
 ## What I'm watching
 
@@ -35,6 +35,5 @@ am doing currently.
 
 ## What I'm listening to
 
-- [Taishi/compllege](https://compllege.bandcamp.com/) (mostly the **Phant Solo**
-  releases)
-- [Apex Legends: Music From The Outlands, Vol. 1](https://eagames.bandcamp.com/album/apex-legends-music-from-the-outlands-vol-1-original-soundtrack)
+- [DJMAX Respect V](https://www.djmaxrespect.com/) Original Soundtrack
+- [nuphory](https://nuphory.com/)
