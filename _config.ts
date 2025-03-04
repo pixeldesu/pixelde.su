@@ -15,7 +15,7 @@ import openring from "lume_openring/mod.ts";
 import nano from "npm:cssnano";
 import vscode from "./plugins/markdown-it/vscode.ts";
 
-import sanitizeHtml from 'npm:sanitize-html';
+import sanitizeHtml from "npm:sanitize-html";
 
 import tailwindOptions from "./tailwind.config.js";
 
