@@ -17,6 +17,8 @@ import vscode from "./plugins/markdown-it/vscode.ts";
 
 import tailwindOptions from "./tailwind.config.js";
 
+import fetchFormSubmissions from "./scripts/fetch-form-submissions.ts";
+
 const site = lume({
   src: "./src",
   emptyDest: false,
@@ -227,5 +229,7 @@ site.filter(
   "removeWWWSubdomain",
   (url: string) => url.replace(/^www\./, ""),
 );
+
+site.script("fetch-form-submissions", async () => await fetchFormSubmissions());
 
 export default site;
