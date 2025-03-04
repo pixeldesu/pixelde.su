@@ -8,6 +8,6 @@
     </span>
   </div>
   <div>
-    {{ entry.message |> replaceAll('\n', '<br>') |> safe }}
+    {{ entry.message |> replaceAll('\n', '<br>') |> sanitize |> safe }}
   </div>
 {{ /comp }}

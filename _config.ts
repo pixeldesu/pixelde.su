@@ -15,6 +15,8 @@ import openring from "lume_openring/mod.ts";
 import nano from "npm:cssnano";
 import vscode from "./plugins/markdown-it/vscode.ts";
 
+import sanitizeHtml from 'npm:sanitize-html';
+
 import tailwindOptions from "./tailwind.config.js";
 
 import fetchFormSubmissions from "./scripts/fetch-form-submissions.ts";
@@ -228,6 +230,11 @@ site.filter(
 site.filter(
   "removeWWWSubdomain",
   (url: string) => url.replace(/^www\./, ""),
+);
+
+site.filter(
+  "sanitize",
+  (string: string) => sanitizeHtml(string),
 );
 
 site.script("fetch-form-submissions", async () => await fetchFormSubmissions());
