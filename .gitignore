@@ -1,1 +1,4 @@
 _site/
+
+# This file is auto-generated while building
+src/_data/guestbook.json
