@@ -1,7 +1,7 @@
 {{ comp ui.raisedCard { classes: "mb-3 prose" } }}
   <div class="flex mb-3">
     <span class="font-semibold">
-      {{ entry.name }}
+      {{ entry.name |> sanitize |> safe }}
     </span>
     <span class="ms-auto italic">
       {{ entry.date |> date('HUMAN_DATE') }}
