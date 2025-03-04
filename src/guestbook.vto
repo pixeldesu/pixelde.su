@@ -6,7 +6,13 @@ title: Guestbook
 {{ comp ui.raisedCard { classes: "mb-3 prose" } }}
   <h1>Guestbook</h1>
   <p>Leave me a nice message!</p>
-  <form name="guestbook" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="grid grid-cols-1 gap-y-3">
+  <form 
+    name="guestbook"
+    action="/guestbook/thanks"
+    method="POST" 
+    data-netlify="true" 
+    netlify-honeypot="bot-field" 
+    class="grid grid-cols-1 gap-y-3">
     <p class="hidden">
       <label>
         Don’t fill this out if you’re human: <input name="bot-field" />
@@ -43,3 +49,7 @@ title: Guestbook
     </div>
   </form>
 {{ /comp }}
+
+{{ for entry of guestbook |> sortDatebyDateDesc }}
+  {{ comp.guestbook({ entry }) }}
+{{ /for }}
