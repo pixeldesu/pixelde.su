@@ -1,4 +1,5 @@
 {
+  "version": "4",
   "specifiers": {
     "jsr:@davidbonnet/astring@1.8.6": "1.8.6",
     "jsr:@libs/typing@2": "2.9.0",
