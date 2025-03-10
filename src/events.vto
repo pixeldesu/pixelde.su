@@ -16,7 +16,7 @@ title: Events
   {{ comp ui.raisedCard { classes: "mb-3 prose" } }}
     <h2 class="mb-0">{{ event.name }}</h2>
     <p class="text-sm mb-2">
-      From {{ event.date.start |> date('HUMAN_DATE') }} to {{ event.date.end |> date('HUMAN_DATE') }} in {{ event.location.name }}
+      From <time datetime={{ event.date.start |> date }}>{{ event.date.start |> date('HUMAN_DATE') }}</time> to <time datetime={{ event.date.end |> date }}>{{ event.date.end |> date('HUMAN_DATE') }}</time> in {{ event.location.name }}
     </p>
     <div class="flex items-center mt-3">
       <ul class="p-0 m-0">
