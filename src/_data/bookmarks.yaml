@@ -54,3 +54,12 @@
     - video
     - essay
     - computer
+- url: https://www.youtube.com/watch?v=AdeswJreJ98
+  title: This Vintage Laptop is TRASH. Let's Fix that.
+  description: |
+    A neat video on the restoration of a Toshiba Libretto, including remodelling the outer shell and building a
+    solution for a BIOS password-resetting dongle.
+  date: 2025-03-11 23:00:00
+  tags:
+    - video
+    - computer
