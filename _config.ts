@@ -180,19 +180,19 @@ site.filter(
 site.filter(
   "filterByTag",
   (array: (Partial<{ tags: string[] }>)[], tag: string) =>
-    array.filter((item) => item.tags?.includes(tag)),
+    array?.filter((item) => item.tags?.includes(tag)),
 );
 
 site.filter(
   "filterNoTags",
   (array: (Partial<{ tags: string[] }>)[]) =>
-    array.filter((item) => !item.tags),
+    array?.filter((item) => !item.tags),
 );
 
 site.filter(
   "sortDatebyDateDesc",
   (array: (Partial<{ date: string }>)[]) =>
-    array.toSorted((a, b) =>
+    array?.toSorted((a, b) =>
       (new Date(b.date!)).valueOf() - (new Date(a.date!)).valueOf()
     ),
 );
@@ -200,7 +200,7 @@ site.filter(
 site.filter(
   "sortDatebyDateAsc",
   (array: (Partial<{ date: string }>)[]) =>
-    array.toSorted((a, b) =>
+    array?.toSorted((a, b) =>
       (new Date(a.date!)).valueOf() - (new Date(b.date!)).valueOf()
     ),
 );
