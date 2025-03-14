@@ -1,18 +1,31 @@
----
-layout: layouts/minimal.vto
-title: Events
----
+{{ layout "layouts/minimal.vto" }}
 
 {{ comp ui.raisedCard { classes: "mb-3 prose" } }}
-  <h1>Events</h1>
-  <p>Events that I will attend or contribute to!</p>
+  <h1>{{ title }}</h1>
+  <p>{{ description }}</p>
 {{ /comp }}
 
 {{ comp ui.raisedCard { classes: "mb-3 !p-0 overflow-hidden no-js-hidden" } }}
-  <div class="aspect-video" id="map" data-events="{{ events |> filterEventInFuture |> JSON.stringify |> encodeURI }}"></div>
+  <div class="aspect-video" id="map" data-events="{{ events |> JSON.stringify |> encodeURI }}"></div>
 {{ /comp }}
 
-{{ for event of events |> filterEventInFuture }}
+{{ if past }}
+  {{ comp ui.linkCard { href: "/events/", classes: "items-center group font-semibold mb-3" } }}
+    <span>Future Events</span>
+    <svg class="fill-current ms-2" width="1rem" height="1rem" version="2.0">
+      <use href="#chevron-right" />
+    </svg>
+  {{ /comp }}
+{{ else }}
+  {{ comp ui.linkCard { href: "/events/past/", classes: "items-center group font-semibold mb-3" } }}
+    <svg class="fill-current me-2" width="1rem" height="1rem" version="2.0">
+      <use href="#chevron-left" />
+    </svg>
+    <span>Past Events</span>
+  {{ /comp }}
+{{ /if }}
+
+{{ for event of events }}
   {{ comp ui.raisedCard { classes: "mb-3 prose" } }}
     <h2 class="mb-0">{{ event.name }}</h2>
     <p class="text-sm mb-2">
