@@ -86,3 +86,14 @@
   url: https://2025.evoke.eu/
   tags:
     - demoscene
+- name: TYPO3camp München
+  date:
+    start: 2025-09-12
+    end: 2025-09-14
+  location:
+    name: Munich, DE
+    lat: 48.13496733759594
+    lng: 11.58176121923381
+  url: https://www.typo3camp-muenchen.de/
+  tags:
+    - typo3
