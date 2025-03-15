@@ -24,7 +24,7 @@ export default function* ({ events }: { events: Event[] }) {
       (new Date(a.date.start)).valueOf() - (new Date(b.date.start)).valueOf()
     );
   const pastEvents = events
-    .filter((event) => event.date.start < (new Date()))
+    .filter((event) => event.date.end < (new Date()))
     .toSorted((a, b) =>
       (new Date(b.date.end)).valueOf() - (new Date(a.date.end)).valueOf()
     );
