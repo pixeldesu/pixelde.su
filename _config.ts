@@ -207,18 +207,6 @@ site.filter(
 );
 
 site.filter(
-  "filterEventInFuture",
-  (array: (Partial<{ date: { end: Date } }>)[]) =>
-    array.filter((event) => event.date!.end > (new Date())),
-);
-
-site.filter(
-  "filterEventInPast",
-  (array: (Partial<{ date: { start: Date } }>)[]) =>
-    array.filter((event) => event.date!.start < (new Date())),
-);
-
-site.filter(
   "removeTrailingSlash",
   (url: string) => url.replace(/\/$/, ""),
 );
