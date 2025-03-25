@@ -4,6 +4,9 @@ description: |
   After several years I relaunched this website on March 25th, 2024. Let's talk a bit about that.
 tags:
   - personal
+comments:
+  fediverse: https://desu.social/@pixel/114221916827786417
+  bluesky: https://bsky.app/profile/pixelde.su/post/3ll6r3exazk2g
 templateEngine: [vto, md]
 ---
 
