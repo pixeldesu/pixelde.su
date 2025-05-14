@@ -20,7 +20,8 @@ am doing currently.
 
 ## What I'm playing
 
-- [SeaBed](https://store.steampowered.com/app/583090/SeaBed/) for [Save and Load Club](https://saveandload.club)
+- [SeaBed](https://store.steampowered.com/app/583090/SeaBed/) for
+  [Save and Load Club](https://saveandload.club)
 - [Haste](https://store.steampowered.com/app/1796470/Haste/)
 
 ## What I'm watching
