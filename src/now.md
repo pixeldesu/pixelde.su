@@ -16,17 +16,18 @@ am doing currently.
 
 ## What I'm working on
 
-- Post-shutdown Retrospring updates
+- Not much actually, mainly just hanging around!
 
 ## What I'm playing
 
-- [No Man's Sky](https://www.nomanssky.com/) - Expedition 17
+- [SeaBed](https://store.steampowered.com/app/583090/SeaBed/) for [Save and Load Club](https://saveandload.club)
+- [Haste](https://store.steampowered.com/app/1796470/Haste/)
 
 ## What I'm watching
 
-- [Ameku M.D.: Doctor Detective](https://anilist.co/anime/176642/Ameku-Takao-no-Suiri-Karte/)
-- [SAKAMOTO DAYS](https://anilist.co/anime/177709/SAKAMOTO-DAYS/)
-- [I May Be a Guild Receptionist, but I’ll Solo Any Boss to Clock Out on Time](https://anilist.co/anime/167143/Guild-no-Uketsukejou-desu-ga-Zangyou-wa-Iya-nanode-Boss-wo-Solo-Tobatsu-Shiyou-to-Omoimasu/)
+- [mono](https://anilist.co/anime/176246/mono/)
+- [Lazarus](https://anilist.co/anime/167336/Lazarus/)
+- [Witch Watch](https://anilist.co/anime/180367/Witch-Watch/)
 - [Golden Kamuy](https://anilist.co/anime/110355/Golden-Kamuy-3rd-Season/)
 
 ## What I'm reading
