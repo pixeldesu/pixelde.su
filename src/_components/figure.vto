@@ -1,13 +1,13 @@
 {{ if url }}
-  <a href="{{ url }}" class="no-underline" target="_blank">
+  <a href="{{ url }}" class="no-underline {{ linkClasses }}" target="_blank" {{ linkAttributes |> attr |> safe }}>
     <figure class="m-0">
-      <img class="rounded-md m-auto" src="{{ image }}" {{ if width }}width="{{ width }}"{{ /if }} {{ if height }}height="{{ height }}"{{ /if }} alt="{{ alt }}"/>
-      <figcaption class="italic text-center font-normal">{{ caption }}</figcaption>
+      <img class="rounded-md m-auto {{ classes }}" src="{{ image }}" {{ if width }}width="{{ width }}"{{ /if }} {{ if height }}height="{{ height }}"{{ /if }} alt="{{ alt }}"/>
+      <figcaption class="italic text-center font-normal" data-caption>{{ caption }}</figcaption>
     </figure>
   </a>
 {{ else }}
   <figure class="m-0">
-    <img class="rounded-md m-auto" src="{{ image }}" {{ if width }}width="{{ width }}"{{ /if }} {{ if height }}height="{{ height }}"{{ /if }} alt="{{ alt }}"/>
+    <img class="rounded-md m-auto" src="{{ image }}" {{ if width }}width="{{ width }}"{{ /if }} {{ if height }}height="{{ height }}"{{ /if }} alt="{{ alt }}" {{ attributes |> attr |> safe }}/>
     <figcaption class="italic text-center font-normal">{{ caption }}</figcaption>
   </figure>
 {{ /if }}
