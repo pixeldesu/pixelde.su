@@ -14,7 +14,7 @@ urls:
     url: https://www.slideshare.net/slideshow/migrating-from-jquery-core-journey-to-vanilla-js/270669719
 downloads:
   - name: Slides
-    url:  /assets/slides/migrating-from-jquery.pdf
+    url: /assets/slides/migrating-from-jquery.pdf
 ---
 
 Discover the journey of the TYPO3 core development team as they work to

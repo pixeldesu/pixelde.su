@@ -14,7 +14,7 @@ urls:
     url: https://www.slideshare.net/slideshow/web-syndication-with-typo3-and-activitypub-pdf/275653970
 downloads:
   - name: Slides
-    url:  /assets/slides/typo3-activitypub.pdf
+    url: /assets/slides/typo3-activitypub.pdf
 ---
 
 ActivityPub is a rising star in the social media sphere with a lot of sites,

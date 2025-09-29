@@ -13,7 +13,7 @@ urls:
     url: https://www.slideshare.net/pixeldesu/unframework-delivering-dynamic-experiences-with-html-over-the-wire
 downloads:
   - name: Slides
-    url:  /assets/slides/un-framework.pdf
+    url: /assets/slides/un-framework.pdf
 ---
 
 In the age of modern frontend frameworks like React and Vue that often require a

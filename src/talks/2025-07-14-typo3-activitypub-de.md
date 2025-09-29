@@ -12,7 +12,7 @@ urls:
     url: https://www.mtug.de/treffen/veranstaltungen-2025/juli.html
 downloads:
   - name: Slides
-    url:  /assets/slides/typo3-activitypub-de.pdf
+    url: /assets/slides/typo3-activitypub-de.pdf
 ---
 
 This is my talk
