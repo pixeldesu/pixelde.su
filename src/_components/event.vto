@@ -1,0 +1,21 @@
+{{ comp ui.raisedCard { classes: "mb-3 prose" } }}
+  <h2 class="mb-0">{{ event.name }}</h2>
+  <p class="text-sm mb-2">
+    From <time datetime={{ event.date.start |> date }}>{{ event.date.start |> date('HUMAN_DATE') }}</time> to <time datetime={{ event.date.end |> date }}>{{ event.date.end |> date('HUMAN_DATE') }}</time> in {{ event.location.name }}
+  </p>
+  <div class="flex items-center mt-3">
+    {{ if event.tags }}
+      <ul class="p-0 m-0">
+        {{ for tag of event.tags }}
+          {{ comp.tag({ tag, isLink: false }) }}
+        {{ /for }}
+      </ul>
+    {{ /if }}
+    {{ if event.url }}
+      <a href="{{ event.url }}" class="ms-auto self-end shrink-0 transition-all font-semibold no-underline" target="_blank">
+        <img src="/assets/svg/fa-link.svg" class="fill-current inline-block h-[1.4rem] w-[1.4rem] me-1 align-middle" inline/>
+        Website
+      </a>
+    {{ /if }}
+  </div>
+{{ /comp }}
