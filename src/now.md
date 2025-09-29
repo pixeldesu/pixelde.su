@@ -16,20 +16,18 @@ am doing currently.
 
 ## What I'm working on
 
-- Not much actually, mainly just hanging around!
+- My current hyperfocus is my return to streaming, so I mostly tend to do stuff
+  around that...[or stream](https://twitch.tv/pixeldesu).
 
 ## What I'm playing
 
-- [SeaBed](https://store.steampowered.com/app/583090/SeaBed/) for
-  [Save and Load Club](https://saveandload.club)
-- [Haste](https://store.steampowered.com/app/1796470/Haste/)
+- Minecraft on a modded server with friends
+- [UNBEATABLE](https://unbeatablegame.com) because I'm hyping myself up for the
+  November release
 
 ## What I'm watching
 
-- [mono](https://anilist.co/anime/176246/mono/)
-- [Lazarus](https://anilist.co/anime/167336/Lazarus/)
 - [Witch Watch](https://anilist.co/anime/180367/Witch-Watch/)
-- [Golden Kamuy](https://anilist.co/anime/110355/Golden-Kamuy-3rd-Season/)
 
 ## What I'm reading
 
@@ -37,5 +35,6 @@ am doing currently.
 
 ## What I'm listening to
 
-- [DJMAX Respect V](https://www.djmaxrespect.com/) Original Soundtrack
-- [nuphory](https://nuphory.com/)
+- [Pendulum](https://pendulum.com/) to hype myself up for the concert in October
+- A bunch of the [Diverse System](https://diverse.jp/) collab albums, mainly
+  AD:TRANCE and AD:Progressive House
