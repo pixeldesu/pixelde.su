@@ -43,7 +43,7 @@ out right here, on my very own [/uses](https://uses.tech) page.
 ### Browser
 
 - I'm a web developer by trade, so technically I use every browser, but
-  generally my main browser by now is [Arc](https://arc.net/).
+  generally my main browser by now is [Zen](https://zen-browser.app/).
 - To block unwanted content while browsing, I use
   [uBlock Origin](https://github.com/gorhill/uBlock) and
   [uBlacklist](https://github.com/iorate/ublacklist). Additionally for YouTube,
