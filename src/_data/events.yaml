@@ -97,3 +97,25 @@
   url: https://www.typo3camp-muenchen.de/
   tags:
     - typo3
+- name: Deadline Demoparty
+  date:
+    start: 2025-10-03
+    end: 2025-10-05
+  location:
+    name: Berlin, DE
+    lat: 52.53735921291396
+    lng: 13.529679283181075
+  url: https://demoparty.berlin/
+  tags:
+    - demoscene
+- name: Pendulum - Tour 2025 / Berlin
+  date:
+    start: 2025-10-14
+    end: 2025-10-14
+  location:
+    name: Berlin, DE
+    lat: 52.484641763009925
+    lng: 13.392397659309513
+  url: https://pendulum.com/
+  tags:
+    - concert
