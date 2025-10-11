@@ -1,0 +1,97 @@
+---
+layout: layouts/empty.vto
+title: "Perrin \"Prisma\" Shaw - Character Sheet"
+description: |
+  Prisma is a inter-dimensional archiver, living in a dimensional library.
+artworks:
+  - thumbnail: /assets/img/characters/prisma/thumb/a3lis_thumb.png
+    url: https://pixeldesu-assets.fra1.cdn.digitaloceanspaces.com/artwork/prisma/a3l_is.png
+    description: |
+      Reference sheet by A3l_is
+---
+
+<div class="container mx-auto max-w-7xl py-10">
+  <div class="relative">
+    <div class="relative md:fixed inset-0 md:max-h-[1248px] min-w-screen min-h-screen max-w-7xl mx-auto overflow-hidden">
+      <img src="/assets/img/characters/prisma/cube.png" inline class="mx-[-50vw] md:w-auto mx-auto md:my-56"/>
+      <div class="absolute inset-0 grid md:grid-cols-3 items-center">
+        <img src="/assets/img/characters/prisma/a3lis.png" width="534" height="992" alt="Fullbody artwork of Prisma by A3l_is" class="col-start-2 items-center justify-items-center block mx-auto rotate-[2deg] drop-shadow-xl"/>
+      </div>
+      <div class="absolute bottom-64 md:bottom-36 inset-x-0 md:left-48 md:rotate-[30deg] drop-shadow-md text-center md:text-left">
+        <p class="text-8xl font-bold text-transparent m-0 leading-none bg-gradient-to-t from-[#bfedfc] to-[#27aad7] bg-clip-text" style="-webkit-text-stroke: 2px white;">PRISMA</p>
+        <p class="text-4xl font-extrabold m-0 ms-2 leading-none" style="-webkit-text-stroke: 1px white;">PERRIN SHAW</p>
+      </div>
+    </div>
+    <div class="relative md:absolute left-0 right-0 bottom-0 -top-56 md:top-0 md:min-h-[1248px] max-w-full">
+      <div class="absolute clear-both grid md:grid-cols-3">
+        <div class="col-start-3 col-span-1 mx-3 md:mx-0">
+          {{ comp ui.raisedCard { classes: "prose mb-3 md:mt-12" } }}
+            <div class="flex">
+              <h2 class="me-auto">Perrin "Prisma" Shaw</h2>
+              <span>
+                <button class="aspect-square appearance-none px-2 py-1 bg-slate-200 hocus:bg-slate-300 dark:bg-neutral-700 dark:hocus:bg-neutral-600 transition-all rounded-md flex items-center me-2 md:me-0 no-js-hidden" data-theme-toggle title="Switch color scheme">
+                  <svg src="/assets/svg/fa-sun.svg" class="fill-current h-[1rem] w-[1rem] hidden dark:block" inline></svg>
+                  <svg src="/assets/svg/fa-moon.svg" class="fill-current h-[1rem] w-[1rem] dark:hidden" inline></svg>
+                </button>
+              </span>
+            </div>
+            <div class="grid grid-cols-2 mb-2">
+              <div><strong>Gender:</strong></div><div>Male</div>
+              <div><strong>Age:</strong></div><div>28</div>
+              <div><strong>Birthday:</strong></div><time datetime="09-16">16.09.</time>
+              <div><strong>Personality:</strong></div><div>Motivating / Analytical</div>
+              <div><strong>Favorite Song:</strong></div><div><a href="https://www.youtube.com/watch?v=tEtYfN6vuT0" target="_blank">Puru - Cappuccino</a></div>
+            </div>
+            <p>Prisma is a inter-dimensional archiver, living in a dimensional library.</p>
+          {{ /comp }}
+          {{ comp ui.raisedCard { classes: "prose mb-3" } }}
+            <h2>Design Details</h2>
+            <div class="grid grid-cols-2">
+              <div><strong>Character Design:</strong></div><div><a href="https://vgen.co/a3l_is">A3l_is</a></div>
+              <div><strong>Initial Illustration:</strong></div><div><a href="https://vgen.co/a3l_is" target="_blank">A3l_is</a></div>
+              <div><strong>Date of Appearance:</strong></div><time datetime="2014-07-14">16.09.2025</time>
+            </div>
+          {{ /comp }}
+          {{ comp ui.raisedCard { classes: "prose mb-3" } }}
+            <h2>Colors</h2>
+            <div class="grid gap-3 font-bold uppercase">
+              <div class="rounded-md text-center p-3 bg-[#27aad7]"><span class="mix-blend-plus-lighter">#27aad7</span></div>
+              <div class="rounded-md text-center p-3 bg-[#bce236]"><span class="text-black">#bce236</span></div>
+              <div class="rounded-md text-center p-3 bg-[#e88e27]"><span class="mix-blend-plus-lighter">#e88e27</span></div>
+              <div class="rounded-md text-center p-3 bg-[#d72859]"><span class="mix-blend-plus-lighter">#d72859</span></div>
+              <div class="rounded-md text-center p-3 bg-[#2d4263]"><span class="mix-blend-plus-lighter">#2d4263</span></div>
+            </div>
+            <a href="/assets/misc/characters/swatches/poly_swatch.ase" class="text-center no-underline font-semibold flex items-center justify-center m-2">
+              <img src="/assets/svg/fa-link.svg" class="fill-current h-[1.5rem] w-[1.5rem] me-2" inline> Download Color Palette
+            </a>
+          {{ /comp }}
+          {{ comp ui.raisedCard { classes: "prose mb-3" } }}
+            <h2>Fanart Policy</h2>
+            <ul>
+              <li>Fanart in general is appreciated, I absolutely adore receiving art of my characters!</li>
+              <li><strong>No NSFW!</strong> While Rule 34 is a thing, Prisma will stay innocent.</li>
+            </ul>
+          {{ /comp }}
+          <div class="grid grid-cols-2 gap-3 mb-3">
+            {{ for artwork of artworks }}
+              {{ comp ui.raisedCard { href: artwork.url, classes: "aspect-square !p-0 overflow-hidden lightbox", attributes: { "data-group": "gallery" } } }}
+                <figure class="w-full h-full">
+                  <img src="{{ artwork.thumbnail }}" width="250" height="250" alt="{{ artwork.description |> safe }}" loading="lazy" class="object-cover"/>
+                  <figcaption data-caption class="hidden">
+                    {{ artwork.description |> safe }}
+                  </figcaption>
+                </figure>
+              {{ /comp }}
+            {{ /for }}
+          </div>
+          {{ comp ui.linkCard { href: "/characters/", classes: "items-center group prose font-semibold md:mb-12" } }}
+            <svg class="fill-current me-2" width="1rem" height="1rem" version="2.0">
+              <use href="#chevron-left" />
+            </svg>
+            Return to character listing
+          {{ /comp }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

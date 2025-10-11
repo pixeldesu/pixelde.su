@@ -1,3 +1,7 @@
+- nickname: Prisma
+  enabled: true
+  featured: true
+  cover: "/assets/img/characters/prisma-cover.png"
 - nickname: Poly
   enabled: true
   cover: "/assets/img/characters/poly-cover.png"
