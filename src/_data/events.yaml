@@ -64,6 +64,17 @@
   url: https://entropia.de/GPN23
   tags:
     - chaos
+- name: TYPO3 Community Sprint Q2/2025
+  date:
+    start: 2025-06-23
+    end: 2025-06-27
+  location:
+    name: Remote
+    lat: 51.24434616677735
+    lng: 6.7400714982612655
+  url: https://typo3.org/event/20250623-typo3-community-sprint-q2-2025
+  tags:
+    - typo3
 - name: TYPO3 Developer Days
   date:
     start: 2025-08-07
@@ -86,6 +97,17 @@
   url: https://2025.evoke.eu/
   tags:
     - demoscene
+- name: TYPO3 Community Sprint Q3/2025
+  date:
+    start: 2025-09-08
+    end: 2025-09-12
+  location:
+    name: Remote
+    lat: 51.24434616677735
+    lng: 6.7400714982612655
+  url: https://typo3.org/event/20250908-typo3-community-sprint-q3-2025
+  tags:
+    - typo3
 - name: TYPO3camp München
   date:
     start: 2025-09-12
@@ -119,3 +141,25 @@
   url: https://pendulum.com/
   tags:
     - concert
+- name: TYPO3 Community Sprint Q4/2025
+  date:
+    start: 2025-11-10
+    end: 2025-11-14
+  location:
+    name: Remote
+    lat: 51.24434616677735
+    lng: 6.7400714982612655
+  url: https://typo3.org/event/20251110-typo3-community-sprint-q4-2025
+  tags:
+    - typo3
+- name: 39C3 - Power Cycles
+  date:
+    start: 2025-12-27
+    end: 2025-12-30
+  location:
+    name: Hamburg, DE
+    lat: 53.56172172166276
+    lng: 9.985985227175412
+  url: https://events.ccc.de/congress/2025/infos/startpage.html
+  tags:
+    - chaos
