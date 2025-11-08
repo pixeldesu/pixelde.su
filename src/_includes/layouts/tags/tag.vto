@@ -59,3 +59,21 @@
     </a>
   {{ /comp }}
 {{ /if }}
+
+{{ if events.length > 0 }}
+  {{ comp ui.groupCard }}
+    <h3 class="font-bold">Events</h3>
+    {{ comp ui.raisedCard { classes: "mb-3 !p-0 overflow-hidden no-js-hidden" } }}
+      <div class="aspect-video" id="map" data-events="{{ events |> JSON.stringify |> encodeURI }}"></div>
+    {{ /comp }}
+    {{ for event of events }}
+      {{ comp.event({ event }) }}
+    {{ /for }}
+    <a href="/events" class="block text-center no-underline transition-all hocus:translate-x-1">
+      All events
+      <svg class="ms-1 inline-block" width=".8rem" height=".8rem" version="2.0">
+        <use href="#chevron-right" />
+      </svg>
+    </a>
+  {{ /comp }}
+{{ /if }}

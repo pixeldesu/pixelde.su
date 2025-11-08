@@ -2,7 +2,7 @@ export const layout = "layouts/tags/tag.vto";
 
 export const type = "page";
 
-export default function* ({ globalTags, projects, search }) {
+export default function* ({ globalTags, projects, search, events }) {
   const tags = search.values("tags");
 
   for (const tag of tags) {
@@ -16,6 +16,9 @@ export default function* ({ globalTags, projects, search }) {
 
     const talks = search.pages(`type=talk ${tag}`, "order date=desc");
 
+    const tagEvents = events
+      .filter((event) => event.tags.includes(tag));
+
     yield {
       url: `/tag/${tag}/`,
       title: globalTags[tag]?.name
@@ -23,6 +26,7 @@ export default function* ({ globalTags, projects, search }) {
         : `Everything tagged with ${tag}`,
       talks,
       articles,
+      events: tagEvents,
       projects: tagProjects,
       tag,
       count: articles.length + tagProjects.length +
