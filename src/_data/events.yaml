@@ -163,3 +163,14 @@
   url: https://events.ccc.de/congress/2025/infos/startpage.html
   tags:
     - chaos
+- name: DoKomi
+  date:
+    start: 2026-05-29
+    end: 2026-05-31
+  location:
+    name: Düsseldorf, DE
+    lat: 51.22342263848014
+    lng: 6.769677235644505
+  url: https://www.dokomi.de
+  tags:
+    - anime
