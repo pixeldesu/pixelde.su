@@ -125,7 +125,7 @@ site.use(robots({
 
 site.use(openring({
   sources: [
-    "https://damien.zone/feed/",
+    "https://damien.zone/feed.xml",
     "https://resir014.xyz/posts/rss.xml",
     "https://seirdy.one/posts/atom.xml",
     "https://volpeon.ink/notebook/rss.xml",
