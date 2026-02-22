@@ -1,16 +1,16 @@
 - nickname: Prisma
-  enabled: true
   featured: true
   cover: "/assets/img/characters/prisma-cover.png"
+  url: "http://vsona.co/perrin-prisma"
 - nickname: Poly
-  enabled: true
   cover: "/assets/img/characters/poly-cover.png"
+  url: "https://vsona.co/poly"
 - nickname: Pixel
-  enabled: false
   cover: "/assets/img/characters/pixel-cover.png"
+  url: "https://vsona.co/pppppixel"
 - nickname: Pyuru
-  enabled: false
   cover: "/assets/img/characters/pyuru-cover.png"
+  url: "https://vsona.co/pyuru"
 - nickname: Vert
-  enabled: false
   cover: "/assets/img/characters/vert-cover.png"
+  url: "https://vsona.co/pixel-vert"
