@@ -13,7 +13,6 @@ import inline from "lume/plugins/inline.ts";
 import attributes from "lume/plugins/attributes.ts";
 import openring from "lume_openring/mod.ts";
 import nano from "npm:cssnano";
-import vscode from "./plugins/markdown-it/vscode.ts";
 
 import sanitizeHtml from "npm:sanitize-html";
 
@@ -31,37 +30,37 @@ site.copy("assets/misc");
 
 site.remoteFile(
   "assets/css/vendor/parvus.css",
-  "https://unpkg.com/parvus@2.6.0/dist/css/parvus.min.css",
+  "https://cdn.jsdelivr.net/npm/parvus@2.6.0/dist/css/parvus.min.css",
 );
 
 site.remoteFile(
   "assets/js/vendor/parvus.js",
-  "https://unpkg.com/parvus@2.6.0/dist/js/parvus.min.js",
+  "https://cdn.jsdelivr.net/npm/parvus@2.6.0/dist/js/parvus.min.js",
 );
 
 site.remoteFile(
   "assets/css/vendor/leaflet.css",
-  "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css",
+  "https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css",
 );
 
 site.remoteFile(
   "assets/js/vendor/leaflet.js",
-  "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",
+  "https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js",
 );
 
 site.remoteFile(
   "assets/img/vendor/leaflet/marker-icon.png",
-  "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
+  "https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/images/marker-icon.png",
 );
 
 site.remoteFile(
   "assets/img/vendor/leaflet/marker-icon-2x.png",
-  "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
+  "https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/images/marker-icon-2x.png",
 );
 
 site.remoteFile(
   "assets/img/vendor/leaflet/marker-shadow.png",
-  "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+  "https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/images/marker-shadow.png",
 );
 
 site.use(esbuild({
@@ -85,10 +84,6 @@ site.use(inline({
 }));
 
 site.use(attributes());
-
-if (site.options.location.hostname === "localhost") {
-  site.use(vscode());
-}
 
 site.use(feed({
   output: ["/blog/posts.rss", "/blog/posts.json"],
