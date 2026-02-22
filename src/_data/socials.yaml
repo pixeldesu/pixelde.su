@@ -32,14 +32,6 @@
   icon: fa-message.svg
   tags:
     - chat
-- name: Retrospring
-  url: https://retrospring.net/@pixeldesu
-  text: "@pixeldesu"
-  icon: retrospring.svg
-- name: Cohost
-  url: https://cohost.org/pixeldesu
-  text: "@pixeldesu"
-  icon: cohost.svg
 - name: Bluesky
   url: https://bsky.app/profile/pixelde.su
   text: "@pixelde.su"

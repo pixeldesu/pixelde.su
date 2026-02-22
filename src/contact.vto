@@ -81,13 +81,3 @@ title: Contact
     {{ /for }}
   </div>
 </section>
-
-<section id="others" class="mt-3">
-  <h2>Others</h2>
-
-  <div class="grid md:grid-cols-2 gap-1">
-    {{ for otherSocial of socials |> filterNoTags }}
-      {{ comp.social({ social: otherSocial }) }}
-    {{ /for }}
-  </div>
-</section>
