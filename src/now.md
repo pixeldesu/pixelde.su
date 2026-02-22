@@ -18,23 +18,23 @@ am doing currently.
 
 - My current hyperfocus is my return to streaming, so I mostly tend to do stuff
   around that...[or stream](https://twitch.tv/pixeldesu).
+- I'm building [a UI renderer for Pangyas custom UI format "Fresh"](https://github.com/retreev/Saeroun)
 
 ## What I'm playing
 
-- Minecraft on a modded server with friends
-- [UNBEATABLE](https://unbeatablegame.com) because I'm hyping myself up for the
-  November release
+- [UNBEATABLE](https://unbeatablegame.com)
+- [In Falsus (Demo)](https://infalsus.lowiro.com/)
+- On stream I'm currently marathoning Pokemon games backwards, from most modern to the oldest releases!
 
 ## What I'm watching
 
-- [Witch Watch](https://anilist.co/anime/180367/Witch-Watch/)
+- [For an up-to-date listing, view my AniList watchlist](https://anilist.co/user/pixeldesu/animelist/Watching)
 
 ## What I'm reading
 
-- [Assassination Classroom](https://anilist.co/manga/69883/Ansatsu-Kyoushitsu/)
+- [For an up-to-date listing, view my AniList reading list](https://anilist.co/user/pixeldesu/mangalist/Reading)
 
 ## What I'm listening to
 
-- [Pendulum](https://pendulum.com/) to hype myself up for the concert in October
 - A bunch of the [Diverse System](https://diverse.jp/) collab albums, mainly
   AD:TRANCE and AD:Progressive House
