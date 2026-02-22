@@ -18,13 +18,15 @@ am doing currently.
 
 - My current hyperfocus is my return to streaming, so I mostly tend to do stuff
   around that...[or stream](https://twitch.tv/pixeldesu).
-- I'm building [a UI renderer for Pangyas custom UI format "Fresh"](https://github.com/retreev/Saeroun)
+- I'm building
+  [a UI renderer for Pangyas custom UI format "Fresh"](https://github.com/retreev/Saeroun)
 
 ## What I'm playing
 
 - [UNBEATABLE](https://unbeatablegame.com)
 - [In Falsus (Demo)](https://infalsus.lowiro.com/)
-- On stream I'm currently marathoning Pokemon games backwards, from most modern to the oldest releases!
+- On stream I'm currently marathoning Pokemon games backwards, from most modern
+  to the oldest releases!
 
 ## What I'm watching
 
