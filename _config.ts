@@ -149,6 +149,9 @@ site.use(openring({
 
 site.hooks.addPostcssPlugin(nano);
 
+site.add([".css"]);
+site.add([".js"]);
+
 const commitCmd = new Deno.Command("git", { args: ["rev-parse", "HEAD"] });
 const { stdout } = await commitCmd.output();
 const commitHash = new TextDecoder().decode(stdout);
