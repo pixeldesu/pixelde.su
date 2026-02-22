@@ -44,7 +44,17 @@
         "jsr.io:443",
         "deno.land:443",
         "esm.sh:443",
-        "registry.npmjs.org:443"
+        "registry.npmjs.org:443",
+        "damien.zone:443",
+        "resir014.xyz:443",
+        "seirdy.one:443",
+        "volpeon.ink:443",
+        "hugo.md:443",
+        "qtea.me:443",
+        "xeiaso.net:443",
+        "chronovore.dev:443",
+        "87flowers.com:443",
+        "flanger.dev:443"
       ],
       "env": true,
       "run": true,
