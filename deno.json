@@ -6,7 +6,7 @@
     },
     "build": {
       "description": "Build the site for production",
-      "command": "deno task lume run fetch-form-submissions && deno task lume --location https://pixelde.su/"
+      "command": "deno task lume -- run fetch-form-submissions && deno task lume --location https://pixelde.su/"
     },
     "serve": {
       "description": "Run and serve the site for development",
