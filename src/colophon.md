@@ -15,8 +15,8 @@ title: Colophon
 
 - Base CSS framework is [Tailwind CSS](https://tailwindcss.com/)
 - Icons and logos used are from [FontAwesome](https://fontawesome.com/)
-- Character sketch illustration on the bottom right drawn by
-  [rinillu](https://x.com/rinillu)
+- Character sketch illustration on the right drawn by
+  [a3l_is](https://vgen.co/a3l_is)
 
 ## JavaScript
 
