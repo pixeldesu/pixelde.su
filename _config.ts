@@ -71,10 +71,10 @@ site.use(esbuild({
 site.use(date());
 site.use(readInfo());
 site.use(sitemap());
+site.use(terser());
 site.use(tailwindcss());
 site.use(postcss());
 site.use(minifyHTML());
-site.use(terser());
 
 site.use(inline({
   copyAttributes: [
