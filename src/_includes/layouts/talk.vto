@@ -2,7 +2,7 @@
 
 {{ set main }}
   {{ comp ui.raisedCard { classes: "flex flex-col min-h-[768px] prose" } }}
-    <ul class="p-0 m-0">
+    <ul class="!p-0 !m-0">
       {{ for tag of tags }}
         {{ comp.tag({ tag, isLink: true, linkPrefix: '/talks/tag/' }) }}
       {{ /for }}

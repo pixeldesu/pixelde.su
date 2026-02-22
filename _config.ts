@@ -17,8 +17,6 @@ import vscode from "./plugins/markdown-it/vscode.ts";
 
 import sanitizeHtml from "npm:sanitize-html";
 
-import tailwindOptions from "./tailwind.config.js";
-
 import fetchFormSubmissions from "./scripts/fetch-form-submissions.ts";
 
 const site = lume({
@@ -74,9 +72,7 @@ site.use(esbuild({
 site.use(date());
 site.use(readInfo());
 site.use(sitemap());
-site.use(tailwindcss({
-  options: tailwindOptions,
-}));
+site.use(tailwindcss());
 site.use(postcss());
 site.use(minifyHTML());
 site.use(terser());

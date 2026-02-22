@@ -8,7 +8,7 @@
   </p>
   {{ bookmark.description |> safe }}
   <div class="flex items-center mt-3">
-    <ul class="p-0 m-0">
+    <ul class="!p-0 !m-0">
       {{ for tag of bookmark.tags }}
         {{ comp.tag({ tag, isLink: false }) }}
       {{ /for }}

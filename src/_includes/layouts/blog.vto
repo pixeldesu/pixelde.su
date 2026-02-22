@@ -3,7 +3,7 @@
 {{ set main }}
   {{ comp ui.raisedCard { classes: "min-h-[768px] prose" } }}
     <div class="relative z-10">
-      <ul class="p-0 m-0">
+      <ul class="!p-0 !m-0">
         {{ for tag of tags }}
           {{ comp.tag({ tag, isLink: true, linkPrefix: '/blog/tag/' }) }}
         {{ /for }}

@@ -2,7 +2,7 @@
   <div class="relative z-10">
     <h2>{{ project.name }}</h2>
     <p>{{ project.description }}</p>
-    <ul class="p-0 m-0">
+    <ul class="!p-0 !m-0">
       {{ for tag of project.tags }}
         {{ comp.tag({ tag, isLink: false }) }}
       {{ /for }}

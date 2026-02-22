@@ -1,16 +1,45 @@
 @import url("./vendor/parvus.css");
 @import url("./vendor/leaflet.css");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *), @media (prefers-color-scheme: dark) { &:not(.light *) });
+
+@variant hocus {
+  &:hover,
+  &:focus {
+    @slot;
+  }
+}
+
+@variant group-hocus {
+  :is(:where(.group)):hover &,
+  :is(:where(.group)):hover & {
+    @slot;
+  }
+}
+
+@theme {
+  --animate-spin-speed-1x: spin 15s linear infinite;
+  --animate-spin-speed-2x: spin 20s linear infinite;
+  --animate-spin-speed-3x: spin 25s linear infinite;
+  --animate-spin-speed-4x: spin 30s linear infinite;
+  --animate-spin-speed-5x: spin 35s linear infinite;
+}
+
+@utility prose {
+  @apply dark:prose-invert prose-headings:!my-3 prose-code:before:hidden prose-code:after:hidden;
+
+  p:first-of-type,
+  h1:first-of-type,
+  h2:first-of-type,
+  h3:first-of-type {
+    margin-block-start: 0 !important;
+  }
+}
 
 @layer components {
-  .prose {
-    @apply dark:prose-invert dark:prose-neutral prose-headings:my-3
-      prose-code:before:hidden prose-code:after:hidden;
-  }
-
   .button {
     @apply inline-flex items-center rounded-md shadow-lg font-bold text-white
       px-2 py-0.5 transition-all hocus:translate-y-0.5;
@@ -34,13 +63,6 @@
   --parvus-background-color: rgb(23 23 23 / 1);
   --parvus-color: #d4d4d4;
   --parvus-caption-color: #d4d4d4;
-}
-
-.prose p:first-of-type,
-.prose h1:first-of-type,
-.prose h2:first-of-type,
-.prose h3:first-of-type {
-  margin-block-start: 0;
 }
 
 .no-js .no-js-hidden {
