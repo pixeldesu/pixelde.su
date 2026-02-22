@@ -10,6 +10,12 @@
   icon: matrix.svg
   tags:
     - chat
+- name: "Twitch"
+  url: https://twitch.tv/pixeldesu
+  text: "pixeldesu"
+  icon: twitch.svg
+  tags:
+    - livestreaming
 - name: Discord
   text: pixeldesu
   icon: discord.svg

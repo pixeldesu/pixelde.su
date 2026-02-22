@@ -32,6 +32,16 @@ title: Contact
   </div>
 </section>
 
+<section id="livestreaming" class="my-3">
+  <h2>Live Streaming</h2>
+
+  <div class="grid md:grid-cols-2 gap-1">
+    {{ for liveSocial of socials |> filterByTag("livestreaming") }}
+      {{ comp.social({ social: liveSocial }) }}
+    {{ /for }}
+  </div>
+</section>
+
 <section id="code" class="my-3">
   <h2>Code</h2>
 
