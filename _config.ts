@@ -13,6 +13,7 @@ import inline from "lume/plugins/inline.ts";
 import attributes from "lume/plugins/attributes.ts";
 import openring from "lume_openring/mod.ts";
 import nano from "npm:cssnano";
+import extractDate from "lume/plugins/extract_date.ts";
 
 import sanitizeHtml from "npm:sanitize-html";
 
@@ -69,6 +70,7 @@ site.use(esbuild({
   },
 }));
 site.use(date());
+site.use(extractDate());
 site.use(readInfo());
 site.use(sitemap());
 site.use(terser());
