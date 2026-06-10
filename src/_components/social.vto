@@ -5,7 +5,7 @@ slim: true
 {{ if social.url }}
   {{ comp ui.flatCard { href: social.url, slim: slim, classes: `not-prose !mb-0 flex items-center ${ social.deprecated ? "text-yellow-700 dark:text-yellow-400 bg-yellow-50/50 dark:bg-yellow-600/25 hocus:bg-yellow-100/75 dark:hocus:bg-yellow-700/50" : ""}`, attributes: { target: "_blank", title: social.deprecated } } }}
     <svg src="/assets/svg/{{ social.icon }}" class="h-[2rem] w-[2rem] fill-current" aria-hidden inline></svg>
-    <div class="ps-2">
+    <div class="ps-2 grow">
       <span class="leading-none block font-semibold dark:text-neutral-100 {{ if social.deprecated }} dark:text-yellow-100{{ /if }}">{{ social.name }}</span>
       <span class="leading-none opacity-75 block italic">{{ social.text }}</span>
     </div>
@@ -16,7 +16,7 @@ slim: true
 {{ else }}
   {{ comp ui.flatCard { slim: slim, classes: `not-prose !mb-0 flex items-center ${ social.deprecated ? "text-yellow-700 dark:text-yellow-400 bg-yellow-50/50 dark:bg-yellow-600/25" : ""}`, attributes: { target: "_blank", title: social.deprecated } } }}
     <svg src="/assets/svg/{{ social.icon }}" class="h-[2rem] w-[2rem] fill-current" aria-hidden inline></svg>
-    <div class="ps-2">
+    <div class="ps-2 grow">
       <span class="leading-none block font-semibold dark:text-neutral-100 {{ if social.deprecated }} dark:text-yellow-100{{ /if }}">{{ social.name }}</span>
       <span class="leading-none opacity-75 block italic">{{ social.text }}</span>
     </div>
