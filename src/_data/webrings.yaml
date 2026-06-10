@@ -39,3 +39,8 @@
   random: https://baccyflap.com/noai/?rnd
   next: https://baccyflap.com/noai/?nxt&s=pxl
   previous: https://baccyflap.com/noai/?prv&s=pxl
+- name: netdir
+  url: https://netdir.org
+  random: https://netdir.org/nav/2/random
+  next: https://netdir.org/nav/2/next
+  previous: https://netdir.org/nav/2/prev
