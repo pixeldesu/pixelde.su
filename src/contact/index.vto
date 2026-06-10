@@ -1,0 +1,22 @@
+---
+layout: layouts/main.vto
+title: Contact
+---
+
+<img src="/assets/img/avatar.png" class="mx-auto w-[200px] h-[200px] rounded-full"/>
+
+<div class="text-center">
+    <h2>pixeldesu</h2>
+    <p>open sourcerer / hobbyist VTuber</p>
+    <div class="grid gap-1">
+    {{ for featuredSocial of socials |> filterByTag("featured") }}
+      {{ comp.social({ social: featuredSocial, slim: false }) }}
+    {{ /for }}
+    </div>
+    <a href="/contact/full" class="inline-block p-3 no-underline hover:underline font-bold">
+        All socials
+        <svg class="inline-block fill-current ms-2" width="1rem" height="1rem" version="2.0">
+            <use href="#chevron-right" />
+        </svg>
+    </a>
+</div>
