@@ -17,8 +17,6 @@ import extractDate from "lume/plugins/extract_date.ts";
 
 import sanitizeHtml from "npm:sanitize-html";
 
-import fetchFormSubmissions from "./scripts/fetch-form-submissions.ts";
-
 const site = lume({
   src: "./src",
   emptyDest: false,
@@ -221,7 +219,5 @@ site.filter(
   "sanitize",
   (string: string) => sanitizeHtml(string),
 );
-
-site.script("fetch-form-submissions", async () => await fetchFormSubmissions());
 
 export default site;
